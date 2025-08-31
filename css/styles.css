@@ -493,3 +493,196 @@ body {
         font-size: 2rem;
     }
 }
+/* ===== SECCIÓN HABILIDADES ===== */
+.skills {
+    background-color: var(--bg-light);
+    padding: var(--spacing-xl) var(--spacing-sm);
+}
+
+.skills__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.skills__subtitle {
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ===== HABILIDADES TÉCNICAS ===== */
+.skills__category {
+    margin-bottom: var(--spacing-xl);
+}
+
+.category__title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.skills__grid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.skill__item {
+    background-color: var(--bg-color);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.skill__item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill__name {
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-small);
+}
+
+.skill__level {
+    background-color: var(--border-color);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill__bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+    border-radius: 4px;
+    width: 0;
+    transition: width 2s ease-in-out;
+    position: relative;
+}
+
+.skill__bar::after {
+    content: attr(data-level) '%';
+    position: absolute;
+    right: 8px;
+    top: -25px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 2px 6px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill__item:hover .skill__bar::after {
+    opacity: 1;
+}
+
+/* Animación de las barras */
+.skill__bar[data-level="90"] { width: 90%; }
+.skill__bar[data-level="85"] { width: 85%; }
+.skill__bar[data-level="80"] { width: 80%; }
+.skill__bar[data-level="75"] { width: 75%; }
+.skill__bar[data-level="70"] { width: 70%; }
+
+/* ===== HABILIDADES BLANDAS ===== */
+.soft-skills__grid {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.soft-skill__item {
+    background-color: var(--bg-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.soft-skill__item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--secondary-color);
+}
+
+.soft-skill__icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+.soft-skill__title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.soft-skill__description {
+    font-size: var(--font-size-small);
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* ===== RESPONSIVE PARA HABILIDADES ===== */
+@media (max-width: 1024px) {
+    .skills__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .soft-skills__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills__grid {
+        gap: var(--spacing-sm);
+    }
+    
+    .skill__item,
+    .soft-skill__item {
+        padding: var(--spacing-sm);
+    }
+    
+    .soft-skills__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .soft-skill__icon {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category__title {
+        font-size: var(--font-size-small);
+    }
+    
+    .skill__name {
+        font-size: 12px;
+    }
+    
+    .soft-skill__item {
+        padding: var(--spacing-md);
+    }
+}
