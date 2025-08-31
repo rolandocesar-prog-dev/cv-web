@@ -157,3 +157,141 @@ body {
         padding: 6px 8px;
     }
 }
+/* ===== SECCIÓN SOBRE MÍ ===== */
+.about {
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-color) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-xl) var(--spacing-sm);
+}
+
+.about__container {
+    width: 100%;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about__image {
+    text-align: center;
+}
+
+.about__photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.about__photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+}
+
+.about__info {
+    padding: var(--spacing-sm);
+}
+
+.about__title {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.2;
+}
+
+.about__subtitle {
+    font-size: var(--font-size-large);
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+}
+
+.about__description {
+    font-size: var(--font-size-base);
+    color: var(--text-light);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.about__contact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.contact__item {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-base);
+}
+
+.contact__item strong {
+    color: var(--primary-color);
+    min-width: 100px;
+    margin-right: var(--spacing-sm);
+}
+
+.contact__item span {
+    color: var(--text-light);
+}
+
+/* ===== RESPONSIVE PARA SOBRE MÍ ===== */
+@media (max-width: 768px) {
+    .about__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+    
+    .about__photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about__title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .about__contact {
+        align-items: center;
+    }
+    
+    .contact__item {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+    
+    .contact__item strong {
+        min-width: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        min-height: auto;
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+    
+    .about__photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .about__title {
+        font-size: var(--font-size-large);
+    }
+}
