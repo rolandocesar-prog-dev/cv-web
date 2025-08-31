@@ -295,3 +295,201 @@ body {
         font-size: var(--font-size-large);
     }
 }
+/* ===== SECCIÓN EDUCACIÓN ===== */
+.education {
+    background-color: var(--bg-color);
+    padding: var(--spacing-xl) var(--spacing-sm);
+}
+
+.education__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+}
+
+.section__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+.education__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.education__subtitle {
+    font-size: var(--font-size-large);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ===== TIMELINE ===== */
+.education__timeline {
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.education__timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--secondary-color);
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+}
+
+.timeline__item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline__marker {
+    position: absolute;
+    left: -23px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    border: 3px solid var(--bg-color);
+    box-shadow: 0 0 0 3px var(--secondary-color);
+    z-index: 1;
+}
+
+.timeline__content {
+    background-color: var(--bg-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.timeline__content:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.timeline__title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline__institution {
+    font-size: var(--font-size-small);
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline__status {
+    font-size: var(--font-size-small);
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* ===== RECONOCIMIENTOS ===== */
+.achievements__grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.achievement__item {
+    background-color: var(--bg-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.achievement__item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--secondary-color);
+}
+
+.achievement__icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.achievement__title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.achievement__description {
+    font-size: var(--font-size-small);
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+/* ===== RESPONSIVE PARA EDUCACIÓN ===== */
+@media (max-width: 768px) {
+    .education__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .education__timeline {
+        padding-left: var(--spacing-md);
+    }
+    
+    .timeline__marker {
+        left: -19px;
+    }
+    
+    .timeline__content {
+        padding: var(--spacing-sm);
+    }
+    
+    .achievements__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .section__title {
+        font-size: var(--font-size-xl);
+    }
+    
+    .achievements__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievement__icon {
+        font-size: 2rem;
+    }
+}
