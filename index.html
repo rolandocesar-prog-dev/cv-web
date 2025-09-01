@@ -5,33 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Curriculum Vitae de Rolando César Vásquez Tavera - Técnico Superior en Sistemas Informáticos y Desarrollador Web">
     <meta name="keywords" content="desarrollador web, sistemas informáticos, PHP, JavaScript, Flutter, Tarija, Bolivia">
+    <meta name="author" content="Rolando César Vásquez Tavera">
     <title>Rolando Vásquez - Desarrollador</title>
+    
+    <!-- Preconnect para optimizar carga de fuentes del sistema -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/perfil.ico">
     <link rel="shortcut icon" href="img/perfil.ico">
 </head>
 <body>
+    <!-- Skip to main content para accesibilidad -->
+    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+    
     <header class="header">
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li>
-                <li class="nav__item"><a href="#education" class="nav__link">Formación</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                <li class="nav__item"><a href="#projects" class="nav__link">Proyectos</a></li>
-                <li class="nav__item"><a href="#hobbies" class="nav__link">Hobbies</a></li>
+        <nav class="nav" aria-label="Navegación principal">
+            <ul class="nav__list" role="menubar">
+                <li class="nav__item" role="none">
+                    <a href="#about" class="nav__link" role="menuitem">Sobre mí</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#education" class="nav__link" role="menuitem">Formación</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#skills" class="nav__link" role="menuitem">Habilidades</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#projects" class="nav__link" role="menuitem">Proyectos</a>
+                </li>
+                <li class="nav__item" role="none">
+                    <a href="#hobbies" class="nav__link" role="menuitem">Hobbies</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main class="main">
-        <section id="about" class="section about">
-            <div class="about__container">
+    <main id="main" class="main">
+        <section id="about" class="section about" aria-labelledby="about-title">
+            <div class="container">
                 <div class="about__content">
                     <div class="about__image">
-                        <img src="img/perfil-web.webp" alt="Rolando César Vásquez Tavera" class="about__photo">
+                        <img src="img/perfil-web.webp" 
+                             alt="Rolando César Vásquez Tavera" 
+                             class="about__photo"
+                             width="250"
+                             height="250"
+                             loading="lazy">
                     </div>
                     <div class="about__info">
-                        <h1 class="about__title">Rolando César Vásquez Tavera</h1>
+                        <h1 id="about-title" class="about__title">Rolando César Vásquez Tavera</h1>
                         <h2 class="about__subtitle">Técnico Superior en Sistemas Informáticos</h2>
                         <p class="about__description">
                             Desarrollador con conocimiento en tecnologías modernas, con cuatro años de experiencia en el sector tecnológico. 
@@ -54,17 +80,17 @@
             </div>
         </section>
 
-        <section id="education" class="section education">
-            <div class="education__container">
-                <h2 class="section__title">Formación Académica</h2>
+        <section id="education" class="section education" aria-labelledby="education-title">
+            <div class="container">
+                <h2 id="education-title" class="section__title">Formación Académica</h2>
                 
                 <div class="education__content">
                     <div class="education__formal">
-                        <h3 class="education__subtitle">Educación Formal</h3>
-                        <div class="education__timeline">
+                        <h3 class="subtitle">Educación Formal</h3>
+                        <div class="timeline">
                             <div class="timeline__item">
                                 <div class="timeline__marker"></div>
-                                <div class="timeline__content">
+                                <div class="timeline__content card">
                                     <h4 class="timeline__title">Bachiller</h4>
                                     <p class="timeline__institution">Colegio Nacional San Luis / CEA San Jerónimo</p>
                                     <p class="timeline__status">Finalizado</p>
@@ -72,7 +98,7 @@
                             </div>
                             <div class="timeline__item">
                                 <div class="timeline__marker"></div>
-                                <div class="timeline__content">
+                                <div class="timeline__content card">
                                     <h4 class="timeline__title">Técnico Superior en Sistemas Informáticos</h4>
                                     <p class="timeline__institution">Instituto Técnico Superior "INCOS"</p>
                                     <p class="timeline__status">Finalizado - Cuadro de Honor</p>
@@ -80,7 +106,7 @@
                             </div>
                             <div class="timeline__item">
                                 <div class="timeline__marker"></div>
-                                <div class="timeline__content">
+                                <div class="timeline__content card">
                                     <h4 class="timeline__title">Ingeniería en Sistemas</h4>
                                     <p class="timeline__institution">Universidad Adventista de Bolivia</p>
                                     <p class="timeline__status">En curso</p>
@@ -90,15 +116,15 @@
                     </div>
                     
                     <div class="education__achievements">
-                        <h3 class="education__subtitle">Reconocimientos</h3>
+                        <h3 class="subtitle">Reconocimientos</h3>
                         <div class="achievements__grid">
-                            <div class="achievement__item">
-                                <div class="achievement__icon">🏆</div>
+                            <div class="card card--centered achievement__item">
+                                <div class="achievement__icon" aria-label="Trofeo primer lugar" role="img">🏆</div>
                                 <h4 class="achievement__title">Primer Lugar</h4>
                                 <p class="achievement__description">Desempeño Académico 2020 - INCOS Tarija</p>
                             </div>
-                            <div class="achievement__item">
-                                <div class="achievement__icon">🥈</div>
+                            <div class="card card--centered achievement__item">
+                                <div class="achievement__icon" aria-label="Trofeo segundo lugar" role="img">🥈</div>
                                 <h4 class="achievement__title">Segundo Lugar</h4>
                                 <p class="achievement__description">Desempeño Académico 2019 - INCOS Tarija</p>
                             </div>
@@ -108,13 +134,13 @@
             </div>
         </section>
 
-        <section id="skills" class="section skills">
-            <div class="skills__container">
-                <h2 class="section__title">Habilidades</h2>
+        <section id="skills" class="section skills" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section__title">Habilidades</h2>
                 
                 <div class="skills__content">
                     <div class="skills__technical">
-                        <h3 class="skills__subtitle">Habilidades Técnicas</h3>
+                        <h3 class="subtitle">Habilidades Técnicas</h3>
                         
                         <div class="skills__category">
                             <h4 class="category__title">Lenguajes de Programación</h4>
@@ -122,37 +148,37 @@
                                 <div class="skill__item">
                                     <div class="skill__name">JavaScript</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">PHP</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">Python</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">TypeScript</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">Dart</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="80"></div>
+                                        <div class="skill__bar" style="--skill-level: 80"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">Java</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                             </div>
@@ -164,31 +190,31 @@
                                 <div class="skill__item">
                                     <div class="skill__name">React</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">Flutter</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="80"></div>
+                                        <div class="skill__bar" style="--skill-level: 80"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">React Native</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">Angular</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                  <div class="skill__item">
                                     <div class="skill__name">Spring Boot</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                             </div>
@@ -200,25 +226,25 @@
                                 <div class="skill__item">
                                     <div class="skill__name">MySQL</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">PostgreSQL</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">Git/GitHub</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                                 <div class="skill__item">
                                     <div class="skill__name">Testing QA</div>
                                     <div class="skill__level">
-                                        <div class="skill__bar" data-level="70"></div>
+                                        <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
                                 </div>
                             </div>
@@ -226,25 +252,25 @@
                     </div>
                     
                     <div class="skills__soft">
-                        <h3 class="skills__subtitle">Habilidades Blandas</h3>
+                        <h3 class="subtitle">Habilidades Blandas</h3>
                         <div class="soft-skills__grid">
-                            <div class="soft-skill__item">
-                                <div class="soft-skill__icon">🎯</div>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Resolución de problemas" role="img">🎯</div>
                                 <h4 class="soft-skill__title">Resolución de Problemas</h4>
                                 <p class="soft-skill__description">Capacidad analítica para identificar y solucionar problemas técnicos complejos</p>
                             </div>
-                            <div class="soft-skill__item">
-                                <div class="soft-skill__icon">👥</div>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Trabajo en equipo" role="img">👥</div>
                                 <h4 class="soft-skill__title">Trabajo en Equipo</h4>
                                 <p class="soft-skill__description">Experiencia colaborando en equipos multidisciplinarios</p>
                             </div>
-                            <div class="soft-skill__item">
-                                <div class="soft-skill__icon">📈</div>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Liderazgo" role="img">📈</div>
                                 <h4 class="soft-skill__title">Liderazgo</h4>
                                 <p class="soft-skill__description">Experiencia en gestión de equipos y coordinación de proyectos</p>
                             </div>
-                            <div class="soft-skill__item">
-                                <div class="soft-skill__icon">🔄</div>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Adaptabilidad" role="img">🔄</div>
                                 <h4 class="soft-skill__title">Adaptabilidad</h4>
                                 <p class="soft-skill__description">Capacidad de adaptación a nuevas tecnologías y metodologías</p>
                             </div>
@@ -254,18 +280,18 @@
             </div>
         </section>
 
-        <section id="projects" class="section projects">
-            <div class="projects__container">
-                <h2 class="section__title">Proyectos</h2>
+        <section id="projects" class="section projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section__title">Proyectos</h2>
                 
                 <div class="projects__content">
                     <div class="projects__current">
-                        <h3 class="projects__subtitle">Proyectos Actuales</h3>
+                        <h3 class="subtitle">Proyectos Actuales</h3>
                         <div class="projects__grid">
-                            <div class="project__card">
+                            <article class="card project__card">
                                 <div class="project__header">
                                     <h4 class="project__title">Voz Liberal Tarija</h4>
-                                    <div class="project__status project__status--active">Activo</div>
+                                    <div class="status status--active">Activo</div>
                                 </div>
                                 <p class="project__description">
                                     Desarrollo de página web para la plataforma política Voz Liberal Tarija. 
@@ -277,14 +303,14 @@
                                     <span class="tech__tag">JavaScript</span>
                                 </div>
                                 <div class="project__links">
-                                    <a href="https://www.vozliberaltarija.com/" class="project__link">Ver Proyecto</a>
+                                    <a href="https://www.vozliberaltarija.com/" class="btn btn--primary" target="_blank" rel="noopener">Ver Proyecto</a>
                                 </div>
-                            </div>
+                            </article>
                             
-                            <div class="project__card">
+                            <article class="card project__card">
                                 <div class="project__header">
                                     <h4 class="project__title">Test Político Boliviano</h4>
-                                    <div class="project__status project__status--active">Activo</div>
+                                    <div class="status status--active">Activo</div>
                                 </div>
                                 <p class="project__description">
                                     Plataforma web para la iniciativa ciudadana Test Político Boliviano. 
@@ -296,14 +322,14 @@
                                     <span class="tech__tag">CSS3</span>
                                 </div>
                                 <div class="project__links">
-                                    <a href="https://testpoliticoboliviano.com/" class="project__link">Ver Proyecto</a>
+                                    <a href="https://testpoliticoboliviano.com/" class="btn btn--primary" target="_blank" rel="noopener">Ver Proyecto</a>
                                 </div>
-                            </div>
+                            </article>
                             
-                            <div class="project__card">
+                            <article class="card project__card">
                                 <div class="project__header">
                                     <h4 class="project__title">Startup - Santa Cruz de la Sierra</h4>
-                                    <div class="project__status project__status--active">Activo</div>
+                                    <div class="status status--active">Activo</div>
                                 </div>
                                 <p class="project__description">
                                     Desarrollo como freelancer remoto para startup tecnológica. 
@@ -315,19 +341,19 @@
                                     <span class="tech__tag">React</span>
                                 </div>
                                 <div class="project__links">
-                                    <span class="project__link project__link--private">Confidencial</span>
+                                    <span class="btn btn--disabled">Confidencial</span>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                     
                     <div class="projects__completed">
-                        <h3 class="projects__subtitle">Proyectos Completados</h3>
+                        <h3 class="subtitle">Proyectos Completados</h3>
                         <div class="projects__grid">
-                            <div class="project__card">
+                            <article class="card project__card">
                                 <div class="project__header">
                                     <h4 class="project__title">Sistema Radio Móvil Andaluz</h4>
-                                    <div class="project__status project__status--completed">Completado</div>
+                                    <div class="status status--completed">Completado</div>
                                 </div>
                                 <p class="project__description">
                                     Sistema web completo para control, despacho y seguimiento de llamadas, 
@@ -339,12 +365,12 @@
                                     <span class="tech__tag">Ajax</span>
                                     <span class="tech__tag">MySQL</span>
                                 </div>
-                            </div>
+                            </article>
                             
-                            <div class="project__card">
+                            <article class="card project__card">
                                 <div class="project__header">
                                     <h4 class="project__title">App OTN-PB Monitoreo</h4>
-                                    <div class="project__status project__status--completed">Completado</div>
+                                    <div class="status status--completed">Completado</div>
                                 </div>
                                 <p class="project__description">
                                     Aplicación móvil para visualización y monitoreo de estaciones 
@@ -355,12 +381,12 @@
                                     <span class="tech__tag">Spring Boot</span>
                                     <span class="tech__tag">PostgreSQL</span>
                                 </div>
-                            </div>
+                            </article>
                             
-                            <div class="project__card">
+                            <article class="card project__card">
                                 <div class="project__header">
                                     <h4 class="project__title">QA Testing - Llevame</h4>
-                                    <div class="project__status project__status--completed">Completado</div>
+                                    <div class="status status--completed">Completado</div>
                                 </div>
                                 <p class="project__description">
                                     Tester QA para startup, realizando pruebas de calidad, usabilidad, 
@@ -371,73 +397,73 @@
                                     <span class="tech__tag">React</span>
                                     <span class="tech__tag">React Native</span>
                                 </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="hobbies" class="section hobbies">
-            <div class="hobbies__container">
-                <h2 class="section__title">Hobbies e Intereses</h2>
+        <section id="hobbies" class="section hobbies" aria-labelledby="hobbies-title">
+            <div class="container">
+                <h2 id="hobbies-title" class="section__title">Hobbies e Intereses</h2>
                 
                 <div class="hobbies__content">
                     <div class="hobbies__grid">
-                        <div class="hobby__card">
-                            <div class="hobby__icon">🚵‍♂️</div>
+                        <article class="card card--centered hobby__card">
+                            <div class="hobby__icon" aria-label="Ciclismo de montaña" role="img">🚵‍♂️</div>
                             <h3 class="hobby__title">Ciclismo de Montaña</h3>
                             <p class="hobby__description">
                                 Apasionado por el mountain bike y la exploración de senderos en las montañas de Tarija. 
                                 Una actividad que me ayuda a mantener el equilibrio entre la vida digital y la naturaleza.
                             </p>
-                        </div>
+                        </article>
                         
-                        <div class="hobby__card">
-                            <div class="hobby__icon">🎧</div>
+                        <article class="card card--centered hobby__card">
+                            <div class="hobby__icon" aria-label="Podcasts" role="img">🎧</div>
                             <h3 class="hobby__title">Podcasts de Programación</h3>
                             <p class="hobby__description">
                                 Escucho regularmente podcasts de referentes como <strong>Fernando Herrera</strong>, 
                                 <strong>Miguel Durán (Midudev)</strong>, <strong>Brais Moure</strong> y <strong>Sergio Code</strong> 
                                 para mantenerme actualizado en las últimas tendencias tecnológicas.
                             </p>
-                        </div>
+                        </article>
                         
-                        <div class="hobby__card">
-                            <div class="hobby__icon">💻</div>
+                        <article class="card card--centered hobby__card">
+                            <div class="hobby__icon" aria-label="Proyectos personales" role="img">💻</div>
                             <h3 class="hobby__title">Proyectos Personales</h3>
                             <p class="hobby__description">
                                 Disfruto experimentando con nuevas tecnologías y frameworks en proyectos personales. 
                                 Siempre hay algo nuevo que aprender en el mundo del desarrollo.
                             </p>
-                        </div>
+                        </article>
                         
-                        <div class="hobby__card">
-                            <div class="hobby__icon">📚</div>
+                        <article class="card card--centered hobby__card">
+                            <div class="hobby__icon" aria-label="Aprendizaje" role="img">📚</div>
                             <h3 class="hobby__title">Aprendizaje Continuo</h3>
                             <p class="hobby__description">
                                 Participación activa en webinars, cursos online y eventos de tecnología. 
                                 La formación constante es clave en esta industria que evoluciona rapidamente.
                             </p>
-                        </div>
+                        </article>
                         
-                        <div class="hobby__card">
-                            <div class="hobby__icon">🌱</div>
+                        <article class="card card--centered hobby__card">
+                            <div class="hobby__icon" aria-label="Tecnologías emergentes" role="img">🌱</div>
                             <h3 class="hobby__title">Tecnologías Emergentes</h3>
                             <p class="hobby__description">
                                 Investigación y experimentación con nuevas tecnologías, frameworks y herramientas 
                                 que puedan mejorar los procesos de desarrollo (N8N, Blockchain).
                             </p>
-                        </div>
+                        </article>
                         
-                        <div class="hobby__card">
-                            <div class="hobby__icon">🎯</div>
+                        <article class="card card--centered hobby__card">
+                            <div class="hobby__icon" aria-label="Metodologías ágiles" role="img">🎯</div>
                             <h3 class="hobby__title">Metodologías Ágiles</h3>
                             <p class="hobby__description">
                                 Interés en metodologías como SCRUM y buenas prácticas de desarrollo. 
                                 Siempre buscando formas de optimizar el trabajo en equipo y la entrega de proyectos.
                             </p>
-                        </div>
+                        </article>
                     </div>
                 </div>
                 
@@ -452,7 +478,7 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
+        <div class="container">
             <div class="footer__content">
                 <div class="footer__info">
                     <h3 class="footer__title">Rolando César Vásquez Tavera</h3>
@@ -464,11 +490,11 @@
                     <h4 class="footer__section-title">Contacto</h4>
                     <div class="contact__list">
                         <a href="tel:+59178249575" class="contact__link">
-                            <span class="contact__icon">📱</span>
+                            <span class="contact__icon" aria-label="Teléfono" role="img">📱</span>
                             <span>+591 78249575</span>
                         </a>
                         <a href="mailto:rolando.sha256@gmail.com" class="contact__link">
-                            <span class="contact__icon">✉️</span>
+                            <span class="contact__icon" aria-label="Email" role="img">✉️</span>
                             <span>rolando.sha256@gmail.com</span>
                         </a>
                     </div>
@@ -481,7 +507,7 @@
                     <p class="footer__made-with">Desarrollado con ❤️ usando HTML y CSS</p>
                 </div>
                 <div class="footer__scroll-top">
-                    <a href="#about" class="scroll-top__btn" title="Volver arriba">
+                    <a href="#about" class="btn btn--scroll" title="Volver arriba" aria-label="Volver al inicio">
                         ↑ Subir
                     </a>
                 </div>
