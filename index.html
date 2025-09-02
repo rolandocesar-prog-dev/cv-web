@@ -3,31 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Rolando Vásquez - Desarrollador Web Full Stack | Tarija, Bolivia</title>
-    <meta name="description" content="Desarrollador Web Full Stack especializado en React, Flutter y Spring Boot. Experiencia en desarrollo de aplicaciones web y móviles, testing QA y soluciones digitales innovadoras.">
-    <meta name="keywords" content="desarrollador web, full stack, sistemas informáticos, React, Flutter, Spring Boot, PHP, JavaScript, Tarija, Bolivia">
+    <meta name="description" content="Curriculum Vitae de Rolando César Vásquez Tavera - Técnico Superior en Sistemas Informáticos y Desarrollador Web">
+    <meta name="keywords" content="desarrollador web, sistemas informáticos, PHP, JavaScript, Flutter, Tarija, Bolivia">
     <meta name="author" content="Rolando César Vásquez Tavera">
-    <meta name="robots" content="index, follow">
+    <title>Rolando Vásquez - Desarrollador</title>
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rolando-vasquez.github.io/">
-    <meta property="og:title" content="Rolando Vásquez - Desarrollador Web Full Stack">
-    <meta property="og:description" content="Desarrollador Web Full Stack especializado en React, Flutter y Spring Boot con experiencia en soluciones digitales innovadoras.">
-    <meta property="og:image" content="img/perfil-web.webp">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://rolando-vasquez.github.io/">
-    <meta property="twitter:title" content="Rolando Vásquez - Desarrollador Web Full Stack">
-    <meta property="twitter:description" content="Desarrollador Web Full Stack especializado en React, Flutter y Spring Boot.">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://rolando-vasquez.github.io/">
-    
-    <!-- Preconnect para optimizar carga -->
+    <!-- Preconnect para optimizar carga de fuentes del sistema -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Hojas de estilo -->
@@ -36,97 +17,62 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/perfil.ico">
     <link rel="shortcut icon" href="img/perfil.ico">
-    <link rel="apple-touch-icon" href="img/perfil-web.webp">
-    
-    <!-- Datos estructurados JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rolando César Vásquez Tavera",
-        "jobTitle": "Técnico Superior en Sistemas Informáticos",
-        "url": "https://rolando-vasquez.github.io",
-        "image": "https://rolando-vasquez.github.io/img/perfil-web.webp",
-        "sameAs": [
-            "https://github.com/rolando-vasquez",
-            "mailto:rolando.sha256@gmail.com"
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Tarija",
-            "addressCountry": "Bolivia"
-        },
-        "telephone": "+59178249575",
-        "email": "rolando.sha256@gmail.com",
-        "alumniOf": [
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Instituto Técnico Superior INCOS"
-            },
-            {
-                "@type": "CollegeOrUniversity", 
-                "name": "Universidad Adventista de Bolivia"
-            }
-        ],
-        "knowsAbout": ["JavaScript", "PHP", "Python", "TypeScript", "Flutter", "React", "Spring Boot", "MySQL", "PostgreSQL", "Git", "Testing QA"],
-        "description": "Desarrollador con conocimiento en tecnologías modernas, con cuatro años de experiencia en el sector tecnológico."
-    }
-    </script>
 </head>
 <body>
     <!-- Skip to main content para accesibilidad -->
     <a href="#main" class="skip-link">Saltar al contenido principal</a>
     
-    <header class="header" role="banner">
-        <nav class="nav" role="navigation" aria-label="Navegación principal">
+    <!-- CORRECCIÓN 1: Removido role="banner" (innecesario en HTML5) -->
+    <header class="header">
+        <!-- CORRECCIÓN 2: Removido role="navigation" (innecesario en HTML5) -->
+        <nav class="nav" aria-label="Navegación principal">
             <ul class="nav__list" role="menubar">
                 <li class="nav__item" role="none">
-                    <a href="#about" class="nav__link" role="menuitem" aria-label="Ir a la sección Sobre mí">Sobre mí</a>
+                    <a href="#about" class="nav__link" role="menuitem">Sobre mí</a>
                 </li>
                 <li class="nav__item" role="none">
-                    <a href="#education" class="nav__link" role="menuitem" aria-label="Ir a la sección Formación">Formación</a>
+                    <a href="#education" class="nav__link" role="menuitem">Formación</a>
                 </li>
                 <li class="nav__item" role="none">
-                    <a href="#skills" class="nav__link" role="menuitem" aria-label="Ir a la sección Habilidades">Habilidades</a>
+                    <a href="#skills" class="nav__link" role="menuitem">Habilidades</a>
                 </li>
                 <li class="nav__item" role="none">
-                    <a href="#projects" class="nav__link" role="menuitem" aria-label="Ir a la sección Proyectos">Proyectos</a>
+                    <a href="#projects" class="nav__link" role="menuitem">Proyectos</a>
                 </li>
                 <li class="nav__item" role="none">
-                    <a href="#hobbies" class="nav__link" role="menuitem" aria-label="Ir a la sección Hobbies">Hobbies</a>
+                    <a href="#hobbies" class="nav__link" role="menuitem">Hobbies</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main id="main" class="main" role="main">
+    <!-- CORRECCIÓN 3: Removido role="main" (innecesario en HTML5) -->
+    <main id="main" class="main">
+        <!-- CORRECCIÓN 4: Section ahora tiene un heading visible (h1) -->
         <section id="about" class="section about" aria-labelledby="about-title">
             <div class="container">
-                <article class="about__content">
+                <div class="about__content">
                     <div class="about__image">
                         <img src="img/perfil-web.webp" 
-                             alt="Foto de perfil de Rolando César Vásquez Tavera, Desarrollador Web" 
+                             alt="Rolando César Vásquez Tavera" 
                              class="about__photo"
                              width="250"
                              height="250"
-                             loading="eager">
+                             loading="lazy">
                     </div>
                     <div class="about__info">
+                        <!-- CORRECCIÓN 5: h1 es apropiado aquí como título principal de la página -->
                         <h1 id="about-title" class="about__title">Rolando César Vásquez Tavera</h1>
-                        <p class="about__subtitle" role="doc-subtitle">Técnico Superior en Sistemas Informáticos</p>
+                        <h2 class="about__subtitle">Técnico Superior en Sistemas Informáticos</h2>
                         <p class="about__description">
                             Desarrollador con conocimiento en tecnologías modernas, con cuatro años de experiencia en el sector tecnológico. 
                             Apasionado por crear soluciones digitales innovadoras y eficientes. Experiencia en desarrollo web, 
                             aplicaciones móviles y testing de calidad.
                         </p>
-                        <address class="about__contact" aria-label="Información de contacto">
+                        <!-- CORRECCIÓN 6: Removido aria-label innecesario de address -->
+                        <address class="about__contact">
                             <div class="contact__item">
-                                <strong>Teléfono:</strong> 
-                                <a href="tel:+59178249575" aria-label="Llamar al número +591 78249575">+591 78249575</a>
-                            </div>
-                            <div class="contact__item">
-                                <strong>Email:</strong> 
-                                <a href="mailto:rolando.sha256@gmail.com" aria-label="Enviar email a rolando.sha256@gmail.com">rolando.sha256@gmail.com</a>
+                                <strong>Teléfono:</strong> <span>+591 78249575</span>
                             </div>
                             <div class="contact__item">
                                 <strong>Ubicación:</strong> <span>Tarija, Bolivia</span>
@@ -136,7 +82,7 @@
                             </div>
                         </address>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -147,55 +93,50 @@
                 <div class="education__content">
                     <div class="education__formal">
                         <h3 class="subtitle">Educación Formal</h3>
-                        <div class="timeline" role="list" aria-label="Línea de tiempo de educación">
-                            <article class="timeline__item" role="listitem">
-                                <div class="timeline__marker" aria-hidden="true"></div>
+                        <!-- CORRECCIÓN 7: Removido role="list" y "listitem" de timeline -->
+                        <div class="timeline">
+                            <div class="timeline__item">
+                                <div class="timeline__marker"></div>
                                 <div class="timeline__content card">
                                     <h4 class="timeline__title">Bachiller</h4>
                                     <p class="timeline__institution">Colegio Nacional San Luis / CEA San Jerónimo</p>
-                                    <p class="timeline__status">
-                                        <span class="sr-only">Estado:</span> Finalizado
-                                    </p>
+                                    <p class="timeline__status">Finalizado</p>
                                 </div>
-                            </article>
-                            <article class="timeline__item" role="listitem">
-                                <div class="timeline__marker" aria-hidden="true"></div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__marker"></div>
                                 <div class="timeline__content card">
                                     <h4 class="timeline__title">Técnico Superior en Sistemas Informáticos</h4>
                                     <p class="timeline__institution">Instituto Técnico Superior "INCOS"</p>
-                                    <p class="timeline__status">
-                                        <span class="sr-only">Estado:</span> Finalizado - Cuadro de Honor
-                                    </p>
+                                    <p class="timeline__status">Finalizado - Cuadro de Honor</p>
                                 </div>
-                            </article>
-                            <article class="timeline__item" role="listitem">
-                                <div class="timeline__marker" aria-hidden="true"></div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__marker"></div>
                                 <div class="timeline__content card">
                                     <h4 class="timeline__title">Ingeniería en Sistemas</h4>
                                     <p class="timeline__institution">Universidad Adventista de Bolivia</p>
-                                    <p class="timeline__status">
-                                        <span class="sr-only">Estado:</span> En curso
-                                    </p>
+                                    <p class="timeline__status">En curso</p>
                                 </div>
-                            </article>
+                            </div>
                         </div>
                     </div>
                     
-                    <aside class="education__achievements" aria-labelledby="achievements-title">
-                        <h3 id="achievements-title" class="subtitle">Reconocimientos</h3>
+                    <div class="education__achievements">
+                        <h3 class="subtitle">Reconocimientos</h3>
                         <div class="achievements__grid">
-                            <article class="card card--centered achievement__item">
-                                <span class="achievement__icon" aria-hidden="true">🏆</span>
+                            <div class="card card--centered achievement__item">
+                                <div class="achievement__icon" aria-label="Trofeo primer lugar" role="img">🏆</div>
                                 <h4 class="achievement__title">Primer Lugar</h4>
                                 <p class="achievement__description">Desempeño Académico 2020 - INCOS Tarija</p>
-                            </article>
-                            <article class="card card--centered achievement__item">
-                                <span class="achievement__icon" aria-hidden="true">🥈</span>
+                            </div>
+                            <div class="card card--centered achievement__item">
+                                <div class="achievement__icon" aria-label="Trofeo segundo lugar" role="img">🥈</div>
                                 <h4 class="achievement__title">Segundo Lugar</h4>
                                 <p class="achievement__description">Desempeño Académico 2019 - INCOS Tarija</p>
-                            </article>
+                            </div>
                         </div>
-                    </aside>
+                    </div>
                 </div>
             </div>
         </section>
@@ -210,138 +151,139 @@
                         
                         <div class="skills__category">
                             <h4 class="category__title">Lenguajes de Programación</h4>
-                            <div class="skills__grid" role="list" aria-label="Lista de lenguajes de programación">
-                                <article class="skill__item" role="listitem">
+                            <!-- CORRECCIÓN 8: Cambiado article por div y removido role="listitem" -->
+                            <div class="skills__grid">
+                                <div class="skill__item">
                                     <div class="skill__name">JavaScript</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">PHP</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="PHP: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">Python</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Python: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">TypeScript</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">Dart</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Dart: 80% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 80"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">Java</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Java: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="skills__category">
                             <h4 class="category__title">Frameworks & Librerías</h4>
-                            <div class="skills__grid" role="list" aria-label="Lista de frameworks y librerías">
-                                <article class="skill__item" role="listitem">
+                            <div class="skills__grid">
+                                <div class="skill__item">
                                     <div class="skill__name">React</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="React: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">Flutter</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Flutter: 80% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 80"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">React Native</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="React Native: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">Angular</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Angular: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                 <div class="skill__item">
                                     <div class="skill__name">Spring Boot</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Spring Boot: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
+                                </div>
                             </div>
                         </div>
                         
                         <div class="skills__category">
                             <h4 class="category__title">Bases de Datos & Herramientas</h4>
-                            <div class="skills__grid" role="list" aria-label="Lista de bases de datos y herramientas">
-                                <article class="skill__item" role="listitem">
+                            <div class="skills__grid">
+                                <div class="skill__item">
                                     <div class="skill__name">MySQL</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">PostgreSQL</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="PostgreSQL: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">Git/GitHub</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Git y GitHub: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
-                                <article class="skill__item" role="listitem">
+                                </div>
+                                <div class="skill__item">
                                     <div class="skill__name">Testing QA</div>
-                                    <div class="skill__level" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Testing QA: 70% de dominio">
+                                    <div class="skill__level">
                                         <div class="skill__bar" style="--skill-level: 70"></div>
                                     </div>
-                                </article>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <aside class="skills__soft" aria-labelledby="soft-skills-title">
-                        <h3 id="soft-skills-title" class="subtitle">Habilidades Blandas</h3>
+                    <div class="skills__soft">
+                        <h3 class="subtitle">Habilidades Blandas</h3>
                         <div class="soft-skills__grid">
-                            <article class="card card--centered soft-skill__item">
-                                <span class="soft-skill__icon" aria-hidden="true">🎯</span>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Resolución de problemas" role="img">🎯</div>
                                 <h4 class="soft-skill__title">Resolución de Problemas</h4>
                                 <p class="soft-skill__description">Capacidad analítica para identificar y solucionar problemas técnicos complejos</p>
-                            </article>
-                            <article class="card card--centered soft-skill__item">
-                                <span class="soft-skill__icon" aria-hidden="true">👥</span>
+                            </div>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Trabajo en equipo" role="img">👥</div>
                                 <h4 class="soft-skill__title">Trabajo en Equipo</h4>
                                 <p class="soft-skill__description">Experiencia colaborando en equipos multidisciplinarios</p>
-                            </article>
-                            <article class="card card--centered soft-skill__item">
-                                <span class="soft-skill__icon" aria-hidden="true">📈</span>
+                            </div>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Liderazgo" role="img">📈</div>
                                 <h4 class="soft-skill__title">Liderazgo</h4>
                                 <p class="soft-skill__description">Experiencia en gestión de equipos y coordinación de proyectos</p>
-                            </article>
-                            <article class="card card--centered soft-skill__item">
-                                <span class="soft-skill__icon" aria-hidden="true">🔄</span>
+                            </div>
+                            <div class="card card--centered soft-skill__item">
+                                <div class="soft-skill__icon" aria-label="Adaptabilidad" role="img">🔄</div>
                                 <h4 class="soft-skill__title">Adaptabilidad</h4>
                                 <p class="soft-skill__description">Capacidad de adaptación a nuevas tecnologías y metodologías</p>
-                            </article>
+                            </div>
                         </div>
-                    </aside>
+                    </div>
                 </div>
             </div>
         </section>
@@ -354,73 +296,64 @@
                     <div class="projects__current">
                         <h3 class="subtitle">Proyectos Actuales</h3>
                         <div class="projects__grid">
+                            <!-- CORRECCIÓN 9: Mantengo article porque tiene h4 como heading -->
                             <article class="card project__card">
-                                <header class="project__header">
+                                <div class="project__header">
                                     <h4 class="project__title">Voz Liberal Tarija</h4>
-                                    <span class="status status--active" aria-label="Estado del proyecto: Activo">Activo</span>
-                                </header>
+                                    <!-- CORRECCIÓN 10: Removido aria-label innecesario de status -->
+                                    <div class="status status--active">Activo</div>
+                                </div>
                                 <p class="project__description">
                                     Desarrollo de página web para la plataforma política Voz Liberal Tarija. 
                                     Proyecto desarrollado sin frameworks, enfocado en performance y accesibilidad.
                                 </p>
-                                <div class="project__tech" role="list" aria-label="Tecnologías utilizadas">
-                                    <span class="tech__tag" role="listitem">HTML5</span>
-                                    <span class="tech__tag" role="listitem">CSS3</span>
-                                    <span class="tech__tag" role="listitem">JavaScript</span>
+                                <div class="project__tech">
+                                    <span class="tech__tag">HTML5</span>
+                                    <span class="tech__tag">CSS3</span>
+                                    <span class="tech__tag">JavaScript</span>
                                 </div>
-                                <footer class="project__links">
-                                    <a href="https://www.vozliberaltarija.com/" 
-                                       class="btn btn--primary" 
-                                       target="_blank" 
-                                       rel="noopener noreferrer"
-                                       aria-label="Ver proyecto Voz Liberal Tarija en nueva ventana">
-                                        Ver Proyecto
-                                    </a>
-                                </footer>
+                                <div class="project__links">
+                                    <a href="https://www.vozliberaltarija.com/" class="btn btn--primary" target="_blank" rel="noopener">Ver Proyecto</a>
+                                </div>
                             </article>
                             
                             <article class="card project__card">
-                                <header class="project__header">
+                                <div class="project__header">
                                     <h4 class="project__title">Test Político Boliviano</h4>
-                                    <span class="status status--active" aria-label="Estado del proyecto: Activo">Activo</span>
-                                </header>
+                                    <div class="status status--active">Activo</div>
+                                </div>
                                 <p class="project__description">
                                     Plataforma web para la iniciativa ciudadana Test Político Boliviano. 
                                     Aplicación interactiva desarrollada con Angular.
                                 </p>
-                                <div class="project__tech" role="list" aria-label="Tecnologías utilizadas">
-                                    <span class="tech__tag" role="listitem">Angular</span>
-                                    <span class="tech__tag" role="listitem">TypeScript</span>
-                                    <span class="tech__tag" role="listitem">CSS3</span>
+                                <div class="project__tech">
+                                    <span class="tech__tag">Angular</span>
+                                    <span class="tech__tag">TypeScript</span>
+                                    <span class="tech__tag">CSS3</span>
                                 </div>
-                                <footer class="project__links">
-                                    <a href="https://testpoliticoboliviano.com/" 
-                                       class="btn btn--primary" 
-                                       target="_blank" 
-                                       rel="noopener noreferrer"
-                                       aria-label="Ver proyecto Test Político Boliviano en nueva ventana">
-                                        Ver Proyecto
-                                    </a>
-                                </footer>
+                                <div class="project__links">
+                                    <a href="https://testpoliticoboliviano.com/" class="btn btn--primary" target="_blank" rel="noopener">Ver Proyecto</a>
+                                </div>
                             </article>
                             
                             <article class="card project__card">
-                                <header class="project__header">
+                                <div class="project__header">
                                     <h4 class="project__title">Startup - Santa Cruz de la Sierra</h4>
-                                    <span class="status status--active" aria-label="Estado del proyecto: Activo">Activo</span>
-                                </header>
+                                    <div class="status status--active">Activo</div>
+                                </div>
                                 <p class="project__description">
                                     Desarrollo como freelancer remoto para startup tecnológica. 
                                     Participación en proyecto de desarrollo web y móvil.
                                 </p>
-                                <div class="project__tech" role="list" aria-label="Tecnologías utilizadas">
-                                    <span class="tech__tag" role="listitem">Flutter</span>
-                                    <span class="tech__tag" role="listitem">Firebase</span>
-                                    <span class="tech__tag" role="listitem">React</span>
+                                <div class="project__tech">
+                                    <span class="tech__tag">Flutter</span>
+                                    <span class="tech__tag">Firebase</span>
+                                    <span class="tech__tag">React</span>
                                 </div>
-                                <footer class="project__links">
-                                    <span class="btn btn--disabled" aria-label="Proyecto confidencial, enlace no disponible">Confidencial</span>
-                                </footer>
+                                <div class="project__links">
+                                    <!-- CORRECCIÓN 11: Removido aria-label innecesario -->
+                                    <span class="btn btn--disabled">Confidencial</span>
+                                </div>
                             </article>
                         </div>
                     </div>
@@ -429,51 +362,51 @@
                         <h3 class="subtitle">Proyectos Completados</h3>
                         <div class="projects__grid">
                             <article class="card project__card">
-                                <header class="project__header">
+                                <div class="project__header">
                                     <h4 class="project__title">Sistema Radio Móvil Andaluz</h4>
-                                    <span class="status status--completed" aria-label="Estado del proyecto: Completado">Completado</span>
-                                </header>
+                                    <div class="status status--completed">Completado</div>
+                                </div>
                                 <p class="project__description">
                                     Sistema web completo para control, despacho y seguimiento de llamadas, 
                                     con registro y administración de clientes.
                                 </p>
-                                <div class="project__tech" role="list" aria-label="Tecnologías utilizadas">
-                                    <span class="tech__tag" role="listitem">PHP</span>
-                                    <span class="tech__tag" role="listitem">JavaScript</span>
-                                    <span class="tech__tag" role="listitem">Ajax</span>
-                                    <span class="tech__tag" role="listitem">MySQL</span>
+                                <div class="project__tech">
+                                    <span class="tech__tag">PHP</span>
+                                    <span class="tech__tag">JavaScript</span>
+                                    <span class="tech__tag">Ajax</span>
+                                    <span class="tech__tag">MySQL</span>
                                 </div>
                             </article>
                             
                             <article class="card project__card">
-                                <header class="project__header">
+                                <div class="project__header">
                                     <h4 class="project__title">App OTN-PB Monitoreo</h4>
-                                    <span class="status status--completed" aria-label="Estado del proyecto: Completado">Completado</span>
-                                </header>
+                                    <div class="status status--completed">Completado</div>
+                                </div>
                                 <p class="project__description">
                                     Aplicación móvil para visualización y monitoreo de estaciones 
                                     meteorológicas satelitales en el valle central de Tarija.
                                 </p>
-                                <div class="project__tech" role="list" aria-label="Tecnologías utilizadas">
-                                    <span class="tech__tag" role="listitem">Flutter</span>
-                                    <span class="tech__tag" role="listitem">Spring Boot</span>
-                                    <span class="tech__tag" role="listitem">PostgreSQL</span>
+                                <div class="project__tech">
+                                    <span class="tech__tag">Flutter</span>
+                                    <span class="tech__tag">Spring Boot</span>
+                                    <span class="tech__tag">PostgreSQL</span>
                                 </div>
                             </article>
                             
                             <article class="card project__card">
-                                <header class="project__header">
+                                <div class="project__header">
                                     <h4 class="project__title">QA Testing - Llevame</h4>
-                                    <span class="status status--completed" aria-label="Estado del proyecto: Completado">Completado</span>
-                                </header>
+                                    <div class="status status--completed">Completado</div>
+                                </div>
                                 <p class="project__description">
                                     Tester QA para startup, realizando pruebas de calidad, usabilidad, 
                                     funcionalidad, rendimiento y seguridad en aplicaciones React Native.
                                 </p>
-                                <div class="project__tech" role="list" aria-label="Tecnologías utilizadas">
-                                    <span class="tech__tag" role="listitem">QA Testing</span>
-                                    <span class="tech__tag" role="listitem">React</span>
-                                    <span class="tech__tag" role="listitem">React Native</span>
+                                <div class="project__tech">
+                                    <span class="tech__tag">QA Testing</span>
+                                    <span class="tech__tag">React</span>
+                                    <span class="tech__tag">React Native</span>
                                 </div>
                             </article>
                         </div>
@@ -489,7 +422,7 @@
                 <div class="hobbies__content">
                     <div class="hobbies__grid">
                         <article class="card card--centered hobby__card">
-                            <span class="hobby__icon" aria-hidden="true">🚵‍♂️</span>
+                            <div class="hobby__icon" aria-label="Ciclismo de montaña" role="img">🚵‍♂️</div>
                             <h3 class="hobby__title">Ciclismo de Montaña</h3>
                             <p class="hobby__description">
                                 Apasionado por el mountain bike y la exploración de senderos en las montañas de Tarija. 
@@ -498,7 +431,7 @@
                         </article>
                         
                         <article class="card card--centered hobby__card">
-                            <span class="hobby__icon" aria-hidden="true">🎧</span>
+                            <div class="hobby__icon" aria-label="Podcasts" role="img">🎧</div>
                             <h3 class="hobby__title">Podcasts de Programación</h3>
                             <p class="hobby__description">
                                 Escucho regularmente podcasts de referentes como <strong>Fernando Herrera</strong>, 
@@ -508,7 +441,7 @@
                         </article>
                         
                         <article class="card card--centered hobby__card">
-                            <span class="hobby__icon" aria-hidden="true">💻</span>
+                            <div class="hobby__icon" aria-label="Proyectos personales" role="img">💻</div>
                             <h3 class="hobby__title">Proyectos Personales</h3>
                             <p class="hobby__description">
                                 Disfruto experimentando con nuevas tecnologías y frameworks en proyectos personales. 
@@ -517,16 +450,16 @@
                         </article>
                         
                         <article class="card card--centered hobby__card">
-                            <span class="hobby__icon" aria-hidden="true">📚</span>
+                            <div class="hobby__icon" aria-label="Aprendizaje" role="img">📚</div>
                             <h3 class="hobby__title">Aprendizaje Continuo</h3>
                             <p class="hobby__description">
                                 Participación activa en webinars, cursos online y eventos de tecnología. 
-                                La formación constante es clave en esta industria que evoluciona rápidamente.
+                                La formación constante es clave en esta industria que evoluciona rapidamente.
                             </p>
                         </article>
                         
                         <article class="card card--centered hobby__card">
-                            <span class="hobby__icon" aria-hidden="true">🌱</span>
+                            <div class="hobby__icon" aria-label="Tecnologías emergentes" role="img">🌱</div>
                             <h3 class="hobby__title">Tecnologías Emergentes</h3>
                             <p class="hobby__description">
                                 Investigación y experimentación con nuevas tecnologías, frameworks y herramientas 
@@ -535,7 +468,7 @@
                         </article>
                         
                         <article class="card card--centered hobby__card">
-                            <span class="hobby__icon" aria-hidden="true">🎯</span>
+                            <div class="hobby__icon" aria-label="Metodologías ágiles" role="img">🎯</div>
                             <h3 class="hobby__title">Metodologías Ágiles</h3>
                             <p class="hobby__description">
                                 Interés en metodologías como SCRUM y buenas prácticas de desarrollo. 
@@ -545,37 +478,36 @@
                     </div>
                 </div>
                 
-                <aside class="hobbies__quote" aria-label="Cita motivacional">
+                <div class="hobbies__quote">
                     <blockquote class="quote__text">
                         "El equilibrio entre la pasión por la tecnología y las actividades al aire libre 
                         me permite mantener la creatividad y productividad en mis proyectos."
                     </blockquote>
-                </aside>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <!-- CORRECCIÓN 12: Removido role="contentinfo" (innecesario en HTML5) -->
+    <footer class="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__info">
                     <h3 class="footer__title">Rolando César Vásquez Tavera</h3>
                     <p class="footer__subtitle">Técnico Superior en Sistemas Informáticos</p>
-                    <p class="footer__location">
-                        <span aria-hidden="true">📍</span> 
-                        <span>Tarija, Bolivia</span>
-                    </p>
+                    <p class="footer__location">📍 Tarija, Bolivia</p>
                 </div>
                 
                 <div class="footer__contact">
                     <h4 class="footer__section-title">Contacto</h4>
-                    <address class="contact__list" aria-label="Información de contacto">
-                        <a href="tel:+59178249575" class="contact__link" aria-label="Llamar al +591 78249575">
-                            <span class="contact__icon" aria-hidden="true">📱</span>
+                    <!-- CORRECCIÓN 13: Removido aria-label innecesario de address -->
+                    <address class="contact__list">
+                        <a href="tel:+59178249575" class="contact__link">
+                            <span class="contact__icon" aria-label="Teléfono" role="img">📱</span>
                             <span>+591 78249575</span>
                         </a>
-                        <a href="mailto:rolando.sha256@gmail.com" class="contact__link" aria-label="Enviar email a rolando.sha256@gmail.com">
-                            <span class="contact__icon" aria-hidden="true">✉️</span>
+                        <a href="mailto:rolando.sha256@gmail.com" class="contact__link">
+                            <span class="contact__icon" aria-label="Email" role="img">✉️</span>
                             <span>rolando.sha256@gmail.com</span>
                         </a>
                     </address>
@@ -585,13 +517,12 @@
             <div class="footer__bottom">
                 <div class="footer__copyright">
                     <p>&copy; 2025 Rolando César Vásquez Tavera. Todos los derechos reservados.</p>
-                    <p class="footer__made-with">Desarrollado con <span aria-label="amor">❤️</span> usando HTML y CSS</p>
+                    <!-- CORRECCIÓN 14: Removido aria-label innecesario del emoji -->
+                    <p class="footer__made-with">Desarrollado con ❤️ usando HTML y CSS</p>
                 </div>
                 <div class="footer__scroll-top">
-                    <a href="#main" 
-                       class="btn btn--scroll" 
-                       aria-label="Volver al inicio de la página">
-                        <span aria-hidden="true">↑</span> Subir
+                    <a href="#about" class="btn btn--scroll" title="Volver arriba" aria-label="Volver al inicio">
+                        ↑ Subir
                     </a>
                 </div>
             </div>
