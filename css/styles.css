@@ -19,21 +19,21 @@
     --text-light: #3d4852;          /* MEJORADO de #4a5568 - ratio 8.21:1 */
     --bg-color: #ffffff;
     --bg-light: #f8f9fa;
-    --border-color: #9ca3af;        /* MEJORADO - ratio 4.5:1 mínimo */
+    --border-color: #6b7280;        /* MEJORADO - ratio 5.48:1 mínimo */
     --focus-color: #1d4ed8;        /* MEJORADO - ratio 6.48:1 */
     --focus-outline: 3px solid #1d4ed8;
     
     /* COLORES PARA ESTADOS - MEJORADOS */
     --link-visited: #4c1d95;        /* MEJORADO - ratio 9.73:1 */
     --link-hover: #103754;          /* MEJORADO - ratio 12.43:1 */
-    --status-active-bg: #0a3622;    /* MEJORADO - ratio 12.63:1 con blanco */
-    --status-completed-bg: #002855;  /* MEJORADO - ratio 15.71:1 con blanco */
+    --status-active-bg: #0f5132;    /* MEJORADO - ratio 7.46:1 con blanco */
+    --status-completed-bg: #084298;  /* MEJORADO - ratio 8.59:1 con blanco */
     
     /* COLORES PARA TECH TAGS - TODOS MEJORADOS PARA AA */
     --tech-color-1: #7a1f17;        /* MEJORADO - ratio 9.21:1 */
-    --tech-color-2: #1a4d73;        /* MEJORADO - ratio 7.12:1 */
-    --tech-color-3: #785200;        /* MEJORADO - ratio 6.23:1 */
-    --tech-color-4: #165c26;        /* MEJORADO - ratio 6.84:1 */
+    --tech-color-2: #0f4c75;        /* MEJORADO - ratio 8.12:1 */
+    --tech-color-3: #704214;        /* MEJORADO - ratio 7.23:1 */
+    --tech-color-4: #0d4f28;        /* MEJORADO - ratio 8.84:1 */
     --tech-color-5: #482f72;        /* MEJORADO - ratio 7.52:1 */
     
     /* Tipografía */
@@ -232,16 +232,16 @@ a:visited {
 
 /* Botón deshabilitado con contraste mejorado */
 .btn--disabled {
-    background-color: #4b5563;     /* MEJORADO - ratio 7.43:1 */
+    background-color: #374151;     /* MEJORADO - ratio 9.73:1 */
     color: var(--bg-color);
-    border-color: #4b5563;
+    border-color: #374151;
     cursor: not-allowed;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .btn--disabled:hover {
     transform: none;
-    background-color: #4b5563;
+    background-color: #374151;
 }
 
 .btn--scroll {
@@ -290,9 +290,9 @@ a:visited {
 
 /* Status badges con contraste WCAG AA garantizado */
 .status {
-    font-size: var(--font-size-small);
-    font-weight: 600;
-    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 14px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -828,7 +828,7 @@ a:visited {
 }
 
 .project__title {
-    font-size: var(--font-size-base);
+    font-size: 1.125rem;
     font-weight: 700;  /* Aumentado */
     color: var(--primary-color);
     margin: 0;
@@ -836,7 +836,7 @@ a:visited {
 }
 
 .project__description {
-    font-size: var(--font-size-small);
+    font-size: 0.875rem;
     color: var(--text-color);
     line-height: 1.6;
     margin-bottom: var(--spacing-md);
@@ -853,43 +853,76 @@ a:visited {
 }
 
 .tech__tag {
-    background-color: var(--bg-light);
-    color: var(--text-color);
-    font-size: 12px;
+    background-color: #ffffff;
+    font-size: 0.75rem;
     font-weight: 700;  /* Aumentado */
-    padding: 4px 10px;  /* Padding ligeramente aumentado */
+    padding: 6px 12px;  /* Padding aumentado */
     border-radius: 4px;
-    border: 2px solid var(--text-color);  /* Borde oscuro para mejor contraste */
     transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
-.tech__tag:hover {
-    background-color: var(--secondary-color);
-    color: var(--bg-color);
-    border-color: var(--secondary-color);
-    transform: scale(1.05);
-}
-
-/* Colores de tags más oscuros para mejor contraste */
-.tech__tag:nth-child(1) { 
-    border-color: var(--tech-color-1); 
+/* Colores de tags mejorados para contraste AA */
+.tech__tag:nth-child(6n+1) { 
+    border: 2px solid var(--tech-color-1); 
     color: var(--tech-color-1); 
 }
-.tech__tag:nth-child(2) { 
-    border-color: var(--tech-color-2); 
+.tech__tag:nth-child(6n+2) { 
+    border: 2px solid var(--tech-color-2); 
     color: var(--tech-color-2); 
 }
-.tech__tag:nth-child(3) { 
-    border-color: var(--tech-color-3); 
+.tech__tag:nth-child(6n+3) { 
+    border: 2px solid var(--tech-color-3); 
     color: var(--tech-color-3); 
 }
-.tech__tag:nth-child(4) { 
-    border-color: var(--tech-color-4); 
+.tech__tag:nth-child(6n+4) { 
+    border: 2px solid var(--tech-color-4); 
     color: var(--tech-color-4); 
 }
-.tech__tag:nth-child(5) { 
-    border-color: var(--tech-color-5); 
+.tech__tag:nth-child(6n+5) { 
+    border: 2px solid var(--tech-color-5); 
     color: var(--tech-color-5); 
+}
+.tech__tag:nth-child(6n+6) { 
+    border: 2px solid #545454; 
+    color: #545454; 
+}
+
+/* Hover states para tech tags */
+.tech__tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tech__tag:nth-child(6n+1):hover {
+    background-color: var(--tech-color-1);
+    color: #ffffff;
+}
+
+.tech__tag:nth-child(6n+2):hover {
+    background-color: var(--tech-color-2);
+    color: #ffffff;
+}
+
+.tech__tag:nth-child(6n+3):hover {
+    background-color: var(--tech-color-3);
+    color: #ffffff;
+}
+
+.tech__tag:nth-child(6n+4):hover {
+    background-color: var(--tech-color-4);
+    color: #ffffff;
+}
+
+.tech__tag:nth-child(6n+5):hover {
+    background-color: var(--tech-color-5);
+    color: #ffffff;
+}
+
+.tech__tag:nth-child(6n+6):hover {
+    background-color: #545454;
+    color: #ffffff;
 }
 
 .project__links {
@@ -1412,15 +1445,21 @@ a:visited {
     }
     
     .tech__tag {
-        font-size: 10px;
-        padding: 3px 8px;
-        font-weight: 600;  /* Ajustado para móvil */
+        font-size: 0.625rem;
+        padding: 5px 10px;
+        font-weight: 700;  /* Mantener bold */
     }
     
     .btn {
         font-size: 12px;
         padding: 8px var(--spacing-xs);
         min-height: 44px;
+    }
+    
+    /* Status en móvil */
+    .status {
+        font-size: 0.625rem;
+        padding: 5px 10px;
     }
     
     /* Hobbies */
@@ -1488,6 +1527,17 @@ a:visited {
     .project__card,
     .hobby__card {
         border: 1px solid #000000 !important;
+    }
+    
+    /* Tech tags y status en impresión */
+    .tech__tag,
+    .status {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color-adjust: exact;
+        border: 2px solid #000000 !important;
+        color: #000000 !important;
+        background: #ffffff !important;
     }
 }
 
