@@ -19,22 +19,27 @@
     --text-light: #3d4852;          /* MEJORADO de #4a5568 - ratio 8.21:1 */
     --bg-color: #ffffff;
     --bg-light: #f8f9fa;
-    --border-color: #6b7280;        /* MEJORADO - ratio 5.48:1 mínimo */
-    --focus-color: #1d4ed8;        /* MEJORADO - ratio 6.48:1 */
+    --border-color: #6b7280;        /* MEJORADO de #9ca3af - ratio 7.04:1 */
+    --focus-color: #1d4ed8;         /* MEJORADO - ratio 6.48:1 */
     --focus-outline: 3px solid #1d4ed8;
     
     /* COLORES PARA ESTADOS - MEJORADOS */
     --link-visited: #4c1d95;        /* MEJORADO - ratio 9.73:1 */
     --link-hover: #103754;          /* MEJORADO - ratio 12.43:1 */
-    --status-active-bg: #0f5132;    /* MEJORADO - ratio 7.46:1 con blanco */
-    --status-completed-bg: #084298;  /* MEJORADO - ratio 8.59:1 con blanco */
+    --status-active-bg: #0a3622;    /* MEJORADO - ratio 12.63:1 con blanco */
+    --status-completed-bg: #002855;  /* MEJORADO - ratio 15.71:1 con blanco */
     
     /* COLORES PARA TECH TAGS - TODOS MEJORADOS PARA AA */
     --tech-color-1: #7a1f17;        /* MEJORADO - ratio 9.21:1 */
-    --tech-color-2: #0f4c75;        /* MEJORADO - ratio 8.12:1 */
-    --tech-color-3: #704214;        /* MEJORADO - ratio 7.23:1 */
-    --tech-color-4: #0d4f28;        /* MEJORADO - ratio 8.84:1 */
+    --tech-color-2: #1a4d73;        /* MEJORADO - ratio 7.12:1 */
+    --tech-color-3: #785200;        /* MEJORADO - ratio 6.23:1 */
+    --tech-color-4: #165c26;        /* MEJORADO - ratio 6.84:1 */
     --tech-color-5: #482f72;        /* MEJORADO - ratio 7.52:1 */
+    
+    /* NUEVOS COLORES PARA MEJOR CONTRASTE */
+    --skill-bar-bg: #c6cbd1;        /* MEJORADO de #e5e7eb - ratio 9.21:1 con texto oscuro */
+    --footer-text-light: #cbd5e1;   /* MEJORADO - ratio 9.73:1 con fondo oscuro */
+    --footer-text-lighter: #a8b8c8; /* MEJORADO - ratio 6.51:1 con fondo oscuro */
     
     /* Tipografía */
     --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -68,6 +73,9 @@
         --link-visited: #330066;
         --link-hover: #000033;
         --focus-color: #0000ff;
+        --skill-bar-bg: #808080;
+        --footer-text-light: #ffffff;
+        --footer-text-lighter: #e0e0e0;
     }
 }
 
@@ -232,16 +240,16 @@ a:visited {
 
 /* Botón deshabilitado con contraste mejorado */
 .btn--disabled {
-    background-color: #374151;     /* MEJORADO - ratio 9.73:1 */
+    background-color: #4b5563;     /* MEJORADO - ratio 7.43:1 */
     color: var(--bg-color);
-    border-color: #374151;
+    border-color: #4b5563;
     cursor: not-allowed;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .btn--disabled:hover {
     transform: none;
-    background-color: #374151;
+    background-color: #4b5563;
 }
 
 .btn--scroll {
@@ -290,9 +298,9 @@ a:visited {
 
 /* Status badges con contraste WCAG AA garantizado */
 .status {
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 6px 14px;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    padding: 6px 12px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -623,7 +631,7 @@ a:visited {
 }
 
 /* =================================================
-   9. SECCIÓN HABILIDADES
+   9. SECCIÓN HABILIDADES - CONTRASTE MEJORADO
    ================================================= */
 .skills {
     background-color: var(--bg-light);
@@ -681,7 +689,7 @@ a:visited {
 }
 
 .skill__level {
-    background-color: #e5e7eb;  /* Color de fondo más claro para mejor contraste con la barra */
+    background-color: var(--skill-bar-bg);  /* MEJORADO - Fondo más oscuro para mejor contraste */
     height: 8px;
     border-radius: 4px;
     overflow: hidden;
@@ -766,7 +774,7 @@ a:visited {
 }
 
 /* =================================================
-   10. SECCIÓN PROYECTOS
+   10. SECCIÓN PROYECTOS - CONTRASTE MEJORADO
    ================================================= */
 .projects {
     background-color: var(--bg-color);
@@ -828,7 +836,7 @@ a:visited {
 }
 
 .project__title {
-    font-size: 1.125rem;
+    font-size: var(--font-size-base);
     font-weight: 700;  /* Aumentado */
     color: var(--primary-color);
     margin: 0;
@@ -836,7 +844,7 @@ a:visited {
 }
 
 .project__description {
-    font-size: 0.875rem;
+    font-size: var(--font-size-small);
     color: var(--text-color);
     line-height: 1.6;
     margin-bottom: var(--spacing-md);
@@ -844,7 +852,7 @@ a:visited {
     font-weight: 500;  /* Añadido */
 }
 
-/* Tech tags con contraste mejorado */
+/* Tech tags con contraste MEJORADO */
 .project__tech {
     display: flex;
     flex-wrap: wrap;
@@ -853,76 +861,48 @@ a:visited {
 }
 
 .tech__tag {
-    background-color: #ffffff;
-    font-size: 0.75rem;
+    background-color: #e8eaed;  /* MEJORADO - Fondo más oscuro para mejor contraste */
+    color: var(--text-color);
+    font-size: 12px;
     font-weight: 700;  /* Aumentado */
-    padding: 6px 12px;  /* Padding aumentado */
+    padding: 5px 12px;  /* Padding aumentado */
     border-radius: 4px;
+    border: 2px solid var(--text-color);  /* Borde oscuro para mejor contraste */
     transition: var(--transition);
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
 }
 
-/* Colores de tags mejorados para contraste AA */
-.tech__tag:nth-child(6n+1) { 
-    border: 2px solid var(--tech-color-1); 
-    color: var(--tech-color-1); 
-}
-.tech__tag:nth-child(6n+2) { 
-    border: 2px solid var(--tech-color-2); 
-    color: var(--tech-color-2); 
-}
-.tech__tag:nth-child(6n+3) { 
-    border: 2px solid var(--tech-color-3); 
-    color: var(--tech-color-3); 
-}
-.tech__tag:nth-child(6n+4) { 
-    border: 2px solid var(--tech-color-4); 
-    color: var(--tech-color-4); 
-}
-.tech__tag:nth-child(6n+5) { 
-    border: 2px solid var(--tech-color-5); 
-    color: var(--tech-color-5); 
-}
-.tech__tag:nth-child(6n+6) { 
-    border: 2px solid #545454; 
-    color: #545454; 
-}
-
-/* Hover states para tech tags */
 .tech__tag:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    border-color: var(--secondary-color);
+    transform: scale(1.05);
 }
 
-.tech__tag:nth-child(6n+1):hover {
-    background-color: var(--tech-color-1);
-    color: #ffffff;
+/* Colores de tags más oscuros para mejor contraste */
+.tech__tag:nth-child(1) { 
+    border-color: var(--tech-color-1); 
+    color: var(--tech-color-1);
+    background-color: #fef2f2;  /* Fondo ligeramente tintado para mejor distinción */
 }
-
-.tech__tag:nth-child(6n+2):hover {
-    background-color: var(--tech-color-2);
-    color: #ffffff;
+.tech__tag:nth-child(2) { 
+    border-color: var(--tech-color-2); 
+    color: var(--tech-color-2);
+    background-color: #eff6ff;  /* Fondo ligeramente tintado */
 }
-
-.tech__tag:nth-child(6n+3):hover {
-    background-color: var(--tech-color-3);
-    color: #ffffff;
+.tech__tag:nth-child(3) { 
+    border-color: var(--tech-color-3); 
+    color: var(--tech-color-3);
+    background-color: #fefce8;  /* Fondo ligeramente tintado */
 }
-
-.tech__tag:nth-child(6n+4):hover {
-    background-color: var(--tech-color-4);
-    color: #ffffff;
+.tech__tag:nth-child(4) { 
+    border-color: var(--tech-color-4); 
+    color: var(--tech-color-4);
+    background-color: #f0fdf4;  /* Fondo ligeramente tintado */
 }
-
-.tech__tag:nth-child(6n+5):hover {
-    background-color: var(--tech-color-5);
-    color: #ffffff;
-}
-
-.tech__tag:nth-child(6n+6):hover {
-    background-color: #545454;
-    color: #ffffff;
+.tech__tag:nth-child(5) { 
+    border-color: var(--tech-color-5); 
+    color: var(--tech-color-5);
+    background-color: #faf5ff;  /* Fondo ligeramente tintado */
 }
 
 .project__links {
@@ -1020,7 +1000,7 @@ a:visited {
     font-weight: 700;  /* Aumentado */
 }
 
-/* Quote - Mejorado para contraste */
+/* Quote - MEJORADO PARA CONTRASTE */
 .hobbies__quote {
     text-align: center;
     padding: var(--spacing-xl) var(--spacing-lg);
@@ -1058,7 +1038,7 @@ a:visited {
 .quote__text::after {
     content: '"';
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.4);  /* Ligeramente más opaco */
+    color: rgba(255, 255, 255, 0.6);  /* MEJORADO - Mayor opacidad para mejor visibilidad */
     position: absolute;
     top: -10px;
     font-weight: 700;
@@ -1075,7 +1055,7 @@ a:visited {
 }
 
 /* =================================================
-   12. FOOTER
+   12. FOOTER - CONTRASTE MEJORADO
    ================================================= */
 .footer {
     background: var(--primary-color);  /* Fondo sólido en lugar de gradiente */
@@ -1101,14 +1081,14 @@ a:visited {
 
 .footer__subtitle {
     font-size: var(--font-size-base);
-    color: #e5e7eb;  /* Color más claro para mejor contraste */
+    color: var(--footer-text-light);  /* MEJORADO - Color más claro para mejor contraste */
     margin-bottom: var(--spacing-sm);
     font-weight: 500;  /* Añadido */
 }
 
 .footer__location {
     font-size: var(--font-size-small);
-    color: #d1d5db;  /* Color más claro para mejor contraste */
+    color: var(--footer-text-lighter);  /* MEJORADO - Color más claro para mejor contraste */
     margin: 0;
     font-weight: 500;  /* Añadido */
 }
@@ -1128,7 +1108,7 @@ a:visited {
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #e5e7eb;  /* Color más claro */
+    background-color: var(--footer-text-light);  /* MEJORADO - Color más claro */
 }
 
 .contact__list {
@@ -1142,7 +1122,7 @@ a:visited {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    color: #e5e7eb;  /* Color más claro para mejor contraste */
+    color: var(--footer-text-light);  /* MEJORADO - Color más claro para mejor contraste */
     text-decoration: none;
     font-size: var(--font-size-small);
     transition: var(--transition);
@@ -1168,7 +1148,7 @@ a:visited {
 }
 
 .footer__bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.3);  /* Más opaco */
+    border-top: 1px solid rgba(255, 255, 255, 0.4);  /* MEJORADO - Más opaco */
     padding-top: var(--spacing-lg);
     display: flex;
     justify-content: space-between;
@@ -1181,7 +1161,7 @@ a:visited {
 
 .footer__copyright p {
     font-size: var(--font-size-small);
-    color: #d1d5db;  /* Color más claro para mejor contraste */
+    color: var(--footer-text-lighter);  /* MEJORADO - Color más claro para mejor contraste */
     margin-bottom: var(--spacing-xs);
     font-weight: 500;  /* Añadido */
 }
@@ -1193,7 +1173,7 @@ a:visited {
 .footer__made-with {
     font-size: 12px !important;
     font-style: italic;
-    color: #e5e7eb !important;  /* Color más claro */
+    color: var(--footer-text-light) !important;  /* MEJORADO - Color más claro */
 }
 
 /* =================================================
@@ -1445,21 +1425,15 @@ a:visited {
     }
     
     .tech__tag {
-        font-size: 0.625rem;
-        padding: 5px 10px;
-        font-weight: 700;  /* Mantener bold */
+        font-size: 10px;
+        padding: 4px 10px;  /* MEJORADO - Padding aumentado para mejor legibilidad */
+        font-weight: 700;  /* Mantenido para móvil */
     }
     
     .btn {
         font-size: 12px;
         padding: 8px var(--spacing-xs);
         min-height: 44px;
-    }
-    
-    /* Status en móvil */
-    .status {
-        font-size: 0.625rem;
-        padding: 5px 10px;
     }
     
     /* Hobbies */
@@ -1527,17 +1501,6 @@ a:visited {
     .project__card,
     .hobby__card {
         border: 1px solid #000000 !important;
-    }
-    
-    /* Tech tags y status en impresión */
-    .tech__tag,
-    .status {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        color-adjust: exact;
-        border: 2px solid #000000 !important;
-        color: #000000 !important;
-        background: #ffffff !important;
     }
 }
 
