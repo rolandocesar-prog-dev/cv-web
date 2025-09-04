@@ -22,9 +22,7 @@
     <!-- Skip to main content para accesibilidad -->
     <a href="#main" class="skip-link">Saltar al contenido principal</a>
     
-    <!-- CORRECCIÓN 1: Removido role="banner" (innecesario en HTML5) -->
     <header class="header">
-        <!-- CORRECCIÓN 2: Removido role="navigation" (innecesario en HTML5) -->
         <nav class="nav" aria-label="Navegación principal">
             <ul class="nav__list" role="menubar">
                 <li class="nav__item" role="none">
@@ -46,22 +44,20 @@
         </nav>
     </header>
 
-    <!-- CORRECCIÓN 3: Removido role="main" (innecesario en HTML5) -->
     <main id="main" class="main">
-        <!-- CORRECCIÓN 4: Section ahora tiene un heading visible (h1) -->
+        <!-- SECCIÓN SOBRE MÍ -->
         <section id="about" class="section about" aria-labelledby="about-title">
             <div class="container">
                 <div class="about__content">
                     <div class="about__image">
                         <img src="img/perfil-web.webp" 
-                             alt="Rolando César Vásquez Tavera" 
+                             alt="Fotografía profesional de Rolando César Vásquez Tavera, Técnico Superior en Sistemas Informáticos" 
                              class="about__photo"
                              width="250"
                              height="250"
                              loading="lazy">
                     </div>
                     <div class="about__info">
-                        <!-- CORRECCIÓN 5: h1 es apropiado aquí como título principal de la página -->
                         <h1 id="about-title" class="about__title">Rolando César Vásquez Tavera</h1>
                         <h2 class="about__subtitle">Técnico Superior en Sistemas Informáticos</h2>
                         <p class="about__description">
@@ -69,7 +65,6 @@
                             Apasionado por crear soluciones digitales innovadoras y eficientes. Experiencia en desarrollo web, 
                             aplicaciones móviles y testing de calidad.
                         </p>
-                        <!-- CORRECCIÓN 6: Removido aria-label innecesario de address -->
                         <address class="about__contact">
                             <div class="contact__item">
                                 <strong>Teléfono:</strong> <span>+591 78249575</span>
@@ -86,6 +81,7 @@
             </div>
         </section>
 
+        <!-- SECCIÓN EDUCACIÓN -->
         <section id="education" class="section education" aria-labelledby="education-title">
             <div class="container">
                 <h2 id="education-title" class="section__title">Formación Académica</h2>
@@ -93,7 +89,6 @@
                 <div class="education__content">
                     <div class="education__formal">
                         <h3 class="subtitle">Educación Formal</h3>
-                        <!-- CORRECCIÓN 7: Removido role="list" y "listitem" de timeline -->
                         <div class="timeline">
                             <div class="timeline__item">
                                 <div class="timeline__marker"></div>
@@ -141,6 +136,7 @@
             </div>
         </section>
 
+        <!-- SECCIÓN HABILIDADES - ACTUALIZADA CON ARIA -->
         <section id="skills" class="section skills" aria-labelledby="skills-title">
             <div class="container">
                 <h2 id="skills-title" class="section__title">Habilidades</h2>
@@ -149,110 +145,229 @@
                     <div class="skills__technical">
                         <h3 class="subtitle">Habilidades Técnicas</h3>
                         
+                        <!-- Lenguajes de Programación -->
                         <div class="skills__category">
                             <h4 class="category__title">Lenguajes de Programación</h4>
-                            <!-- CORRECCIÓN 8: Cambiado article por div y removido role="listitem" -->
                             <div class="skills__grid">
                                 <div class="skill__item">
-                                    <div class="skill__name">JavaScript</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-javascript">JavaScript</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-javascript"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">PHP</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-php">PHP</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-php"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">Python</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-python">Python</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-python"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">TypeScript</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-typescript">TypeScript</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-typescript"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">Dart</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 80"></div>
+                                    <div class="skill__name" id="skill-dart">Dart</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-dart"
+                                         aria-valuenow="80" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 80" data-value="80">
+                                            <span class="skill__percentage" aria-hidden="true">80%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">Java</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-java">Java</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-java"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
+                        <!-- Frameworks & Librerías -->
                         <div class="skills__category">
                             <h4 class="category__title">Frameworks & Librerías</h4>
                             <div class="skills__grid">
                                 <div class="skill__item">
-                                    <div class="skill__name">React</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-react">React</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-react"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">Flutter</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 80"></div>
+                                    <div class="skill__name" id="skill-flutter">Flutter</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-flutter"
+                                         aria-valuenow="80" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 80" data-value="80">
+                                            <span class="skill__percentage" aria-hidden="true">80%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">React Native</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-react-native">React Native</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-react-native"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">Angular</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-angular">Angular</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-angular"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
-                                 <div class="skill__item">
-                                    <div class="skill__name">Spring Boot</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                
+                                <div class="skill__item">
+                                    <div class="skill__name" id="skill-spring">Spring Boot</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-spring"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
+                        <!-- Bases de Datos & Herramientas -->
                         <div class="skills__category">
                             <h4 class="category__title">Bases de Datos & Herramientas</h4>
                             <div class="skills__grid">
                                 <div class="skill__item">
-                                    <div class="skill__name">MySQL</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-mysql">MySQL</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-mysql"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">PostgreSQL</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-postgresql">PostgreSQL</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-postgresql"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">Git/GitHub</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-git">Git/GitHub</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-git"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
+                                
                                 <div class="skill__item">
-                                    <div class="skill__name">Testing QA</div>
-                                    <div class="skill__level">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
+                                    <div class="skill__name" id="skill-testing">Testing QA</div>
+                                    <div class="skill__level" 
+                                         role="progressbar" 
+                                         aria-labelledby="skill-testing"
+                                         aria-valuenow="70" 
+                                         aria-valuemin="0" 
+                                         aria-valuemax="100">
+                                        <div class="skill__bar" style="--skill-level: 70" data-value="70">
+                                            <span class="skill__percentage" aria-hidden="true">70%</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -288,6 +403,7 @@
             </div>
         </section>
 
+        <!-- SECCIÓN PROYECTOS -->
         <section id="projects" class="section projects" aria-labelledby="projects-title">
             <div class="container">
                 <h2 id="projects-title" class="section__title">Proyectos</h2>
@@ -296,11 +412,9 @@
                     <div class="projects__current">
                         <h3 class="subtitle">Proyectos Actuales</h3>
                         <div class="projects__grid">
-                            <!-- CORRECCIÓN 9: Mantengo article porque tiene h4 como heading -->
                             <article class="card project__card">
                                 <div class="project__header">
                                     <h4 class="project__title">Voz Liberal Tarija</h4>
-                                    <!-- CORRECCIÓN 10: Removido aria-label innecesario de status -->
                                     <div class="status status--active">Activo</div>
                                 </div>
                                 <p class="project__description">
@@ -313,7 +427,14 @@
                                     <span class="tech__tag">JavaScript</span>
                                 </div>
                                 <div class="project__links">
-                                    <a href="https://www.vozliberaltarija.com/" class="btn btn--primary" target="_blank" rel="noopener">Ver Proyecto</a>
+                                    <a href="https://www.vozliberaltarija.com/" 
+                                       class="btn btn--primary" 
+                                       target="_blank" 
+                                       rel="noopener"
+                                       aria-label="Ver proyecto Voz Liberal Tarija (se abre en nueva ventana)">
+                                        Ver Proyecto
+                                        <span class="sr-only">(se abre en nueva ventana)</span>
+                                    </a>
                                 </div>
                             </article>
                             
@@ -332,7 +453,14 @@
                                     <span class="tech__tag">CSS3</span>
                                 </div>
                                 <div class="project__links">
-                                    <a href="https://testpoliticoboliviano.com/" class="btn btn--primary" target="_blank" rel="noopener">Ver Proyecto</a>
+                                    <a href="https://testpoliticoboliviano.com/" 
+                                       class="btn btn--primary" 
+                                       target="_blank" 
+                                       rel="noopener"
+                                       aria-label="Ver proyecto Test Político Boliviano (se abre en nueva ventana)">
+                                        Ver Proyecto
+                                        <span class="sr-only">(se abre en nueva ventana)</span>
+                                    </a>
                                 </div>
                             </article>
                             
@@ -351,7 +479,6 @@
                                     <span class="tech__tag">React</span>
                                 </div>
                                 <div class="project__links">
-                                    <!-- CORRECCIÓN 11: Removido aria-label innecesario -->
                                     <span class="btn btn--disabled">Confidencial</span>
                                 </div>
                             </article>
@@ -415,6 +542,7 @@
             </div>
         </section>
 
+        <!-- SECCIÓN HOBBIES -->
         <section id="hobbies" class="section hobbies" aria-labelledby="hobbies-title">
             <div class="container">
                 <h2 id="hobbies-title" class="section__title">Hobbies e Intereses</h2>
@@ -488,7 +616,6 @@
         </section>
     </main>
 
-    <!-- CORRECCIÓN 12: Removido role="contentinfo" (innecesario en HTML5) -->
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -500,7 +627,6 @@
                 
                 <div class="footer__contact">
                     <h4 class="footer__section-title">Contacto</h4>
-                    <!-- CORRECCIÓN 13: Removido aria-label innecesario de address -->
                     <address class="contact__list">
                         <a href="tel:+59178249575" class="contact__link">
                             <span class="contact__icon" aria-label="Teléfono" role="img">📱</span>
@@ -517,7 +643,6 @@
             <div class="footer__bottom">
                 <div class="footer__copyright">
                     <p>&copy; 2025 Rolando César Vásquez Tavera. Todos los derechos reservados.</p>
-                    <!-- CORRECCIÓN 14: Removido aria-label innecesario del emoji -->
                     <p class="footer__made-with">Desarrollado con ❤️ usando HTML y CSS</p>
                 </div>
                 <div class="footer__scroll-top">
