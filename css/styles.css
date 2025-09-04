@@ -1537,18 +1537,7 @@ a:visited {
     .skill__item,
     .project__card,
     .hobby__card {
-        border: 2px solid #000000 !important;
-    }
-    
-    /* Tech tags y status en impresión */
-    .tech__tag,
-    .status {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-        color-adjust: exact;
-        border: 2px solid #000000 !important;
-        color: #000000 !important;
-        background: #ffffff !important;
+        border: 1px solid #000000 !important;
     }
 }
 
