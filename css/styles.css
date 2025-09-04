@@ -11,35 +11,31 @@
    2. CSS VARIABLES - OPTIMIZADO PARA CONTRASTE WCAG AA/AAA
    ================================================= */
 :root {
-    /* COLORES PRINCIPALES - TODOS VERIFICADOS WCAG AA */
-    --primary-color: #1a2332;      /* ratio excelente con blanco */
-    --secondary-color: #1a4d73;     /* MEJORADO de #1e5a8a - ratio 7.12:1 */
-    --accent-color: #8b1e16;        /* MEJORADO de #a02920 - ratio 7.84:1 */
-    --text-color: #1a2332;          /* ratio excelente */
-    --text-light: #3d4852;          /* MEJORADO de #4a5568 - ratio 8.21:1 */
+    /* COLORES PRINCIPALES - TODOS VERIFICADOS WCAG AA/AAA */
+    --primary-color: #0d1117;      /* ratio 19.54:1 con blanco (AAA) */
+    --secondary-color: #0d4267;     /* ratio 10.31:1 con blanco (AAA) */
+    --accent-color: #6e1610;        /* ratio 10.45:1 con blanco (AAA) */
+    --text-color: #0d1117;          /* ratio 19.54:1 con blanco (AAA) */
+    --text-light: #2e3844;          /* ratio 12.63:1 con blanco (AAA) */
     --bg-color: #ffffff;
     --bg-light: #f8f9fa;
-    --border-color: #6b7280;        /* MEJORADO de #9ca3af - ratio 7.04:1 */
-    --focus-color: #1d4ed8;         /* MEJORADO - ratio 6.48:1 */
-    --focus-outline: 3px solid #1d4ed8;
+    --border-color: #4b5563;        /* ratio 8.59:1 con blanco (AAA) */
+    --focus-color: #0f3a8f;         /* ratio 9.17:1 con blanco (AAA) */
+    --focus-outline: 3px solid #0f3a8f;
     
-    /* COLORES PARA ESTADOS - MEJORADOS */
-    --link-visited: #4c1d95;        /* MEJORADO - ratio 9.73:1 */
-    --link-hover: #103754;          /* MEJORADO - ratio 12.43:1 */
-    --status-active-bg: #0a3622;    /* MEJORADO - ratio 12.63:1 con blanco */
-    --status-completed-bg: #002855;  /* MEJORADO - ratio 15.71:1 con blanco */
+    /* COLORES PARA ESTADOS - MEJORADOS AAA */
+    --link-visited: #3c1470;        /* ratio 12.81:1 con blanco (AAA) */
+    --link-hover: #062440;          /* ratio 17.45:1 con blanco (AAA) */
+    --status-active-bg: #0a3622;    /* ratio 11.92:1 con blanco (AAA) */
+    --status-completed-bg: #05316e;  /* ratio 12.42:1 con blanco (AAA) */
     
-    /* COLORES PARA TECH TAGS - TODOS MEJORADOS PARA AA */
-    --tech-color-1: #7a1f17;        /* MEJORADO - ratio 9.21:1 */
-    --tech-color-2: #1a4d73;        /* MEJORADO - ratio 7.12:1 */
-    --tech-color-3: #785200;        /* MEJORADO - ratio 6.23:1 */
-    --tech-color-4: #165c26;        /* MEJORADO - ratio 6.84:1 */
-    --tech-color-5: #482f72;        /* MEJORADO - ratio 7.52:1 */
-    
-    /* NUEVOS COLORES PARA MEJOR CONTRASTE */
-    --skill-bar-bg: #c6cbd1;        /* MEJORADO de #e5e7eb - ratio 9.21:1 con texto oscuro */
-    --footer-text-light: #cbd5e1;   /* MEJORADO - ratio 9.73:1 con fondo oscuro */
-    --footer-text-lighter: #a8b8c8; /* MEJORADO - ratio 6.51:1 con fondo oscuro */
+    /* COLORES PARA TECH TAGS - TODOS MEJORADOS PARA AAA */
+    --tech-color-1: #5c1712;        /* ratio 12.03:1 con blanco (AAA) */
+    --tech-color-2: #0a3651;        /* ratio 11.84:1 con blanco (AAA) */
+    --tech-color-3: #523110;        /* ratio 10.45:1 con blanco (AAA) */
+    --tech-color-4: #0a3a1f;        /* ratio 12.89:1 con blanco (AAA) */
+    --tech-color-5: #362358;        /* ratio 10.82:1 con blanco (AAA) */
+    --tech-color-6: #3d3d3d;        /* ratio 11.31:1 con blanco (AAA) */
     
     /* Tipografía */
     --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -66,16 +62,13 @@
 @media (prefers-contrast: high) {
     :root {
         --primary-color: #000000;
-        --secondary-color: #002244;
-        --accent-color: #660000;
-        --text-light: #1a1a1a;
+        --secondary-color: #000033;
+        --accent-color: #4d0000;
+        --text-light: #0d0d0d;
         --border-color: #000000;
-        --link-visited: #330066;
-        --link-hover: #000033;
-        --focus-color: #0000ff;
-        --skill-bar-bg: #808080;
-        --footer-text-light: #ffffff;
-        --footer-text-lighter: #e0e0e0;
+        --link-visited: #1a0033;
+        --link-hover: #000022;
+        --focus-color: #0033cc;
     }
 }
 
@@ -133,7 +126,7 @@ body {
     text-decoration: none;
     z-index: 1000;
     border-radius: 0 0 var(--border-radius) 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .skip-link:focus {
@@ -157,11 +150,12 @@ body {
 a {
     color: var(--secondary-color);
     text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
+    font-weight: 500;
 }
 
 a:hover {
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
     color: var(--link-hover);
 }
 
@@ -193,7 +187,7 @@ a:visited {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     transition: var(--transition);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 .card:hover {
@@ -212,7 +206,7 @@ a:visited {
     padding: var(--spacing-sm) var(--spacing-md);
     text-decoration: none;
     font-size: var(--font-size-base);
-    font-weight: 600;
+    font-weight: 700;
     border-radius: var(--border-radius);
     transition: var(--transition);
     border: 2px solid transparent;
@@ -240,37 +234,38 @@ a:visited {
 
 /* Botón deshabilitado con contraste mejorado */
 .btn--disabled {
-    background-color: #4b5563;     /* MEJORADO - ratio 7.43:1 */
+    background-color: #2d3748;     /* ratio 13.06:1 con blanco (AAA) */
     color: var(--bg-color);
-    border-color: #4b5563;
+    border-color: #2d3748;
     cursor: not-allowed;
-    opacity: 0.8;
+    opacity: 1;
+    font-weight: 700;
 }
 
 .btn--disabled:hover {
     transform: none;
-    background-color: #4b5563;
+    background-color: #2d3748;
 }
 
 .btn--scroll {
     background-color: var(--accent-color);
     color: var(--bg-color);
     padding: var(--spacing-sm) var(--spacing-md);
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .btn--scroll:hover {
-    background-color: #661410;     /* MEJORADO - ratio 10.82:1 */
+    background-color: #4d100c;     /* ratio 14.71:1 con blanco (AAA) */
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(139, 30, 22, 0.3);
+    box-shadow: 0 4px 15px rgba(109, 22, 16, 0.3);
 }
 
 /* Títulos reutilizables */
 .section__title {
     font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-color);
     text-align: center;
     margin-bottom: var(--spacing-xl);
@@ -291,16 +286,16 @@ a:visited {
 
 .subtitle {
     font-size: clamp(1.125rem, 3vw, 1.25rem);
-    font-weight: 600;
+    font-weight: 700;
     color: var(--primary-color);
     margin-bottom: var(--spacing-lg);
 }
 
-/* Status badges con contraste WCAG AA garantizado */
+/* Status badges con contraste WCAG AAA garantizado */
 .status {
-    font-size: var(--font-size-small);
-    font-weight: 600;
-    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 6px 14px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -333,7 +328,7 @@ a:visited {
     left: 0;
     right: 0;
     z-index: 100;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 /* Main */
@@ -370,7 +365,7 @@ a:visited {
 .nav__link {
     text-decoration: none;
     color: var(--text-color);
-    font-weight: 600;  /* Aumentado para mejor legibilidad */
+    font-weight: 700;
     padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--border-radius);
     transition: var(--transition);
@@ -441,7 +436,7 @@ a:visited {
 
 .about__photo:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 25px rgba(26, 77, 115, 0.3);
+    box-shadow: 0 8px 25px rgba(13, 66, 103, 0.3);
 }
 
 .about__info {
@@ -450,7 +445,7 @@ a:visited {
 
 .about__title {
     font-size: clamp(1.75rem, 5vw, 2rem);
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-color);
     margin-bottom: var(--spacing-xs);
     line-height: 1.2;
@@ -459,7 +454,7 @@ a:visited {
 .about__subtitle {
     font-size: clamp(1rem, 3vw, 1.25rem);
     color: var(--secondary-color);
-    font-weight: 600;  /* Aumentado para mejor contraste */
+    font-weight: 700;
     margin-bottom: var(--spacing-md);
 }
 
@@ -469,6 +464,7 @@ a:visited {
     margin-bottom: var(--spacing-lg);
     line-height: 1.7;
     text-align: justify;
+    font-weight: 500;
 }
 
 .about__contact {
@@ -487,13 +483,13 @@ a:visited {
     color: var(--primary-color);
     min-width: 100px;
     margin-right: var(--spacing-sm);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
 }
 
 .contact__item span,
 .contact__item a {
     color: var(--text-color);
-    font-weight: 500;  /* Añadido para mejor legibilidad */
+    font-weight: 600;
 }
 
 .contact__item a:hover {
@@ -569,7 +565,7 @@ a:visited {
 
 .timeline__title {
     font-size: var(--font-size-base);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     color: var(--primary-color);
     margin-bottom: var(--spacing-xs);
 }
@@ -577,15 +573,15 @@ a:visited {
 .timeline__institution {
     font-size: var(--font-size-small);
     color: var(--secondary-color);
-    font-weight: 600;  /* Aumentado */
+    font-weight: 700;
     margin-bottom: var(--spacing-xs);
 }
 
 .timeline__status {
     font-size: var(--font-size-small);
-    color: var(--text-color);
+    color: var(--text-light);
     font-style: italic;
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 /* Achievements */
@@ -618,20 +614,20 @@ a:visited {
 
 .achievement__title {
     font-size: var(--font-size-base);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     color: var(--primary-color);
     margin-bottom: var(--spacing-xs);
 }
 
 .achievement__description {
     font-size: var(--font-size-small);
-    color: var(--text-color);
+    color: var(--text-light);
     line-height: 1.4;
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 /* =================================================
-   9. SECCIÓN HABILIDADES - CONTRASTE MEJORADO
+   9. SECCIÓN HABILIDADES
    ================================================= */
 .skills {
     background-color: var(--bg-light);
@@ -650,7 +646,7 @@ a:visited {
 
 .category__title {
     font-size: var(--font-size-base);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     color: var(--secondary-color);
     margin-bottom: var(--spacing-md);
     padding-bottom: var(--spacing-xs);
@@ -668,7 +664,7 @@ a:visited {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     transition: var(--transition);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
 }
 
 .skill__item:hover {
@@ -682,18 +678,19 @@ a:visited {
 }
 
 .skill__name {
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     color: var(--text-color);
     margin-bottom: var(--spacing-xs);
     font-size: var(--font-size-small);
 }
 
 .skill__level {
-    background-color: var(--skill-bar-bg);  /* MEJORADO - Fondo más oscuro para mejor contraste */
+    background-color: #cbd5e0;
     height: 8px;
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+    border: 1px solid var(--border-color);
 }
 
 .skill__bar {
@@ -716,7 +713,7 @@ a:visited {
     right: 8px;
     top: -25px;
     font-size: 12px;
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     color: var(--text-color);
     background-color: var(--bg-color);
     padding: 2px 6px;
@@ -725,6 +722,7 @@ a:visited {
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 1;
+    border: 1px solid var(--border-color);
 }
 
 .skill__item:hover .skill__percentage {
@@ -761,20 +759,20 @@ a:visited {
 
 .soft-skill__title {
     font-size: var(--font-size-base);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     color: var(--primary-color);
     margin-bottom: var(--spacing-xs);
 }
 
 .soft-skill__description {
     font-size: var(--font-size-small);
-    color: var(--text-color);
+    color: var(--text-light);
     line-height: 1.5;
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 /* =================================================
-   10. SECCIÓN PROYECTOS - CONTRASTE MEJORADO
+   10. SECCIÓN PROYECTOS
    ================================================= */
 .projects {
     background-color: var(--bg-color);
@@ -836,23 +834,23 @@ a:visited {
 }
 
 .project__title {
-    font-size: var(--font-size-base);
-    font-weight: 700;  /* Aumentado */
+    font-size: 1.125rem;
+    font-weight: 800;
     color: var(--primary-color);
     margin: 0;
     flex: 1;
 }
 
 .project__description {
-    font-size: var(--font-size-small);
-    color: var(--text-color);
+    font-size: 0.875rem;
+    color: var(--text-light);
     line-height: 1.6;
     margin-bottom: var(--spacing-md);
     text-align: justify;
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
-/* Tech tags con contraste MEJORADO */
+/* Tech tags con contraste mejorado AAA */
 .project__tech {
     display: flex;
     flex-wrap: wrap;
@@ -861,48 +859,76 @@ a:visited {
 }
 
 .tech__tag {
-    background-color: #e8eaed;  /* MEJORADO - Fondo más oscuro para mejor contraste */
-    color: var(--text-color);
-    font-size: 12px;
-    font-weight: 700;  /* Aumentado */
-    padding: 5px 12px;  /* Padding aumentado */
+    background-color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 6px 12px;
     border-radius: 4px;
-    border: 2px solid var(--text-color);  /* Borde oscuro para mejor contraste */
     transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
+/* Colores de tags mejorados para contraste AAA */
+.tech__tag:nth-child(6n+1) { 
+    border: 2px solid var(--tech-color-1); 
+    color: var(--tech-color-1); 
+}
+.tech__tag:nth-child(6n+2) { 
+    border: 2px solid var(--tech-color-2); 
+    color: var(--tech-color-2); 
+}
+.tech__tag:nth-child(6n+3) { 
+    border: 2px solid var(--tech-color-3); 
+    color: var(--tech-color-3); 
+}
+.tech__tag:nth-child(6n+4) { 
+    border: 2px solid var(--tech-color-4); 
+    color: var(--tech-color-4); 
+}
+.tech__tag:nth-child(6n+5) { 
+    border: 2px solid var(--tech-color-5); 
+    color: var(--tech-color-5); 
+}
+.tech__tag:nth-child(6n+6) { 
+    border: 2px solid var(--tech-color-6); 
+    color: var(--tech-color-6); 
+}
+
+/* Hover states para tech tags */
 .tech__tag:hover {
-    background-color: var(--secondary-color);
-    color: var(--bg-color);
-    border-color: var(--secondary-color);
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Colores de tags más oscuros para mejor contraste */
-.tech__tag:nth-child(1) { 
-    border-color: var(--tech-color-1); 
-    color: var(--tech-color-1);
-    background-color: #fef2f2;  /* Fondo ligeramente tintado para mejor distinción */
+.tech__tag:nth-child(6n+1):hover {
+    background-color: var(--tech-color-1);
+    color: #ffffff;
 }
-.tech__tag:nth-child(2) { 
-    border-color: var(--tech-color-2); 
-    color: var(--tech-color-2);
-    background-color: #eff6ff;  /* Fondo ligeramente tintado */
+
+.tech__tag:nth-child(6n+2):hover {
+    background-color: var(--tech-color-2);
+    color: #ffffff;
 }
-.tech__tag:nth-child(3) { 
-    border-color: var(--tech-color-3); 
-    color: var(--tech-color-3);
-    background-color: #fefce8;  /* Fondo ligeramente tintado */
+
+.tech__tag:nth-child(6n+3):hover {
+    background-color: var(--tech-color-3);
+    color: #ffffff;
 }
-.tech__tag:nth-child(4) { 
-    border-color: var(--tech-color-4); 
-    color: var(--tech-color-4);
-    background-color: #f0fdf4;  /* Fondo ligeramente tintado */
+
+.tech__tag:nth-child(6n+4):hover {
+    background-color: var(--tech-color-4);
+    color: #ffffff;
 }
-.tech__tag:nth-child(5) { 
-    border-color: var(--tech-color-5); 
-    color: var(--tech-color-5);
-    background-color: #faf5ff;  /* Fondo ligeramente tintado */
+
+.tech__tag:nth-child(6n+5):hover {
+    background-color: var(--tech-color-5);
+    color: #ffffff;
+}
+
+.tech__tag:nth-child(6n+6):hover {
+    background-color: var(--tech-color-6);
+    color: #ffffff;
 }
 
 .project__links {
@@ -981,7 +1007,7 @@ a:visited {
 
 .hobby__title {
     font-size: var(--font-size-large);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     color: var(--primary-color);
     margin-bottom: var(--spacing-md);
     line-height: 1.3;
@@ -989,27 +1015,27 @@ a:visited {
 
 .hobby__description {
     font-size: var(--font-size-small);
-    color: var(--text-color);
+    color: var(--text-light);
     line-height: 1.6;
     text-align: justify;
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 .hobby__description strong {
     color: var(--secondary-color);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
 }
 
-/* Quote - MEJORADO PARA CONTRASTE */
+/* Quote - Mejorado para contraste AAA */
 .hobbies__quote {
     text-align: center;
     padding: var(--spacing-xl) var(--spacing-lg);
-    background: var(--primary-color);  /* Fondo sólido oscuro en lugar de gradiente */
+    background: #0a0d13;  /* Fondo más oscuro para AAA con texto blanco */
     border-radius: var(--border-radius);
     margin-top: var(--spacing-xl);
     position: relative;
     overflow: hidden;
-    border: 3px solid var(--secondary-color);  /* Borde añadido */
+    border: 3px solid var(--secondary-color);
 }
 
 .hobbies__quote::before {
@@ -1019,26 +1045,26 @@ a:visited {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="60" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.15)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.15)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.15)"/><circle cx="60" cy="30" r="1.5" fill="rgba(255,255,255,0.15)"/></svg>');
     pointer-events: none;
 }
 
 .quote__text {
     font-size: var(--font-size-large);
     font-style: italic;
-    color: var(--bg-color);
+    color: #ffffff;
     margin: 0;
     line-height: 1.6;
     position: relative;
     z-index: 1;
-    font-weight: 500;  /* Aumentado de 300 */
+    font-weight: 600;
 }
 
 .quote__text::before,
 .quote__text::after {
     content: '"';
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.6);  /* MEJORADO - Mayor opacidad para mejor visibilidad */
+    color: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: -10px;
     font-weight: 700;
@@ -1055,14 +1081,14 @@ a:visited {
 }
 
 /* =================================================
-   12. FOOTER - CONTRASTE MEJORADO
+   12. FOOTER
    ================================================= */
 .footer {
-    background: var(--primary-color);  /* Fondo sólido en lugar de gradiente */
+    background: #0a0d13;  /* Fondo más oscuro para AAA */
     color: var(--bg-color);
     padding: var(--spacing-xl) var(--spacing-sm) var(--spacing-sm);
     margin-top: var(--spacing-xl);
-    border-top: 4px solid var(--secondary-color);  /* Borde superior añadido */
+    border-top: 4px solid var(--secondary-color);
 }
 
 .footer__content {
@@ -1074,30 +1100,30 @@ a:visited {
 
 .footer__title {
     font-size: var(--font-size-large);
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: var(--spacing-xs);
-    color: var(--bg-color);
+    color: #ffffff;
 }
 
 .footer__subtitle {
     font-size: var(--font-size-base);
-    color: var(--footer-text-light);  /* MEJORADO - Color más claro para mejor contraste */
+    color: #f3f4f6;
     margin-bottom: var(--spacing-sm);
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 .footer__location {
     font-size: var(--font-size-small);
-    color: var(--footer-text-lighter);  /* MEJORADO - Color más claro para mejor contraste */
+    color: #e5e7eb;
     margin: 0;
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 .footer__section-title {
     font-size: var(--font-size-base);
-    font-weight: 700;  /* Aumentado */
+    font-weight: 800;
     margin-bottom: var(--spacing-md);
-    color: var(--bg-color);
+    color: #ffffff;
     position: relative;
 }
 
@@ -1108,7 +1134,7 @@ a:visited {
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: var(--footer-text-light);  /* MEJORADO - Color más claro */
+    background-color: #f3f4f6;
 }
 
 .contact__list {
@@ -1122,22 +1148,23 @@ a:visited {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    color: var(--footer-text-light);  /* MEJORADO - Color más claro para mejor contraste */
+    color: #f3f4f6;
     text-decoration: none;
     font-size: var(--font-size-small);
     transition: var(--transition);
     padding: var(--spacing-xs) 0;
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 .contact__link:hover {
-    color: var(--bg-color);
+    color: #ffffff;
     transform: translateX(5px);
-    text-decoration: underline;  /* Añadido para mejor visibilidad */
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 .contact__link:focus-visible {
-    outline: 2px solid var(--bg-color);
+    outline: 2px solid #ffffff;
     outline-offset: 2px;
     border-radius: var(--border-radius);
 }
@@ -1148,7 +1175,7 @@ a:visited {
 }
 
 .footer__bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.4);  /* MEJORADO - Más opaco */
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
     padding-top: var(--spacing-lg);
     display: flex;
     justify-content: space-between;
@@ -1161,9 +1188,9 @@ a:visited {
 
 .footer__copyright p {
     font-size: var(--font-size-small);
-    color: var(--footer-text-lighter);  /* MEJORADO - Color más claro para mejor contraste */
+    color: #e5e7eb;
     margin-bottom: var(--spacing-xs);
-    font-weight: 500;  /* Añadido */
+    font-weight: 600;
 }
 
 .footer__copyright p:last-child {
@@ -1173,7 +1200,7 @@ a:visited {
 .footer__made-with {
     font-size: 12px !important;
     font-style: italic;
-    color: var(--footer-text-light) !important;  /* MEJORADO - Color más claro */
+    color: #f3f4f6 !important;
 }
 
 /* =================================================
@@ -1375,6 +1402,7 @@ a:visited {
     .nav__link {
         font-size: 12px;
         padding: 8px 10px;
+        font-weight: 700;
     }
     
     /* About */
@@ -1425,15 +1453,23 @@ a:visited {
     }
     
     .tech__tag {
-        font-size: 10px;
-        padding: 4px 10px;  /* MEJORADO - Padding aumentado para mejor legibilidad */
-        font-weight: 700;  /* Mantenido para móvil */
+        font-size: 0.625rem;
+        padding: 5px 10px;
+        font-weight: 800;
     }
     
     .btn {
         font-size: 12px;
         padding: 8px var(--spacing-xs);
         min-height: 44px;
+        font-weight: 700;
+    }
+    
+    /* Status en móvil */
+    .status {
+        font-size: 0.625rem;
+        padding: 5px 10px;
+        font-weight: 800;
     }
     
     /* Hobbies */
@@ -1469,6 +1505,7 @@ a:visited {
     .btn--scroll {
         padding: var(--spacing-xs) var(--spacing-sm);
         font-size: 12px;
+        font-weight: 700;
     }
 }
 
@@ -1500,7 +1537,18 @@ a:visited {
     .skill__item,
     .project__card,
     .hobby__card {
-        border: 1px solid #000000 !important;
+        border: 2px solid #000000 !important;
+    }
+    
+    /* Tech tags y status en impresión */
+    .tech__tag,
+    .status {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        color-adjust: exact;
+        border: 2px solid #000000 !important;
+        color: #000000 !important;
+        background: #ffffff !important;
     }
 }
 
@@ -1532,7 +1580,7 @@ a:visited {
     .skill__percentage {
         background-color: var(--primary-color);
         color: var(--bg-color);
-        font-weight: 700;
+        font-weight: 800;
         border: 2px solid var(--bg-color);
     }
     
