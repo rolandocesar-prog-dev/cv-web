@@ -8,11 +8,11 @@ export function printConsoleBanner() {
 
   const banner = `
 %c
- ____      _                 _        __     __
-|  _ \\ ___| | __ _ _ __   __| | ___   \\ \\   / /
-| |_) / _ \\ |/ _\` | '_ \\ / _\` |/ _ \\   \\ \\ / /
-|  _ <  __/ | (_| | | | | (_| | (_) |   \\ V /
-|_| \\_\\___|_|\\__,_|_| |_|\\__,_|\\___/     \\_/
+╭──────────────────────────────────────────╮
+│                                          │
+│   R  O  L  A  N  D  O  -  D  E  V       │
+│                                          │
+╰──────────────────────────────────────────╯
 
 %cDesarrollador Web · Mobile · QA  —  Tarija, Bolivia
 %c¿Te interesa colaborar? %crolando.sha256@gmail.com
