@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rolandocesar-prog-dev.github.io/cv-web/sitemap.xml

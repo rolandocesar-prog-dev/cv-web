@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Rolando Vásquez  Desarrollador">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0a0e1a"/>
+            <stop offset="100%" stop-color="#111827"/>
+        </linearGradient>
+        <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#3b82f6"/>
+            <stop offset="100%" stop-color="#6366f1"/>
+        </linearGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3b82f6" stroke-width="1" stroke-opacity="0.08"/>
+        </pattern>
+    </defs>
+
+    <rect width="1200" height="630" fill="url(#bg)"/>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+    <circle cx="950" cy="180" r="280" fill="url(#glow)"/>
+    <circle cx="200" cy="500" r="240" fill="url(#glow)"/>
+
+    <g font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif">
+        <text x="80" y="180" font-size="28" font-weight="600" fill="#94a3b8" font-family="JetBrains Mono, ui-monospace, monospace">
+            <tspan fill="#3b82f6">&gt;</tspan> hola, soy
+        </text>
+        <text x="80" y="320" font-size="110" font-weight="800" fill="#e2e8f0" letter-spacing="-3">
+            Rolando Vásquez
+        </text>
+        <text x="80" y="400" font-size="44" font-weight="600" fill="url(#accent)">
+            Desarrollador Web · Mobile · QA
+        </text>
+        <text x="80" y="455" font-size="26" font-weight="500" fill="#94a3b8">
+            Tarija, Bolivia · JavaScript · TypeScript · Flutter · React · PHP · Java
+        </text>
+    </g>
+
+    <g transform="translate(80, 540)">
+        <rect width="60" height="4" rx="2" fill="#3b82f6"/>
+        <text x="76" y="8" font-size="18" font-weight="600" fill="#64748b" font-family="JetBrains Mono, monospace" dominant-baseline="middle">
+            rolandocesar-prog-dev.github.io/cv-web
+        </text>
+    </g>
+
+    <g transform="translate(1000, 80)" font-family="JetBrains Mono, monospace" fill="#3b82f6" opacity="0.6">
+        <text font-size="20" font-weight="600">&lt;/&gt;</text>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "name": "cv-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio personal de Rolando César Vásquez Tavera",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "lint:html": "html-validate index.html",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,json,md}\"",
+    "build:sprite": "powershell -ExecutionPolicy Bypass -File build-sprite.ps1"
+  },
+  "devDependencies": {
+    "html-validate": "^9.0.0",
+    "prettier": "^3.3.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}

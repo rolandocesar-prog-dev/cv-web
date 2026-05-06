@@ -1,11 +1,32 @@
-# Sistema operativo
+# OS
 .DS_Store
 Thumbs.db
 
 # Editores
 .vscode/settings.json
+.idea/
 *.swp
+
+# Dependencias y build
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Temporales
 *.tmp
 *.bak
+*.log
+
+# Local
+.env
+.env.local
+
+# Cursor
+.agents/
+skills-lock.json

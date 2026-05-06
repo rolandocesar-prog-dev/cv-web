@@ -3,553 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Curriculum Vitae de Rolando César Vásquez Tavera - Técnico Superior en Sistemas Informáticos y Desarrollador Web">
-    <meta name="keywords" content="desarrollador web, sistemas informáticos, PHP, JavaScript, Flutter, Tarija, Bolivia">
+    <meta name="description" content="Rolando César Vásquez Tavera — Desarrollador web, móvil y QA. Tarija, Bolivia. Stack: JavaScript, TypeScript, React, Flutter, PHP, Java.">
+    <meta name="keywords" content="desarrollador web, Flutter, React, JavaScript, TypeScript, PHP, QA, Tarija, Bolivia, freelancer">
     <meta name="author" content="Rolando César Vásquez Tavera">
-    <title>Rolando Vásquez - Desarrollador</title>
-    
-    <!-- Preconnect para optimizar carga de fuentes del sistema -->
+    <meta name="theme-color" content="#0a0e1a">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="canonical" href="https://rolandocesar-prog-dev.github.io/cv-web/">
+
+    <meta property="og:title" content="Rolando Vásquez — Desarrollador">
+    <meta property="og:description" content="Portfolio de Rolando César Vásquez Tavera. Desarrollo web, móvil y QA desde Tarija, Bolivia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rolandocesar-prog-dev.github.io/cv-web/">
+    <meta property="og:locale" content="es_BO">
+    <meta property="og:image" content="https://rolandocesar-prog-dev.github.io/cv-web/img/og-image.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Rolando Vásquez — Desarrollador">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rolando Vásquez — Desarrollador">
+    <meta name="twitter:description" content="Portfolio de Rolando César Vásquez Tavera. Web, móvil y QA.">
+    <meta name="twitter:image" content="https://rolandocesar-prog-dev.github.io/cv-web/img/og-image.svg">
+
+    <title>Rolando Vásquez — Desarrollador</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Hojas de estilo -->
+    <link rel="preload" as="image" href="img/perfil-web.webp" fetchpriority="high">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/perfil.ico">
-    <link rel="shortcut icon" href="img/perfil.ico">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rolando César Vásquez Tavera",
+        "jobTitle": "Desarrollador Web y Móvil",
+        "url": "https://rolandocesar-prog-dev.github.io/cv-web/",
+        "image": "https://rolandocesar-prog-dev.github.io/cv-web/img/perfil-web.webp",
+        "telephone": "+59178249575",
+        "email": "rolando.sha256@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tarija",
+            "addressCountry": "BO"
+        },
+        "knowsLanguage": [
+            { "@type": "Language", "name": "Spanish", "alternateName": "es" },
+            { "@type": "Language", "name": "English", "alternateName": "en" }
+        ],
+        "knowsAbout": [
+            "JavaScript", "TypeScript", "React", "Flutter", "PHP", "Java",
+            "Spring Boot", "Angular", "PostgreSQL", "MySQL", "Firebase",
+            "QA Testing", "Desarrollo Web", "Desarrollo Móvil"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Skip to main content para accesibilidad -->
     <a href="#main" class="skip-link">Saltar al contenido principal</a>
-    
-    <header class="header">
-        <nav class="nav" aria-label="Navegación principal">
-            <ul class="nav__list" role="menubar">
-                <li class="nav__item" role="none">
-                    <a href="#about" class="nav__link" role="menuitem">Sobre mí</a>
-                </li>
-                <li class="nav__item" role="none">
-                    <a href="#education" class="nav__link" role="menuitem">Formación</a>
-                </li>
-                <li class="nav__item" role="none">
-                    <a href="#skills" class="nav__link" role="menuitem">Habilidades</a>
-                </li>
-                <li class="nav__item" role="none">
-                    <a href="#projects" class="nav__link" role="menuitem">Proyectos</a>
-                </li>
-                <li class="nav__item" role="none">
-                    <a href="#hobbies" class="nav__link" role="menuitem">Hobbies</a>
-                </li>
-            </ul>
-        </nav>
+
+    <header class="header" data-scroll-state="top">
+        <div class="container header__inner">
+            <a href="#hero" class="logo" aria-label="Inicio — Rolando Vásquez">
+                <span class="logo__icon mono" aria-hidden="true">&lt;/&gt;</span>
+                <span class="logo__text">RV</span>
+            </a>
+
+            <nav class="nav nav--desktop" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link" data-spy>Inicio</a></li>
+                    <li><a href="#about" class="nav__link" data-spy>Sobre mí</a></li>
+                    <li><a href="#skills" class="nav__link" data-spy>Skills</a></li>
+                    <li><a href="#projects" class="nav__link" data-spy>Proyectos</a></li>
+                    <li><a href="#education" class="nav__link" data-spy>Formación</a></li>
+                    <li><a href="#hobbies" class="nav__link" data-spy>Intereses</a></li>
+                    <li><a href="#contact" class="nav__link" data-spy>Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+                    <span class="menu-toggle__bar" aria-hidden="true"></span>
+                    <span class="menu-toggle__bar" aria-hidden="true"></span>
+                    <span class="menu-toggle__bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" hidden>
+            <nav class="mobile-menu__nav" aria-label="Móvil">
+                <ul class="mobile-menu__list">
+                    <li><a href="#hero" class="mobile-menu__link">Inicio</a></li>
+                    <li><a href="#about" class="mobile-menu__link">Sobre mí</a></li>
+                    <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+                    <li><a href="#projects" class="mobile-menu__link">Proyectos</a></li>
+                    <li><a href="#education" class="mobile-menu__link">Formación</a></li>
+                    <li><a href="#hobbies" class="mobile-menu__link">Intereses</a></li>
+                    <li><a href="#contact" class="mobile-menu__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main id="main" class="main">
-        <!-- SECCIÓN SOBRE MÍ -->
+    <main id="main">
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="hero__bg" aria-hidden="true">
+                <div class="hero__grid"></div>
+                <div class="hero__blob"></div>
+            </div>
+            <div class="container hero__inner">
+                <div class="hero__text">
+                    <p class="hero__greeting mono"><span class="accent">&gt;</span> Hola, soy</p>
+                    <h1 id="hero-title" class="hero__name gradient-text">Rolando Vásquez</h1>
+                    <h2 class="hero__role">
+                        <span class="mono accent" aria-hidden="true">&lt;</span>
+                        <span class="hero__typewriter mono" data-typewriter='["Desarrollador Web","Mobile Developer","QA Tester"]'></span>
+                        <span class="mono accent" aria-hidden="true">/&gt;</span>
+                    </h2>
+                    <p class="hero__desc">
+                        Desarrollo software a medida y asesoro a empresas y emprendedores en la adopción de
+                        soluciones tecnológicas — desde <strong>Tarija, Bolivia</strong>, con alcance remoto.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary">
+                            Ver proyectos
+                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-arrow-right"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn--ghost">Contáctame</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__photo-ring" aria-hidden="true"></div>
+                    <div class="hero__photo-wrap">
+                        <img src="img/perfil-web.webp" width="320" height="320" alt="Rolando César Vásquez Tavera, desarrollador" class="hero__photo" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="hero__scroll" aria-label="Ir a la sección Sobre mí">
+                <span class="hero__scroll-text mono">scroll</span>
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-chevron-down"/></svg>
+            </a>
+        </section>
+
         <section id="about" class="section about" aria-labelledby="about-title">
             <div class="container">
-                <div class="about__content">
-                    <div class="about__image">
-                        <img src="img/perfil-web.webp" 
-                             alt="Fotografía profesional de Rolando César Vásquez Tavera, Técnico Superior en Sistemas Informáticos" 
-                             class="about__photo"
-                             width="250"
-                             height="250"
-                             loading="lazy">
+                <h2 id="about-title" class="section__title reveal">Sobre mí</h2>
+                <div class="about__grid">
+                    <div class="about__media reveal">
+                        <img src="img/perfil-web.webp" width="280" height="280" loading="lazy" alt="" class="about__photo" decoding="async">
                     </div>
-                    <div class="about__info">
-                        <h1 id="about-title" class="about__title">Rolando César Vásquez Tavera</h1>
-                        <h2 class="about__subtitle">Técnico Superior en Sistemas Informáticos</h2>
-                        <p class="about__description">
-                            Desarrollador con conocimiento en tecnologías modernas, con cuatro años de experiencia en el sector tecnológico. 
-                            Apasionado por crear soluciones digitales innovadoras y eficientes. Experiencia en desarrollo web, 
-                            aplicaciones móviles y testing de calidad.
+                    <div class="about__body reveal">
+                        <p class="about__lead">
+                            Soy <strong>programador</strong> y me apasiona crear soluciones digitales claras, rápidas y accesibles.
                         </p>
-                        <address class="about__contact">
-                            <div class="contact__item">
-                                <strong>Teléfono:</strong> <span>+591 78249575</span>
-                            </div>
-                            <div class="contact__item">
-                                <strong>Ubicación:</strong> <span>Tarija, Bolivia</span>
-                            </div>
-                            <div class="contact__item">
-                                <strong>Nacionalidad:</strong> <span>Boliviana</span>
-                            </div>
-                        </address>
+                        <p class="about__text">
+                            Experiencia en el sector tecnológico: desarrollo web, aplicaciones móviles y testing de calidad.
+                            Trabajo con equipos y proyectos reales, priorizando buenas prácticas y entregas mantenibles.
+                        </p>
+                        <ul class="about__meta">
+                            <li>
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-map-pin"/></svg>
+                                Tarija, Bolivia
+                            </li>
+                            <li>
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-phone"/></svg>
+                                +591 78249575
+                            </li>
+                            <li>
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-flag"/></svg>
+                                Nacionalidad boliviana
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="stats reveal" role="list">
+                    <div class="stat" role="listitem">
+                        <span class="stat__num mono">5+</span>
+                        <span class="stat__label">Años como freelancer</span>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <span class="stat__num mono">6+</span>
+                        <span class="stat__label">Proyectos destacados</span>
+                    </div>
+                    <div class="stat" role="listitem">
+                        <span class="stat__num mono">3</span>
+                        <span class="stat__label">Áreas: web, móvil, QA</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN EDUCACIÓN -->
-        <section id="education" class="section education" aria-labelledby="education-title">
-            <div class="container">
-                <h2 id="education-title" class="section__title">Formación Académica</h2>
-                
-                <div class="education__content">
-                    <div class="education__formal">
-                        <h3 class="subtitle">Educación Formal</h3>
-                        <div class="timeline">
-                            <div class="timeline__item">
-                                <div class="timeline__marker"></div>
-                                <div class="timeline__content card">
-                                    <h4 class="timeline__title">Bachiller</h4>
-                                    <p class="timeline__institution">Colegio Nacional San Luis / CEA San Jerónimo</p>
-                                    <p class="timeline__status">Finalizado</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__marker"></div>
-                                <div class="timeline__content card">
-                                    <h4 class="timeline__title">Técnico Superior en Sistemas Informáticos</h4>
-                                    <p class="timeline__institution">Instituto Técnico Superior "INCOS"</p>
-                                    <p class="timeline__status">Finalizado - Cuadro de Honor</p>
-                                </div>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__marker"></div>
-                                <div class="timeline__content card">
-                                    <h4 class="timeline__title">Ingeniería en Sistemas</h4>
-                                    <p class="timeline__institution">Universidad Adventista de Bolivia</p>
-                                    <p class="timeline__status">En curso</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="education__achievements">
-                        <h3 class="subtitle">Reconocimientos</h3>
-                        <div class="achievements__grid">
-                            <div class="card card--centered achievement__item">
-                                <div class="achievement__icon" aria-label="Trofeo primer lugar" role="img">🏆</div>
-                                <h4 class="achievement__title">Primer Lugar</h4>
-                                <p class="achievement__description">Desempeño Académico 2020 - INCOS Tarija</p>
-                            </div>
-                            <div class="card card--centered achievement__item">
-                                <div class="achievement__icon" aria-label="Trofeo segundo lugar" role="img">🥈</div>
-                                <h4 class="achievement__title">Segundo Lugar</h4>
-                                <p class="achievement__description">Desempeño Académico 2019 - INCOS Tarija</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN HABILIDADES - CORREGIDA PARA WCAG -->
         <section id="skills" class="section skills" aria-labelledby="skills-title">
             <div class="container">
-                <h2 id="skills-title" class="section__title">Habilidades</h2>
-                
-                <div class="skills__content">
-                    <div class="skills__technical">
-                        <h3 class="subtitle">Habilidades Técnicas</h3>
-                        
-                        <!-- Lenguajes de Programación -->
-                        <div class="skills__category">
-                            <h4 class="category__title">Lenguajes de Programación</h4>
-                            <div class="skills__grid">
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-javascript">JavaScript</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-javascript"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-php">PHP</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">50%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-php"
-                                         aria-valuenow="50" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 50"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-python">Python</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">50%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-python"
-                                         aria-valuenow="50" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 50"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-typescript">TypeScript</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-typescript"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-dart">Dart</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-dart"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-java">Java</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-java"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Frameworks & Librerías -->
-                        <div class="skills__category">
-                            <h4 class="category__title">Frameworks & Librerías</h4>
-                            <div class="skills__grid">
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-react">React</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-react"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-flutter">Flutter</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">70%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-flutter"
-                                         aria-valuenow="70" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-react-native">React Native</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-react-native"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-angular">Angular</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">50%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-angular"
-                                         aria-valuenow="50" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 50"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-spring">Spring Boot</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-spring"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Bases de Datos & Herramientas -->
-                        <div class="skills__category">
-                            <h4 class="category__title">Bases de Datos & Herramientas</h4>
-                            <div class="skills__grid">
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-mysql">MySQL</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-mysql"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-postgresql">PostgreSQL</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-postgresql"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-git">Git/GitHub</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">70%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-git"
-                                         aria-valuenow="70" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 70"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skill__item">
-                                    <div class="skill__header">
-                                        <div class="skill__name" id="skill-testing">Testing QA</div>
-                                        <div class="skill__percentage-value" aria-hidden="true">60%</div>
-                                    </div>
-                                    <div class="skill__level" 
-                                         role="progressbar" 
-                                         aria-labelledby="skill-testing"
-                                         aria-valuenow="60" 
-                                         aria-valuemin="0" 
-                                         aria-valuemax="100">
-                                        <div class="skill__bar" style="--skill-level: 60"></div>
-                                    </div>
-                                </div>
-                            </div>
+                <h2 id="skills-title" class="section__title reveal">Skills</h2>
+                <p class="section__lead reveal">Stack y herramientas que uso en producción y proyectos personales.</p>
+
+                <div class="skills__tabs reveal">
+                    <div role="tablist" class="skills__tablist mono" aria-label="Categorías de habilidades técnicas">
+                        <button type="button" role="tab" id="tab-lang" class="skills__tab" aria-selected="true" aria-controls="panel-lang">Lenguajes</button>
+                        <button type="button" role="tab" id="tab-fw" class="skills__tab" aria-selected="false" aria-controls="panel-fw" tabindex="-1">Frameworks</button>
+                        <button type="button" role="tab" id="tab-db" class="skills__tab" aria-selected="false" aria-controls="panel-db" tabindex="-1">Datos &amp; tools</button>
+                    </div>
+
+                    <div id="panel-lang" role="tabpanel" class="skills__panel" aria-labelledby="tab-lang">
+                        <div class="skill-grid">
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-js"/></svg><h3 class="skill-card__name">JavaScript</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-ts"/></svg><h3 class="skill-card__name">TypeScript</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-php"/></svg><h3 class="skill-card__name">PHP</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-python"/></svg><h3 class="skill-card__name">Python</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-java"/></svg><h3 class="skill-card__name">Java</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-dart"/></svg><h3 class="skill-card__name">Dart</h3></article>
                         </div>
                     </div>
-                    
-                    <div class="skills__soft">
-                        <h3 class="subtitle">Habilidades Blandas</h3>
-                        <div class="soft-skills__grid">
-                            <div class="card card--centered soft-skill__item">
-                                <div class="soft-skill__icon" aria-label="Resolución de problemas" role="img">🎯</div>
-                                <h4 class="soft-skill__title">Resolución de Problemas</h4>
-                                <p class="soft-skill__description">Capacidad analítica para identificar y solucionar problemas técnicos complejos</p>
-                            </div>
-                            <div class="card card--centered soft-skill__item">
-                                <div class="soft-skill__icon" aria-label="Trabajo en equipo" role="img">👥</div>
-                                <h4 class="soft-skill__title">Trabajo en Equipo</h4>
-                                <p class="soft-skill__description">Experiencia colaborando en equipos multidisciplinarios</p>
-                            </div>
-                            <div class="card card--centered soft-skill__item">
-                                <div class="soft-skill__icon" aria-label="Liderazgo" role="img">📈</div>
-                                <h4 class="soft-skill__title">Liderazgo</h4>
-                                <p class="soft-skill__description">Experiencia en gestión de equipos y coordinación de proyectos</p>
-                            </div>
-                            <div class="card card--centered soft-skill__item">
-                                <div class="soft-skill__icon" aria-label="Adaptabilidad" role="img">🔄</div>
-                                <h4 class="soft-skill__title">Adaptabilidad</h4>
-                                <p class="soft-skill__description">Capacidad de adaptación a nuevas tecnologías y metodologías</p>
-                            </div>
+                    <div id="panel-fw" role="tabpanel" class="skills__panel" aria-labelledby="tab-fw" hidden>
+                        <div class="skill-grid">
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg><h3 class="skill-card__name">React</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-flutter"/></svg><h3 class="skill-card__name">Flutter</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg><h3 class="skill-card__name">React Native</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-angular"/></svg><h3 class="skill-card__name">Angular</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-spring"/></svg><h3 class="skill-card__name">Spring Boot</h3></article>
                         </div>
                     </div>
+                    <div id="panel-db" role="tabpanel" class="skills__panel" aria-labelledby="tab-db" hidden>
+                        <div class="skill-grid">
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-mysql"/></svg><h3 class="skill-card__name">MySQL</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-postgresql"/></svg><h3 class="skill-card__name">PostgreSQL</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-firebase"/></svg><h3 class="skill-card__name">Firebase</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-supabase"/></svg><h3 class="skill-card__name">Supabase</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-git"/></svg><h3 class="skill-card__name">Git</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-github"/></svg><h3 class="skill-card__name">GitHub</h3></article>
+                            <article class="skill-card"><svg class="skill-card__svg skill-card__svg--ui" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-clipboard-check"/></svg><h3 class="skill-card__name">QA / Testing</h3></article>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="skills__subtitle reveal">Habilidades blandas e idiomas</h3>
+                <div class="soft-row reveal">
+                    <ul class="chips" aria-label="Habilidades blandas">
+                        <li class="chip">
+                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-target"/></svg>
+                            Resolución de problemas
+                        </li>
+                        <li class="chip">
+                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-users"/></svg>
+                            Trabajo en equipo
+                        </li>
+                        <li class="chip">
+                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-trending-up"/></svg>
+                            Liderazgo
+                        </li>
+                        <li class="chip">
+                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-refresh-cw"/></svg>
+                            Adaptabilidad
+                        </li>
+                    </ul>
+
+                    <ul class="languages" aria-label="Idiomas">
+                        <li class="language">
+                            <div class="language__head">
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-languages"/></svg>
+                                <span class="language__name">Español</span>
+                                <span class="language__level mono">Nativo</span>
+                            </div>
+                            <div class="language__bar" role="progressbar" aria-label="Nivel de español: nativo" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                <span class="language__fill" style="--level: 100%;"></span>
+                            </div>
+                        </li>
+                        <li class="language">
+                            <div class="language__head">
+                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-languages"/></svg>
+                                <span class="language__name">Inglés <span class="language__hint">(técnico)</span></span>
+                                <span class="language__level mono">B1 básico</span>
+                            </div>
+                            <div class="language__bar" role="progressbar" aria-label="Nivel de inglés técnico: B1 básico" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                <span class="language__fill" style="--level: 45%;"></span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN PROYECTOS -->
         <section id="projects" class="section projects" aria-labelledby="projects-title">
             <div class="container">
-                <h2 id="projects-title" class="section__title">Proyectos</h2>
-                
-                <div class="projects__content">
-                    <div class="projects__current">
-                        <h3 class="subtitle">Proyectos Actuales</h3>
-                        <div class="projects__grid">
-                            <article class="card project__card">
-                                <div class="project__header">
-                                    <h4 class="project__title">Voz Liberal Tarija</h4>
-                                    <div class="status status--active">Activo</div>
+                <h2 id="projects-title" class="section__title reveal">Proyectos</h2>
+                <p class="section__lead reveal">Selección de trabajo reciente y proyectos completados como freelancer.</p>
+
+                <div class="project-grid">
+                    <article class="project reveal">
+                        <div class="project__body">
+                            <div class="project__dots" aria-hidden="true">
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                            </div>
+                            <header class="project__header">
+                                <div>
+                                    <p class="project__type">Desarrollo Web</p>
+                                    <h3 class="project__title">Voz Liberal Tarija</h3>
                                 </div>
-                                <p class="project__description">
-                                    Desarrollo de página web para la plataforma política Voz Liberal Tarija. 
-                                    Proyecto desarrollado sin frameworks, enfocado en performance y accesibilidad.
-                                </p>
-                                <div class="project__tech">
-                                    <span class="tech__tag">HTML5</span>
-                                    <span class="tech__tag">CSS3</span>
-                                    <span class="tech__tag">JavaScript</span>
+                                <span class="badge badge--done">Completado</span>
+                            </header>
+                            <p class="project__desc">Sitio web institucional para plataforma política. Desarrollado sin frameworks, con enfoque en rendimiento, accesibilidad y carga rápida.</p>
+                            <ul class="project__stack">
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-html5"/></svg> HTML5</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-css3"/></svg> CSS3</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-js"/></svg> JavaScript</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project__body">
+                            <div class="project__dots" aria-hidden="true">
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                            </div>
+                            <header class="project__header">
+                                <div>
+                                    <p class="project__type">Aplicación Web</p>
+                                    <h3 class="project__title">Test Político Boliviano</h3>
                                 </div>
-                                <div class="project__links">
-                                    <a href="https://www.vozliberaltarija.com/" 
-                                       class="btn btn--primary" 
-                                       target="_blank" 
-                                       rel="noopener"
-                                       aria-label="Ver proyecto Voz Liberal Tarija (se abre en nueva ventana)">
-                                        Ver Proyecto
-                                        <span class="sr-only">(se abre en nueva ventana)</span>
-                                    </a>
+                                <span class="badge badge--done">Completado</span>
+                            </header>
+                            <p class="project__desc">Plataforma interactiva para iniciativa ciudadana. Cuestionario político con resultados en tiempo real, desarrollado con Angular y TypeScript.</p>
+                            <ul class="project__stack">
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-angular"/></svg> Angular</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-ts"/></svg> TypeScript</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-css3"/></svg> CSS3</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project__body">
+                            <div class="project__dots" aria-hidden="true">
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                            </div>
+                            <header class="project__header">
+                                <div>
+                                    <p class="project__type">Web &amp; Mobile · Freelance remoto</p>
+                                    <h3 class="project__title">Startup — Santa Cruz</h3>
                                 </div>
-                            </article>
-                            
-                            <article class="card project__card">
-                                <div class="project__header">
-                                    <h4 class="project__title">Test Político Boliviano</h4>
-                                    <div class="status status--active">Activo</div>
+                                <span class="badge badge--progress">En desarrollo</span>
+                            </header>
+                            <p class="project__desc">Desarrollo de aplicación móvil y panel web para startup tecnológica. Arquitectura con Firebase como backend en tiempo real.</p>
+                            <ul class="project__stack">
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-flutter"/></svg> Flutter</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg> React</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-firebase"/></svg> Firebase</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project__body">
+                            <div class="project__dots" aria-hidden="true">
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                            </div>
+                            <header class="project__header">
+                                <div>
+                                    <p class="project__type">Sistema Web</p>
+                                    <h3 class="project__title">Sistema Radio Móvil Andaluz</h3>
                                 </div>
-                                <p class="project__description">
-                                    Plataforma web para la iniciativa ciudadana Test Político Boliviano. 
-                                    Aplicación interactiva desarrollada con Angular.
-                                </p>
-                                <div class="project__tech">
-                                    <span class="tech__tag">Angular</span>
-                                    <span class="tech__tag">TypeScript</span>
-                                    <span class="tech__tag">CSS3</span>
+                                <span class="badge badge--done">Completado</span>
+                            </header>
+                            <p class="project__desc">Sistema completo para control y despacho de llamadas radiales: registro de clientes, historial y panel de operadores en tiempo real.</p>
+                            <ul class="project__stack">
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-php"/></svg> PHP</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-js"/></svg> JavaScript</li>
+                                <li><span class="stack-fallback mono">Ajax</span></li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-mysql"/></svg> MySQL</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project__body">
+                            <div class="project__dots" aria-hidden="true">
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                            </div>
+                            <header class="project__header">
+                                <div>
+                                    <p class="project__type">Aplicación Móvil</p>
+                                    <h3 class="project__title">App OTN-PB Monitoreo</h3>
                                 </div>
-                                <div class="project__links">
-                                    <a href="https://testpoliticoboliviano.com/" 
-                                       class="btn btn--primary" 
-                                       target="_blank" 
-                                       rel="noopener"
-                                       aria-label="Ver proyecto Test Político Boliviano (se abre en nueva ventana)">
-                                        Ver Proyecto
-                                        <span class="sr-only">(se abre en nueva ventana)</span>
-                                    </a>
+                                <span class="badge badge--done">Completado</span>
+                            </header>
+                            <p class="project__desc">App móvil para visualización y monitoreo de estaciones meteorológicas satelitales en el valle central de Tarija.</p>
+                            <ul class="project__stack">
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-flutter"/></svg> Flutter</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-spring"/></svg> Spring Boot</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-postgresql"/></svg> PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project__body">
+                            <div class="project__dots" aria-hidden="true">
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                                <span class="project__dot"></span>
+                            </div>
+                            <header class="project__header">
+                                <div>
+                                    <p class="project__type">QA / Aseguramiento de calidad</p>
+                                    <h3 class="project__title">QA Testing — Llévame</h3>
                                 </div>
-                            </article>
-                            
-                            <article class="card project__card">
-                                <div class="project__header">
-                                    <h4 class="project__title">Startup - Santa Cruz de la Sierra</h4>
-                                    <div class="status status--active">Activo</div>
-                                </div>
-                                <p class="project__description">
-                                    Desarrollo como freelancer remoto para startup tecnológica. 
-                                    Participación en proyecto de desarrollo web y móvil.
-                                </p>
-                                <div class="project__tech">
-                                    <span class="tech__tag">Flutter</span>
-                                    <span class="tech__tag">Firebase</span>
-                                    <span class="tech__tag">React</span>
-                                </div>
-                                <div class="project__links">
-                                    <span class="btn btn--disabled">Confidencial</span>
-                                </div>
+                                <span class="badge badge--done">Completado</span>
+                            </header>
+                            <p class="project__desc">Tester QA para startup de movilidad. Pruebas de funcionalidad, usabilidad, rendimiento y seguridad sobre aplicación React Native.</p>
+                            <ul class="project__stack">
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-clipboard-check"/></svg> QA</li>
+                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg> React Native</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section education" aria-labelledby="education-title">
+            <div class="container">
+                <h2 id="education-title" class="section__title reveal">Formación</h2>
+                <div class="education__layout">
+                    <div class="timeline reveal">
+                        <div class="timeline__item">
+                            <div class="timeline__marker" aria-hidden="true"></div>
+                            <article class="timeline__card">
+                                <h3 class="timeline__title">Bachiller</h3>
+                                <p class="timeline__inst">Colegio Nacional San Luis / CEA San Jerónimo</p>
                             </article>
                         </div>
-                    </div>
-                    
-                    <div class="projects__completed">
-                        <h3 class="subtitle">Proyectos Completados</h3>
-                        <div class="projects__grid">
-                            <article class="card project__card">
-                                <div class="project__header">
-                                    <h4 class="project__title">Sistema Radio Móvil Andaluz</h4>
-                                    <div class="status status--completed">Completado</div>
-                                </div>
-                                <p class="project__description">
-                                    Sistema web completo para control, despacho y seguimiento de llamadas, 
-                                    con registro y administración de clientes.
-                                </p>
-                                <div class="project__tech">
-                                    <span class="tech__tag">PHP</span>
-                                    <span class="tech__tag">JavaScript</span>
-                                    <span class="tech__tag">Ajax</span>
-                                    <span class="tech__tag">MySQL</span>
-                                </div>
+                        <div class="timeline__item">
+                            <div class="timeline__marker" aria-hidden="true"></div>
+                            <article class="timeline__card">
+                                <h3 class="timeline__title">Técnico Superior en Sistemas Informáticos</h3>
+                                <p class="timeline__inst">Instituto Técnico Superior «INCOS»</p>
                             </article>
-                            
-                            <article class="card project__card">
-                                <div class="project__header">
-                                    <h4 class="project__title">App OTN-PB Monitoreo</h4>
-                                    <div class="status status--completed">Completado</div>
-                                </div>
-                                <p class="project__description">
-                                    Aplicación móvil para visualización y monitoreo de estaciones 
-                                    meteorológicas satelitales en el valle central de Tarija.
-                                </p>
-                                <div class="project__tech">
-                                    <span class="tech__tag">Flutter</span>
-                                    <span class="tech__tag">Spring Boot</span>
-                                    <span class="tech__tag">PostgreSQL</span>
-                                </div>
-                            </article>
-                            
-                            <article class="card project__card">
-                                <div class="project__header">
-                                    <h4 class="project__title">QA Testing - Llevame</h4>
-                                    <div class="status status--completed">Completado</div>
-                                </div>
-                                <p class="project__description">
-                                    Tester QA para startup, realizando pruebas de calidad, usabilidad, 
-                                    funcionalidad, rendimiento y seguridad en aplicaciones React Native.
-                                </p>
-                                <div class="project__tech">
-                                    <span class="tech__tag">QA Testing</span>
-                                    <span class="tech__tag">React</span>
-                                    <span class="tech__tag">React Native</span>
-                                </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__marker" aria-hidden="true"></div>
+                            <article class="timeline__card">
+                                <h3 class="timeline__title">Ingeniería en Sistemas</h3>
+                                <p class="timeline__inst">Universidad Adventista de Bolivia</p>
                             </article>
                         </div>
                     </div>
@@ -557,116 +465,82 @@
             </div>
         </section>
 
-        <!-- SECCIÓN HOBBIES -->
         <section id="hobbies" class="section hobbies" aria-labelledby="hobbies-title">
             <div class="container">
-                <h2 id="hobbies-title" class="section__title">Hobbies e Intereses</h2>
-                
-                <div class="hobbies__content">
-                    <div class="hobbies__grid">
-                        <article class="card card--centered hobby__card">
-                            <div class="hobby__icon" aria-label="Ciclismo de montaña" role="img">🚵‍♂️</div>
-                            <h3 class="hobby__title">Ciclismo de Montaña</h3>
-                            <p class="hobby__description">
-                                Apasionado por el mountain bike y la exploración de senderos en las montañas de Tarija. 
-                                Una actividad que me ayuda a mantener el equilibrio entre la vida digital y la naturaleza.
-                            </p>
-                        </article>
-                        
-                        <article class="card card--centered hobby__card">
-                            <div class="hobby__icon" aria-label="Podcasts" role="img">🎧</div>
-                            <h3 class="hobby__title">Podcasts de Programación</h3>
-                            <p class="hobby__description">
-                                Escucho regularmente podcasts de referentes como <strong>Fernando Herrera</strong>, 
-                                <strong>Miguel Durán (Midudev)</strong>, <strong>Brais Moure</strong> y <strong>Sergio Code</strong> 
-                                para mantenerme actualizado en las últimas tendencias tecnológicas.
-                            </p>
-                        </article>
-                        
-                        <article class="card card--centered hobby__card">
-                            <div class="hobby__icon" aria-label="Proyectos personales" role="img">💻</div>
-                            <h3 class="hobby__title">Proyectos Personales</h3>
-                            <p class="hobby__description">
-                                Disfruto experimentando con nuevas tecnologías y frameworks en proyectos personales. 
-                                Siempre hay algo nuevo que aprender en el mundo del desarrollo.
-                            </p>
-                        </article>
-                        
-                        <article class="card card--centered hobby__card">
-                            <div class="hobby__icon" aria-label="Aprendizaje" role="img">📚</div>
-                            <h3 class="hobby__title">Aprendizaje Continuo</h3>
-                            <p class="hobby__description">
-                                Participación activa en webinars, cursos online y eventos de tecnología. 
-                                La formación constante es clave en esta industria que evoluciona rapidamente.
-                            </p>
-                        </article>
-                        
-                        <article class="card card--centered hobby__card">
-                            <div class="hobby__icon" aria-label="Tecnologías emergentes" role="img">🌱</div>
-                            <h3 class="hobby__title">Tecnologías Emergentes</h3>
-                            <p class="hobby__description">
-                                Investigación y experimentación con nuevas tecnologías, frameworks y herramientas 
-                                que puedan mejorar los procesos de desarrollo (N8N, Blockchain).
-                            </p>
-                        </article>
-                        
-                        <article class="card card--centered hobby__card">
-                            <div class="hobby__icon" aria-label="Metodologías ágiles" role="img">🎯</div>
-                            <h3 class="hobby__title">Metodologías Ágiles</h3>
-                            <p class="hobby__description">
-                                Interés en metodologías como SCRUM y buenas prácticas de desarrollo. 
-                                Siempre buscando formas de optimizar el trabajo en equipo y la entrega de proyectos.
-                            </p>
-                        </article>
+                <h2 id="hobbies-title" class="section__title reveal">Intereses</h2>
+                <div class="hobby-grid">
+                    <article class="hobby-card reveal">
+                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-brain-circuit"/></svg>
+                        <h3 class="hobby-card__title">IA y tecnologías emergentes</h3>
+                        <p class="hobby-card__desc">Modelos de lenguaje, automatización e IA aplicada al desarrollo; también exploración de blockchain, integraciones y herramientas que optimizan productos.</p>
+                    </article>
+                    <article class="hobby-card reveal">
+                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-book-open"/></svg>
+                        <h3 class="hobby-card__title">Formación y comunidad</h3>
+                        <p class="hobby-card__desc">Podcasts (Fernando Herrera, Midudev, Brais Moure, Sergio Code), cursos, webinars y eventos para seguir al día en la industria.</p>
+                    </article>
+                    <article class="hobby-card reveal">
+                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-laptop"/></svg>
+                        <h3 class="hobby-card__title">Práctica y equipos</h3>
+                        <p class="hobby-card__desc">Side projects con frameworks nuevos; interés en Scrum y buenas prácticas para colaborar y entregar con calidad.</p>
+                    </article>
+                </div>
+                <blockquote class="quote reveal">
+                    <p>La pasión por la tecnología y el aprendizaje continuo me permiten mantener la creatividad y la productividad en mis proyectos.</p>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section__title reveal">Contacto</h2>
+                <p class="section__lead reveal">¿Colaboramos? Escríbeme o llámame; respondo lo antes posible.</p>
+
+                <div class="contact__grid reveal">
+                    <a href="mailto:rolando.sha256@gmail.com" class="contact-card">
+                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-mail"/></svg>
+                        <span class="contact-card__label">Email</span>
+                        <span class="contact-card__value mono">rolando.sha256@gmail.com</span>
+                    </a>
+                    <a href="tel:+59178249575" class="contact-card">
+                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-phone"/></svg>
+                        <span class="contact-card__label">Teléfono</span>
+                        <span class="contact-card__value mono">+591 78249575</span>
+                    </a>
+                    <div class="contact-card">
+                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-map-pin"/></svg>
+                        <span class="contact-card__label">Ubicación</span>
+                        <span class="contact-card__value mono">Tarija, Bolivia</span>
                     </div>
                 </div>
-                
-                <div class="hobbies__quote">
-                    <blockquote class="quote__text">
-                        "El equilibrio entre la pasión por la tecnología y las actividades al aire libre 
-                        me permite mantener la creatividad y productividad en mis proyectos."
-                    </blockquote>
+
+                <div class="contact__cta reveal">
+                    <h3 class="contact__cta-title">¿Tienes un proyecto en mente?</h3>
+                    <a class="btn btn--primary btn--lg" href="mailto:rolando.sha256@gmail.com?subject=Propuesta%20de%20proyecto">
+                        Enviar mensaje
+                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-send"/></svg>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__info">
-                    <h3 class="footer__title">Rolando César Vásquez Tavera</h3>
-                    <p class="footer__subtitle">Técnico Superior en Sistemas Informáticos</p>
-                    <p class="footer__location">📍 Tarija, Bolivia</p>
-                </div>
-                
-                <div class="footer__contact">
-                    <h4 class="footer__section-title">Contacto</h4>
-                    <address class="contact__list">
-                        <a href="tel:+59178249575" class="contact__link">
-                            <span class="contact__icon" aria-label="Teléfono" role="img">📱</span>
-                            <span>+591 78249575</span>
-                        </a>
-                        <a href="mailto:rolando.sha256@gmail.com" class="contact__link">
-                            <span class="contact__icon" aria-label="Email" role="img">✉️</span>
-                            <span>rolando.sha256@gmail.com</span>
-                        </a>
-                    </address>
-                </div>
-            </div>
-            
-            <div class="footer__bottom">
-                <div class="footer__copyright">
-                    <p>&copy; 2025 Rolando César Vásquez Tavera. Todos los derechos reservados.</p>
-                    <p class="footer__made-with">Desarrollado con ❤️ usando HTML y CSS</p>
-                </div>
-                <div class="footer__scroll-top">
-                    <a href="#about" class="btn btn--scroll" title="Volver arriba" aria-label="Volver al inicio">
-                        ↑ Subir
-                    </a>
-                </div>
-            </div>
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+            <p class="footer__copyright">
+                <span class="footer__symbol" aria-hidden="true">©</span>
+                <span class="sr-only">Copyright </span>
+                <span data-year></span>
+                <a href="#hero" class="footer__name">Rolando César Vásquez Tavera</a>.
+                <span class="footer__rights">Todos los derechos reservados.</span>
+            </p>
         </div>
     </footer>
+
+    <button type="button" class="back-to-top" aria-label="Volver arriba">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-arrow-up"/></svg>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

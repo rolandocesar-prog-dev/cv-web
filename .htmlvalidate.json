@@ -1,0 +1,11 @@
+{
+    "extends": ["html-validate:recommended"],
+    "rules": {
+        "no-inline-style": "off",
+        "void-style": "off",
+        "wcag/h30": "warn",
+        "wcag/h32": "off",
+        "wcag/h36": "warn",
+        "wcag/h37": "error"
+    }
+}
