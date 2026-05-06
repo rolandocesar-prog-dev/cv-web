@@ -20,6 +20,7 @@ cv-web/
 │   └── modules/
 ├── img/
 │   ├── icons.svg        (sprite SVG)
+│   ├── icons-src/       (SVG fuente para regenerar el sprite)
 │   ├── og-image.svg
 │   ├── perfil-web.webp
 │   └── perfil.ico
@@ -30,15 +31,9 @@ cv-web/
 
 ## Uso local
 
-```bash
-npx serve .
-```
+Abre `index.html` directamente en el navegador o sírvelo con cualquier servidor estático de tu preferencia.
 
-> El sitio usa módulos ES nativos, por lo que debe servirse vía HTTP (no abrirse con `file://`).
-
-## Despliegue
-
-Publicado en GitHub Pages: <https://rolandocesar-prog-dev.github.io/cv-web/>
+> El sitio usa módulos ES nativos (`type="module"`), por lo que algunas funciones requieren servirse vía HTTP en lugar de abrirse como archivo local (`file://`).
 
 ## Licencia
 
