@@ -1307,7 +1307,10 @@ a.contact-card:hover {
    Reveal al hacer scroll
    ============================================================ */
 
-.reveal {
+/* El estado oculto se aplica solo si el JS arrancó (clase .js en <html>).
+   Sin esto, un fallo de JS o un IntersectionObserver que no dispara dejaría
+   las 28 secciones en opacity:0 y la página se vería vacía. */
+.js .reveal {
     opacity: 0;
     transform: translateY(26px);
     transition:
@@ -1318,7 +1321,7 @@ a.contact-card:hover {
     transition-delay: calc(var(--i, 0) * 80ms);
 }
 
-.reveal.is-visible {
+.js .reveal.is-visible {
     opacity: 1;
     transform: none;
 }
@@ -1401,7 +1404,7 @@ a.contact-card:hover {
         transition-duration: 0.01ms !important;
     }
 
-    .reveal {
+    .js .reveal {
         opacity: 1;
         transform: none;
     }
