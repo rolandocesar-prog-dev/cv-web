@@ -3,8 +3,7 @@
  * Estructura: cada feature vive en js/modules/* y exporta una función init().
  */
 import { initHeaderScroll } from './modules/header.js';
-import { initMobileMenu } from './modules/menu.js';
-import { initScrollSpy } from './modules/scroll-spy.js';
+import { initMenu } from './modules/menu.js';
 import { initReveal } from './modules/reveal.js';
 import { initTypewriter } from './modules/typewriter.js';
 import { initYear } from './modules/year.js';
@@ -19,8 +18,7 @@ const ready = (fn) =>
 
 ready(() => {
   initHeaderScroll();
-  initMobileMenu();
-  initScrollSpy();
+  initMenu();
   initReveal();
   initTypewriter();
   initYear();

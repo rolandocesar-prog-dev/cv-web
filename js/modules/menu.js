@@ -1,10 +1,14 @@
-/** Maneja apertura/cierre del menú móvil con accesibilidad.
+/** Menú overlay a pantalla completa.
  *  Usa la técnica de body-lock para evitar que el fondo
- *  se filtre en iOS Safari cuando la página está scrolleada. */
-export function initMobileMenu() {
+ *  se filtre en iOS Safari cuando la página está scrolleada.
+ *  El overlay se superpone al header, así que el cierre vive dentro
+ *  del propio overlay ("Cerrar", Escape o cualquier enlace). */
+export function initMenu() {
   const toggle = document.querySelector('.menu-toggle');
-  const menu = document.getElementById('mobile-menu');
+  const menu = document.getElementById('site-menu');
   if (!toggle || !menu) return;
+
+  const closeBtn = menu.querySelector('.menu__close');
 
   const lockBody = () => {
     const scrollY = window.scrollY;
@@ -23,23 +27,34 @@ export function initMobileMenu() {
     window.scrollTo({ top: scrollY, behavior: 'instant' });
   };
 
+  const isOpen = () => toggle.getAttribute('aria-expanded') === 'true';
+
   const setOpen = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
     menu.hidden = !open;
-    open ? lockBody() : unlockBody();
+
+    if (open) {
+      lockBody();
+      // El toggle queda tapado por el overlay: llevamos el foco adentro.
+      if (closeBtn) closeBtn.focus();
+    } else {
+      unlockBody();
+      toggle.focus();
+    }
   };
 
-  toggle.addEventListener('click', () => {
-    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-    setOpen(!isOpen);
-  });
+  toggle.addEventListener('click', () => setOpen(!isOpen()));
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => setOpen(false));
+  }
 
   menu.querySelectorAll('a').forEach((a) => {
     a.addEventListener('click', () => setOpen(false));
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') setOpen(false);
+    if (e.key === 'Escape' && isOpen()) setOpen(false);
   });
 }

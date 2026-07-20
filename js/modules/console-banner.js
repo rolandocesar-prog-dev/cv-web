@@ -3,8 +3,8 @@
  * Mantiene el branding y un canal directo de contacto.
  */
 export function printConsoleBanner() {
-  const accent = '#3b82f6';
-  const text = '#e2e8f0';
+  const accent = '#b1441f';
+  const text = '#1c1a16';
 
   const banner = `
 %c
@@ -23,7 +23,7 @@ export function printConsoleBanner() {
     banner,
     `color:${accent};font-weight:bold`,
     `color:${text};font-weight:600`,
-    `color:#94a3b8`,
+    `color:#4a453d`,
     `color:${accent};font-weight:bold;text-decoration:underline`,
   );
 }

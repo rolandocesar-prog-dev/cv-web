@@ -4,7 +4,7 @@ export function initHeaderScroll() {
   if (!header) return;
 
   const onScroll = () => {
-    header.dataset.scrollState = window.scrollY > 8 ? 'scrolled' : 'top';
+    header.dataset.scrollState = window.scrollY > 10 ? 'scrolled' : 'top';
   };
 
   onScroll();

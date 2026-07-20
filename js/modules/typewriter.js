@@ -19,10 +19,11 @@ export function initTypewriter() {
     return;
   }
 
-  const TYPE_MS = 90;
-  const ERASE_MS = 45;
-  const HOLD_MS = 1800;
-  const PAUSE_MS = 600;
+  const TYPE_MS = 70;
+  const ERASE_MS = 35;
+  const HOLD_MS = 1600;
+  const PAUSE_MS = 400;
+  const START_MS = 600;
 
   let wordIndex = 0;
   let charIndex = 0;
@@ -48,5 +49,5 @@ export function initTypewriter() {
     window.setTimeout(tick, delay);
   };
 
-  tick();
+  window.setTimeout(tick, START_MS);
 }

@@ -12,8 +12,8 @@
             content="desarrollador web, Flutter, React, JavaScript, TypeScript, PHP, QA, Tarija, Bolivia, freelancer"
         />
         <meta name="author" content="Rolando César Vásquez Tavera" />
-        <meta name="theme-color" content="#0a0e1a" />
-        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#faf7f1" />
+        <meta name="color-scheme" content="light" />
 
         <link rel="canonical" href="https://rolandocesar-prog-dev.github.io/cv-web/" />
 
@@ -50,7 +50,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="preload" as="image" href="img/perfil-web.webp" fetchpriority="high" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/styles.css" />
@@ -104,47 +104,66 @@
                     <span class="logo__text">RV</span>
                 </a>
 
-                <nav class="nav nav--desktop" aria-label="Navegación principal">
-                    <ul class="nav__list">
-                        <li><a href="#hero" class="nav__link" data-spy>Inicio</a></li>
-                        <li><a href="#about" class="nav__link" data-spy>Sobre mí</a></li>
-                        <li><a href="#skills" class="nav__link" data-spy>Skills</a></li>
-                        <li><a href="#projects" class="nav__link" data-spy>Proyectos</a></li>
-                        <li><a href="#education" class="nav__link" data-spy>Formación</a></li>
-                        <li><a href="#hobbies" class="nav__link" data-spy>Intereses</a></li>
-                        <li><a href="#contact" class="nav__link" data-spy>Contacto</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header__actions">
-                    <button
-                        type="button"
-                        class="menu-toggle"
-                        aria-expanded="false"
-                        aria-controls="mobile-menu"
-                        aria-label="Abrir menú"
-                    >
-                        <span class="menu-toggle__bar" aria-hidden="true"></span>
-                        <span class="menu-toggle__bar" aria-hidden="true"></span>
-                        <span class="menu-toggle__bar" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-
-            <div id="mobile-menu" class="mobile-menu" hidden>
-                <nav class="mobile-menu__nav" aria-label="Móvil">
-                    <ul class="mobile-menu__list">
-                        <li><a href="#hero" class="mobile-menu__link">Inicio</a></li>
-                        <li><a href="#about" class="mobile-menu__link">Sobre mí</a></li>
-                        <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
-                        <li><a href="#projects" class="mobile-menu__link">Proyectos</a></li>
-                        <li><a href="#education" class="mobile-menu__link">Formación</a></li>
-                        <li><a href="#hobbies" class="mobile-menu__link">Intereses</a></li>
-                        <li><a href="#contact" class="mobile-menu__link">Contacto</a></li>
-                    </ul>
-                </nav>
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    aria-expanded="false"
+                    aria-controls="site-menu"
+                    aria-label="Abrir menú"
+                >
+                    <span class="menu-toggle__label">Menú</span>
+                    <span class="menu-toggle__bars" aria-hidden="true">
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                        <span class="menu-toggle__bar"></span>
+                    </span>
+                </button>
             </div>
         </header>
+
+        <nav id="site-menu" class="menu" aria-label="Menú principal" hidden>
+            <button type="button" class="menu__close" aria-label="Cerrar menú">
+                Cerrar
+                <span class="menu__close-x" aria-hidden="true">&times;</span>
+            </button>
+
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">01</span
+                    ><a href="#hero" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">02</span
+                    ><a href="#about" class="menu__link">Sobre mí</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">03</span
+                    ><a href="#skills" class="menu__link">Skills</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">04</span
+                    ><a href="#projects" class="menu__link">Proyectos</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">05</span
+                    ><a href="#education" class="menu__link">Formación</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">06</span
+                    ><a href="#hobbies" class="menu__link">Intereses</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">07</span
+                    ><a href="#contact" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="menu__footer">
+                <a href="mailto:rolando.sha256@gmail.com">rolando.sha256@gmail.com</a>
+                <span>+591&nbsp;78249575</span>
+                <span>Tarija, Bolivia</span>
+            </div>
+        </nav>
 
         <main id="main">
             <section id="hero" class="hero" aria-labelledby="hero-title">
@@ -157,14 +176,15 @@
                         <p class="hero__greeting mono">
                             <span class="accent">&gt;</span> Hola, soy
                         </p>
-                        <h1 id="hero-title" class="hero__name gradient-text">Rolando Vásquez</h1>
+                        <h1 id="hero-title" class="hero__name">Rolando<br />Vásquez</h1>
                         <h2 class="hero__role">
-                            <span class="mono accent" aria-hidden="true">&lt;</span>
-                            <span
-                                class="hero__typewriter mono"
+                            <span class="hero__bracket" aria-hidden="true">&lt;</span
+                            ><span
+                                class="hero__typewriter"
                                 data-typewriter='["Desarrollador Web","Mobile Developer","QA Tester"]'
-                            ></span>
-                            <span class="mono accent" aria-hidden="true">/&gt;</span>
+                            ></span
+                            ><span class="hero__cursor" aria-hidden="true"></span
+                            ><span class="hero__bracket" aria-hidden="true">/&gt;</span>
                         </h2>
                         <p class="hero__desc">
                             Desarrollo software a medida y asesoro a empresas y emprendedores en la
@@ -179,6 +199,9 @@
                                 </svg>
                             </a>
                             <a href="#contact" class="btn btn--ghost">Contáctame</a>
+                            <a href="RolandoVasquez-CV.pdf" class="btn-link" download
+                                >Descargar CV ↓</a
+                            >
                         </div>
                     </div>
                     <div class="hero__visual">
@@ -186,8 +209,8 @@
                         <div class="hero__photo-wrap">
                             <img
                                 src="img/perfil-web.webp"
-                                width="320"
-                                height="320"
+                                width="300"
+                                height="360"
                                 alt="Rolando César Vásquez Tavera, desarrollador"
                                 class="hero__photo"
                                 fetchpriority="high"
@@ -197,21 +220,21 @@
                 </div>
                 <a href="#about" class="hero__scroll" aria-label="Ir a la sección Sobre mí">
                     <span class="hero__scroll-text mono">scroll</span>
-                    <svg class="icon" aria-hidden="true" focusable="false">
-                        <use href="img/icons.svg#ui-chevron-down" />
-                    </svg>
+                    <span class="hero__scroll-line" aria-hidden="true"></span>
                 </a>
             </section>
 
-            <section id="about" class="section about" aria-labelledby="about-title">
+            <section id="about" class="section section--alt about" aria-labelledby="about-title">
                 <div class="container">
-                    <h2 id="about-title" class="section__title reveal">Sobre mí</h2>
+                    <h2 id="about-title" class="section__title section__title--spaced reveal">
+                        Sobre mí
+                    </h2>
                     <div class="about__grid">
                         <div class="about__media reveal">
                             <img
                                 src="img/perfil-web.webp"
-                                width="280"
-                                height="280"
+                                width="360"
+                                height="440"
                                 loading="lazy"
                                 alt=""
                                 class="about__photo"
@@ -250,20 +273,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="stats reveal" role="list">
-                        <div class="stat" role="listitem">
-                            <span class="stat__num mono">5+</span>
+                    <ul class="stats reveal">
+                        <li class="stat">
+                            <span class="stat__num">5+</span>
                             <span class="stat__label">Años como freelancer</span>
-                        </div>
-                        <div class="stat" role="listitem">
-                            <span class="stat__num mono">6+</span>
+                        </li>
+                        <li class="stat">
+                            <span class="stat__num">6+</span>
                             <span class="stat__label">Proyectos destacados</span>
-                        </div>
-                        <div class="stat" role="listitem">
-                            <span class="stat__num mono">3</span>
+                        </li>
+                        <li class="stat">
+                            <span class="stat__num">3</span>
                             <span class="stat__label">Áreas: web, móvil, QA</span>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -527,7 +550,7 @@
 
                     <h3 class="skills__subtitle reveal">Habilidades blandas e idiomas</h3>
                     <div class="soft-row reveal">
-                        <ul class="chips" aria-label="Habilidades blandas">
+                        <ul class="chips">
                             <li class="chip">
                                 <svg class="icon" aria-hidden="true" focusable="false">
                                     <use href="img/icons.svg#ui-target" />
@@ -554,7 +577,7 @@
                             </li>
                         </ul>
 
-                        <ul class="languages" aria-label="Idiomas">
+                        <ul class="languages">
                             <li class="language">
                                 <div class="language__head">
                                     <svg class="icon" aria-hidden="true" focusable="false">
@@ -563,14 +586,7 @@
                                     <span class="language__name">Español</span>
                                     <span class="language__level mono">Nativo</span>
                                 </div>
-                                <div
-                                    class="language__bar"
-                                    role="progressbar"
-                                    aria-label="Nivel de español: nativo"
-                                    aria-valuenow="100"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                >
+                                <div class="language__bar" aria-hidden="true">
                                     <span class="language__fill" style="--level: 100%"></span>
                                 </div>
                             </li>
@@ -582,16 +598,9 @@
                                     <span class="language__name"
                                         >Inglés <span class="language__hint">(técnico)</span></span
                                     >
-                                    <span class="language__level mono">B1 básico</span>
+                                    <span class="language__level mono">B1 intermedio</span>
                                 </div>
-                                <div
-                                    class="language__bar"
-                                    role="progressbar"
-                                    aria-label="Nivel de inglés técnico: B1 básico"
-                                    aria-valuenow="45"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                >
+                                <div class="language__bar" aria-hidden="true">
                                     <span class="language__fill" style="--level: 45%"></span>
                                 </div>
                             </li>
@@ -600,7 +609,11 @@
                 </div>
             </section>
 
-            <section id="projects" class="section projects" aria-labelledby="projects-title">
+            <section
+                id="projects"
+                class="section section--alt projects"
+                aria-labelledby="projects-title"
+            >
                 <div class="container">
                     <h2 id="projects-title" class="section__title reveal">Proyectos</h2>
                     <p class="section__lead reveal">
@@ -610,11 +623,6 @@
                     <div class="project-grid">
                         <article class="project reveal">
                             <div class="project__body">
-                                <div class="project__dots" aria-hidden="true">
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                </div>
                                 <header class="project__header">
                                     <div>
                                         <p class="project__type">Desarrollo Web</p>
@@ -652,11 +660,6 @@
 
                         <article class="project reveal">
                             <div class="project__body">
-                                <div class="project__dots" aria-hidden="true">
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                </div>
                                 <header class="project__header">
                                     <div>
                                         <p class="project__type">Aplicación Web</p>
@@ -694,11 +697,6 @@
 
                         <article class="project reveal">
                             <div class="project__body">
-                                <div class="project__dots" aria-hidden="true">
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                </div>
                                 <header class="project__header">
                                     <div>
                                         <p class="project__type">
@@ -738,11 +736,6 @@
 
                         <article class="project reveal">
                             <div class="project__body">
-                                <div class="project__dots" aria-hidden="true">
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                </div>
                                 <header class="project__header">
                                     <div>
                                         <p class="project__type">Sistema Web</p>
@@ -768,7 +761,7 @@
                                         </svg>
                                         JavaScript
                                     </li>
-                                    <li><span class="stack-fallback mono">Ajax</span></li>
+                                    <li>Ajax</li>
                                     <li>
                                         <svg class="icon" aria-hidden="true" focusable="false">
                                             <use href="img/icons.svg#tech-mysql" />
@@ -781,11 +774,6 @@
 
                         <article class="project reveal">
                             <div class="project__body">
-                                <div class="project__dots" aria-hidden="true">
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                </div>
                                 <header class="project__header">
                                     <div>
                                         <p class="project__type">Aplicación Móvil</p>
@@ -822,11 +810,6 @@
 
                         <article class="project reveal">
                             <div class="project__body">
-                                <div class="project__dots" aria-hidden="true">
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                    <span class="project__dot"></span>
-                                </div>
                                 <header class="project__header">
                                     <div>
                                         <p class="project__type">QA / Aseguramiento de calidad</p>
@@ -841,7 +824,11 @@
                                 </p>
                                 <ul class="project__stack">
                                     <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                        <svg
+                                            class="icon icon--ui"
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
                                             <use href="img/icons.svg#ui-clipboard-check" />
                                         </svg>
                                         QA
@@ -861,7 +848,9 @@
 
             <section id="education" class="section education" aria-labelledby="education-title">
                 <div class="container">
-                    <h2 id="education-title" class="section__title reveal">Formación</h2>
+                    <h2 id="education-title" class="section__title section__title--spaced reveal">
+                        Formación
+                    </h2>
                     <div class="education__layout">
                         <div class="timeline reveal">
                             <div class="timeline__item">
@@ -894,9 +883,15 @@
                 </div>
             </section>
 
-            <section id="hobbies" class="section hobbies" aria-labelledby="hobbies-title">
+            <section
+                id="hobbies"
+                class="section section--alt hobbies"
+                aria-labelledby="hobbies-title"
+            >
                 <div class="container">
-                    <h2 id="hobbies-title" class="section__title reveal">Intereses</h2>
+                    <h2 id="hobbies-title" class="section__title section__title--spaced reveal">
+                        Intereses
+                    </h2>
                     <div class="hobby-grid">
                         <article class="hobby-card reveal">
                             <svg class="icon icon--lg" aria-hidden="true" focusable="false">
@@ -959,7 +954,7 @@
                                 <use href="img/icons.svg#ui-phone" />
                             </svg>
                             <span class="contact-card__label">Teléfono</span>
-                            <span class="contact-card__value mono">+591 78249575</span>
+                            <span class="contact-card__value mono">+591&nbsp;78249575</span>
                         </a>
                         <div class="contact-card">
                             <svg class="icon icon--lg" aria-hidden="true" focusable="false">
@@ -986,14 +981,14 @@
             </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
+        <footer class="footer">
             <div class="container footer__inner">
                 <p class="footer__copyright">
-                    <span class="footer__symbol" aria-hidden="true">©</span>
+                    <span aria-hidden="true">©</span>
                     <span class="sr-only">Copyright </span>
-                    <span data-year></span>
-                    <a href="#hero" class="footer__name">Rolando César Vásquez Tavera</a>.
-                    <span class="footer__rights">Todos los derechos reservados.</span>
+                    <span class="footer__year" data-year></span>
+                    <a href="#hero" class="footer__name">Rolando César Vásquez Tavera</a>. Todos los
+                    derechos reservados.
                 </p>
             </div>
         </footer>

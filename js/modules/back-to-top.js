@@ -6,7 +6,7 @@ export function initBackToTop() {
   if (!btn) return;
 
   const toggle = () => {
-    btn.classList.toggle('is-visible', window.scrollY > 500);
+    btn.classList.toggle('is-visible', window.scrollY > 600);
   };
 
   toggle();
