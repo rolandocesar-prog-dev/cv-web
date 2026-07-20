@@ -5,6 +5,7 @@
     "no-descending-specificity": null,
     "alpha-value-notation": "number",
     "color-function-notation": null,
-    "media-feature-range-notation": null
+    "media-feature-range-notation": null,
+    "property-no-vendor-prefix": null
   }
 }
