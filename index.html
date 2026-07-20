@@ -148,18 +148,22 @@
                 </li>
                 <li class="menu__item">
                     <span class="menu__num" aria-hidden="true">04</span
-                    ><a href="#projects" class="menu__link">Proyectos</a>
+                    ><a href="#apps" class="menu__link">Apps publicadas</a>
                 </li>
                 <li class="menu__item">
                     <span class="menu__num" aria-hidden="true">05</span
-                    ><a href="#education" class="menu__link">Formación</a>
+                    ><a href="#projects" class="menu__link">Proyectos</a>
                 </li>
                 <li class="menu__item">
                     <span class="menu__num" aria-hidden="true">06</span
-                    ><a href="#hobbies" class="menu__link">Intereses</a>
+                    ><a href="#education" class="menu__link">Formación</a>
                 </li>
                 <li class="menu__item">
                     <span class="menu__num" aria-hidden="true">07</span
+                    ><a href="#hobbies" class="menu__link">Intereses</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num" aria-hidden="true">08</span
                     ><a href="#contact" class="menu__link">Contacto</a>
                 </li>
             </ul>
@@ -283,6 +287,10 @@
                         <li class="stat">
                             <span class="stat__num">5+</span>
                             <span class="stat__label">Años como freelancer</span>
+                        </li>
+                        <li class="stat">
+                            <span class="stat__num">4</span>
+                            <span class="stat__label">Apps en tiendas</span>
                         </li>
                         <li class="stat">
                             <span class="stat__num">6+</span>
@@ -615,11 +623,225 @@
                 </div>
             </section>
 
-            <section
-                id="projects"
-                class="section section--alt projects"
-                aria-labelledby="projects-title"
-            >
+            <section id="apps" class="section section--alt apps" aria-labelledby="apps-title">
+                <div class="container">
+                    <h2 id="apps-title" class="section__title reveal">Apps publicadas</h2>
+                    <p class="section__lead reveal">
+                        Aplicaciones en producción, publicadas y mantenidas bajo mi propia cuenta de
+                        desarrollador en Google Play Console y Apple Developer Program.
+                    </p>
+
+                    <div class="app-grid">
+                        <article class="app-card reveal">
+                            <header class="app-card__head">
+                                <svg
+                                    class="icon app-card__icon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                >
+                                    <use href="img/icons.svg#ui-smartphone" />
+                                </svg>
+                                <span class="badge badge--done">Publicada</span>
+                            </header>
+                            <p class="app-card__type">Delivery y servicios · Pasajero</p>
+                            <h3 class="app-card__title">GoPlus</h3>
+                            <p class="app-card__desc">
+                                App de delivery y servicios para usuarios finales. Desarrollada en
+                                Flutter para Android e iOS, con backend en tiempo real sobre
+                                Firebase.
+                            </p>
+                            <ul class="app-card__stack">
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#tech-flutter" /></svg
+                                    >Flutter
+                                </li>
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#tech-firebase" /></svg
+                                    >Firebase
+                                </li>
+                            </ul>
+                            <ul class="store-links">
+                                <li>
+                                    <a
+                                        class="store-link"
+                                        href="https://play.google.com/store/apps/details?id=com.goplus.customerapp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Google Play
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#ui-external-link" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="store-link"
+                                        href="https://apps.apple.com/bo/app/id6787314464"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        App Store
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#ui-external-link" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="app-card reveal">
+                            <header class="app-card__head">
+                                <svg
+                                    class="icon app-card__icon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                >
+                                    <use href="img/icons.svg#ui-smartphone" />
+                                </svg>
+                                <span class="badge badge--done">Publicada</span>
+                            </header>
+                            <p class="app-card__type">Delivery y servicios · Repartidor</p>
+                            <h3 class="app-card__title">GoPlus Driver</h3>
+                            <p class="app-card__desc">
+                                Módulo para repartidores: gestión de pedidos, estados de entrega y
+                                ganancias, con notificaciones push en tiempo real.
+                            </p>
+                            <ul class="app-card__stack">
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#tech-flutter" /></svg
+                                    >Flutter
+                                </li>
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#tech-firebase" /></svg
+                                    >Firebase
+                                </li>
+                            </ul>
+                            <ul class="store-links">
+                                <li>
+                                    <a
+                                        class="store-link"
+                                        href="https://play.google.com/store/apps/details?id=com.goplus.driverapp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Google Play
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#ui-external-link" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="store-link"
+                                        href="https://apps.apple.com/bo/app/id6787321937"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        App Store
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#ui-external-link" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="app-card reveal">
+                            <header class="app-card__head">
+                                <svg
+                                    class="icon app-card__icon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                >
+                                    <use href="img/icons.svg#ui-smartphone" />
+                                </svg>
+                                <span class="badge badge--done">Publicada</span>
+                            </header>
+                            <p class="app-card__type">Movilidad · Pasajero</p>
+                            <h3 class="app-card__title">Llévame App</h3>
+                            <p class="app-card__desc">
+                                App de movilidad para pasajeros. Desarrollo del módulo y publicación
+                                en App Store bajo cuenta propia de desarrollador.
+                            </p>
+                            <ul class="app-card__stack">
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#tech-react" /></svg
+                                    >React Native
+                                </li>
+                            </ul>
+                            <ul class="store-links">
+                                <li>
+                                    <a
+                                        class="store-link"
+                                        href="https://apps.apple.com/bo/app/id6450678669"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        App Store
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#ui-external-link" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="app-card reveal">
+                            <header class="app-card__head">
+                                <svg
+                                    class="icon app-card__icon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                >
+                                    <use href="img/icons.svg#ui-smartphone" />
+                                </svg>
+                                <span class="badge badge--done">Publicada</span>
+                            </header>
+                            <p class="app-card__type">Movilidad · Conductor</p>
+                            <h3 class="app-card__title">Llévame Driver</h3>
+                            <p class="app-card__desc">
+                                Módulo para conductores de la plataforma, con pruebas de
+                                funcionalidad, usabilidad, rendimiento y seguridad.
+                            </p>
+                            <ul class="app-card__stack">
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#tech-react" /></svg
+                                    >React Native
+                                </li>
+                                <li>
+                                    <svg class="icon icon--ui" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#ui-clipboard-check" /></svg
+                                    >QA
+                                </li>
+                            </ul>
+                            <ul class="store-links">
+                                <li>
+                                    <a
+                                        class="store-link"
+                                        href="https://apps.apple.com/bo/app/id6469526845"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        App Store
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#ui-external-link" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section projects" aria-labelledby="projects-title">
                 <div class="container">
                     <h2 id="projects-title" class="section__title reveal">Proyectos</h2>
                     <p class="section__lead reveal">
@@ -852,7 +1074,11 @@
                 </div>
             </section>
 
-            <section id="education" class="section education" aria-labelledby="education-title">
+            <section
+                id="education"
+                class="section section--alt education"
+                aria-labelledby="education-title"
+            >
                 <div class="container">
                     <h2 id="education-title" class="section__title section__title--spaced reveal">
                         Formación
@@ -889,11 +1115,7 @@
                 </div>
             </section>
 
-            <section
-                id="hobbies"
-                class="section section--alt hobbies"
-                aria-labelledby="hobbies-title"
-            >
+            <section id="hobbies" class="section hobbies" aria-labelledby="hobbies-title">
                 <div class="container">
                     <h2 id="hobbies-title" class="section__title section__title--spaced reveal">
                         Intereses
@@ -940,7 +1162,11 @@
                 </div>
             </section>
 
-            <section id="contact" class="section contact" aria-labelledby="contact-title">
+            <section
+                id="contact"
+                class="section section--alt contact"
+                aria-labelledby="contact-title"
+            >
                 <div class="container">
                     <h2 id="contact-title" class="section__title reveal">Contacto</h2>
                     <p class="section__lead reveal">

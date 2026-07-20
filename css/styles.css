@@ -362,7 +362,10 @@ section[id] {
     z-index: 150;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    /* "safe" evita que, si el contenido no cabe, el centrado empuje las
+       primeras entradas fuera del área scrolleable y queden inalcanzables. */
+    justify-content: safe center;
     padding: 120px var(--gutter) 56px;
     background: var(--bg);
     overflow-y: auto;
@@ -934,6 +937,130 @@ section[id] {
 }
 
 /* ============================================================
+   Apps publicadas
+   ============================================================ */
+
+/* 340px reparte las 4 tarjetas en 2x2 en escritorio (mismo umbral que
+   .project-grid); con 300px caben 3 y la cuarta queda huérfana. */
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 28px;
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    transition:
+        transform var(--transition),
+        border-color var(--transition);
+}
+
+.app-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.app-card__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.app-card__icon {
+    width: 28px;
+    height: 28px;
+    color: var(--accent);
+}
+
+.app-card__type {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+}
+
+.app-card__title {
+    margin-top: -8px;
+    font-size: 22px;
+}
+
+.app-card__desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.app-card__stack {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.app-card__stack li {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.app-card__stack .icon {
+    width: 13px;
+    height: 13px;
+}
+
+/* Enlaces a tiendas: chips sólidos, empujados al pie de la tarjeta
+   para que todas las tarjetas los alineen a la misma altura. */
+.store-links {
+    list-style: none;
+    margin: auto 0 0;
+    padding: 16px 0 0;
+    border-top: 1px solid var(--line-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.store-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    border: 1.5px solid var(--line);
+    border-radius: 2px;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+.store-link:hover {
+    background: var(--line);
+    color: var(--bg);
+}
+
+.store-link .icon {
+    width: 13px;
+    height: 13px;
+}
+
+/* ============================================================
    Proyectos
    ============================================================ */
 
@@ -1330,6 +1457,31 @@ a.contact-card:hover {
    Responsive
    ============================================================ */
 
+/* Con 8 entradas el menú no entra en pantallas de portátil (~800px de alto).
+   Se compacta en vez de obligar a scrollear para llegar a "Contacto".
+   Va aquí, después de las reglas base: @media no aporta especificidad. */
+@media (height <= 900px) {
+    .menu {
+        padding-top: 96px;
+    }
+
+    .menu__list {
+        gap: 2px;
+    }
+
+    .menu__item {
+        padding-bottom: 6px;
+    }
+
+    .menu__link {
+        font-size: clamp(1.5rem, 4vw, 2.35rem);
+    }
+
+    .menu__footer {
+        margin-top: 28px;
+    }
+}
+
 @media (width <= 900px) {
     .hero {
         min-height: auto;
@@ -1371,6 +1523,7 @@ a.contact-card:hover {
         padding-right: 28px;
     }
 
+    .app-grid,
     .project-grid,
     .hobby-grid,
     .contact__grid {
