@@ -1,546 +1,1009 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rolando César Vásquez Tavera — Desarrollador web, móvil y QA. Tarija, Bolivia. Stack: JavaScript, TypeScript, React, Flutter, PHP, Java.">
-    <meta name="keywords" content="desarrollador web, Flutter, React, JavaScript, TypeScript, PHP, QA, Tarija, Bolivia, freelancer">
-    <meta name="author" content="Rolando César Vásquez Tavera">
-    <meta name="theme-color" content="#0a0e1a">
-    <meta name="color-scheme" content="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Rolando César Vásquez Tavera — Desarrollador web, móvil y QA. Tarija, Bolivia. Stack: JavaScript, TypeScript, React, Flutter, PHP, Java."
+        />
+        <meta
+            name="keywords"
+            content="desarrollador web, Flutter, React, JavaScript, TypeScript, PHP, QA, Tarija, Bolivia, freelancer"
+        />
+        <meta name="author" content="Rolando César Vásquez Tavera" />
+        <meta name="theme-color" content="#0a0e1a" />
+        <meta name="color-scheme" content="dark" />
 
-    <link rel="canonical" href="https://rolandocesar-prog-dev.github.io/cv-web/">
+        <link rel="canonical" href="https://rolandocesar-prog-dev.github.io/cv-web/" />
 
-    <meta property="og:title" content="Rolando Vásquez — Desarrollador">
-    <meta property="og:description" content="Portfolio de Rolando César Vásquez Tavera. Desarrollo web, móvil y QA desde Tarija, Bolivia.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rolandocesar-prog-dev.github.io/cv-web/">
-    <meta property="og:locale" content="es_BO">
-    <meta property="og:image" content="https://rolandocesar-prog-dev.github.io/cv-web/img/og-image.svg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Rolando Vásquez — Desarrollador">
+        <meta property="og:title" content="Rolando Vásquez — Desarrollador" />
+        <meta
+            property="og:description"
+            content="Portfolio de Rolando César Vásquez Tavera. Desarrollo web, móvil y QA desde Tarija, Bolivia."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://rolandocesar-prog-dev.github.io/cv-web/" />
+        <meta property="og:locale" content="es_BO" />
+        <meta
+            property="og:image"
+            content="https://rolandocesar-prog-dev.github.io/cv-web/img/og-image.svg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Rolando Vásquez — Desarrollador" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rolando Vásquez — Desarrollador">
-    <meta name="twitter:description" content="Portfolio de Rolando César Vásquez Tavera. Web, móvil y QA.">
-    <meta name="twitter:image" content="https://rolandocesar-prog-dev.github.io/cv-web/img/og-image.svg">
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Rolando Vásquez — Desarrollador" />
+        <meta
+            name="twitter:description"
+            content="Portfolio de Rolando César Vásquez Tavera. Web, móvil y QA."
+        />
+        <meta
+            name="twitter:image"
+            content="https://rolandocesar-prog-dev.github.io/cv-web/img/og-image.svg"
+        />
 
-    <title>Rolando Vásquez — Desarrollador</title>
+        <title>Rolando Vásquez — Desarrollador</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="img/perfil-web.webp" fetchpriority="high">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="img/perfil.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preload" as="image" href="img/perfil-web.webp" fetchpriority="high" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" type="image/x-icon" href="img/perfil.ico" />
 
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rolando César Vásquez Tavera",
-        "jobTitle": "Desarrollador Web y Móvil",
-        "url": "https://rolandocesar-prog-dev.github.io/cv-web/",
-        "image": "https://rolandocesar-prog-dev.github.io/cv-web/img/perfil-web.webp",
-        "telephone": "+59178249575",
-        "email": "rolando.sha256@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Tarija",
-            "addressCountry": "BO"
-        },
-        "knowsLanguage": [
-            { "@type": "Language", "name": "Spanish", "alternateName": "es" },
-            { "@type": "Language", "name": "English", "alternateName": "en" }
-        ],
-        "knowsAbout": [
-            "JavaScript", "TypeScript", "React", "Flutter", "PHP", "Java",
-            "Spring Boot", "Angular", "PostgreSQL", "MySQL", "Firebase",
-            "QA Testing", "Desarrollo Web", "Desarrollo Móvil"
-        ]
-    }
-    </script>
-</head>
-<body>
-    <a href="#main" class="skip-link">Saltar al contenido principal</a>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Rolando César Vásquez Tavera",
+                "jobTitle": "Desarrollador Web y Móvil",
+                "url": "https://rolandocesar-prog-dev.github.io/cv-web/",
+                "image": "https://rolandocesar-prog-dev.github.io/cv-web/img/perfil-web.webp",
+                "telephone": "+59178249575",
+                "email": "rolando.sha256@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Tarija",
+                    "addressCountry": "BO"
+                },
+                "knowsLanguage": [
+                    { "@type": "Language", "name": "Spanish", "alternateName": "es" },
+                    { "@type": "Language", "name": "English", "alternateName": "en" }
+                ],
+                "knowsAbout": [
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "Flutter",
+                    "PHP",
+                    "Java",
+                    "Spring Boot",
+                    "Angular",
+                    "PostgreSQL",
+                    "MySQL",
+                    "Firebase",
+                    "QA Testing",
+                    "Desarrollo Web",
+                    "Desarrollo Móvil"
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <a href="#main" class="skip-link">Saltar al contenido principal</a>
 
-    <header class="header" data-scroll-state="top">
-        <div class="container header__inner">
-            <a href="#hero" class="logo" aria-label="Inicio — Rolando Vásquez">
-                <span class="logo__icon mono" aria-hidden="true">&lt;/&gt;</span>
-                <span class="logo__text">RV</span>
-            </a>
+        <header class="header" data-scroll-state="top">
+            <div class="container header__inner">
+                <a href="#hero" class="logo" aria-label="Inicio — Rolando Vásquez">
+                    <span class="logo__icon mono" aria-hidden="true">&lt;/&gt;</span>
+                    <span class="logo__text">RV</span>
+                </a>
 
-            <nav class="nav nav--desktop" aria-label="Navegación principal">
-                <ul class="nav__list">
-                    <li><a href="#hero" class="nav__link" data-spy>Inicio</a></li>
-                    <li><a href="#about" class="nav__link" data-spy>Sobre mí</a></li>
-                    <li><a href="#skills" class="nav__link" data-spy>Skills</a></li>
-                    <li><a href="#projects" class="nav__link" data-spy>Proyectos</a></li>
-                    <li><a href="#education" class="nav__link" data-spy>Formación</a></li>
-                    <li><a href="#hobbies" class="nav__link" data-spy>Intereses</a></li>
-                    <li><a href="#contact" class="nav__link" data-spy>Contacto</a></li>
-                </ul>
-            </nav>
+                <nav class="nav nav--desktop" aria-label="Navegación principal">
+                    <ul class="nav__list">
+                        <li><a href="#hero" class="nav__link" data-spy>Inicio</a></li>
+                        <li><a href="#about" class="nav__link" data-spy>Sobre mí</a></li>
+                        <li><a href="#skills" class="nav__link" data-spy>Skills</a></li>
+                        <li><a href="#projects" class="nav__link" data-spy>Proyectos</a></li>
+                        <li><a href="#education" class="nav__link" data-spy>Formación</a></li>
+                        <li><a href="#hobbies" class="nav__link" data-spy>Intereses</a></li>
+                        <li><a href="#contact" class="nav__link" data-spy>Contacto</a></li>
+                    </ul>
+                </nav>
 
-            <div class="header__actions">
-                <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
-                    <span class="menu-toggle__bar" aria-hidden="true"></span>
-                    <span class="menu-toggle__bar" aria-hidden="true"></span>
-                    <span class="menu-toggle__bar" aria-hidden="true"></span>
-                </button>
+                <div class="header__actions">
+                    <button
+                        type="button"
+                        class="menu-toggle"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        aria-label="Abrir menú"
+                    >
+                        <span class="menu-toggle__bar" aria-hidden="true"></span>
+                        <span class="menu-toggle__bar" aria-hidden="true"></span>
+                        <span class="menu-toggle__bar" aria-hidden="true"></span>
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <div id="mobile-menu" class="mobile-menu" hidden>
-            <nav class="mobile-menu__nav" aria-label="Móvil">
-                <ul class="mobile-menu__list">
-                    <li><a href="#hero" class="mobile-menu__link">Inicio</a></li>
-                    <li><a href="#about" class="mobile-menu__link">Sobre mí</a></li>
-                    <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
-                    <li><a href="#projects" class="mobile-menu__link">Proyectos</a></li>
-                    <li><a href="#education" class="mobile-menu__link">Formación</a></li>
-                    <li><a href="#hobbies" class="mobile-menu__link">Intereses</a></li>
-                    <li><a href="#contact" class="mobile-menu__link">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main id="main">
-        <section id="hero" class="hero" aria-labelledby="hero-title">
-            <div class="hero__bg" aria-hidden="true">
-                <div class="hero__grid"></div>
-                <div class="hero__blob"></div>
+            <div id="mobile-menu" class="mobile-menu" hidden>
+                <nav class="mobile-menu__nav" aria-label="Móvil">
+                    <ul class="mobile-menu__list">
+                        <li><a href="#hero" class="mobile-menu__link">Inicio</a></li>
+                        <li><a href="#about" class="mobile-menu__link">Sobre mí</a></li>
+                        <li><a href="#skills" class="mobile-menu__link">Skills</a></li>
+                        <li><a href="#projects" class="mobile-menu__link">Proyectos</a></li>
+                        <li><a href="#education" class="mobile-menu__link">Formación</a></li>
+                        <li><a href="#hobbies" class="mobile-menu__link">Intereses</a></li>
+                        <li><a href="#contact" class="mobile-menu__link">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="container hero__inner">
-                <div class="hero__text">
-                    <p class="hero__greeting mono"><span class="accent">&gt;</span> Hola, soy</p>
-                    <h1 id="hero-title" class="hero__name gradient-text">Rolando Vásquez</h1>
-                    <h2 class="hero__role">
-                        <span class="mono accent" aria-hidden="true">&lt;</span>
-                        <span class="hero__typewriter mono" data-typewriter='["Desarrollador Web","Mobile Developer","QA Tester"]'></span>
-                        <span class="mono accent" aria-hidden="true">/&gt;</span>
-                    </h2>
-                    <p class="hero__desc">
-                        Desarrollo software a medida y asesoro a empresas y emprendedores en la adopción de
-                        soluciones tecnológicas — desde <strong>Tarija, Bolivia</strong>, con alcance remoto.
+        </header>
+
+        <main id="main">
+            <section id="hero" class="hero" aria-labelledby="hero-title">
+                <div class="hero__bg" aria-hidden="true">
+                    <div class="hero__grid"></div>
+                    <div class="hero__blob"></div>
+                </div>
+                <div class="container hero__inner">
+                    <div class="hero__text">
+                        <p class="hero__greeting mono">
+                            <span class="accent">&gt;</span> Hola, soy
+                        </p>
+                        <h1 id="hero-title" class="hero__name gradient-text">Rolando Vásquez</h1>
+                        <h2 class="hero__role">
+                            <span class="mono accent" aria-hidden="true">&lt;</span>
+                            <span
+                                class="hero__typewriter mono"
+                                data-typewriter='["Desarrollador Web","Mobile Developer","QA Tester"]'
+                            ></span>
+                            <span class="mono accent" aria-hidden="true">/&gt;</span>
+                        </h2>
+                        <p class="hero__desc">
+                            Desarrollo software a medida y asesoro a empresas y emprendedores en la
+                            adopción de soluciones tecnológicas — desde
+                            <strong>Tarija, Bolivia</strong>, con alcance remoto.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="#projects" class="btn btn--primary">
+                                Ver proyectos
+                                <svg class="icon" aria-hidden="true" focusable="false">
+                                    <use href="img/icons.svg#ui-arrow-right" />
+                                </svg>
+                            </a>
+                            <a href="#contact" class="btn btn--ghost">Contáctame</a>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__photo-ring" aria-hidden="true"></div>
+                        <div class="hero__photo-wrap">
+                            <img
+                                src="img/perfil-web.webp"
+                                width="320"
+                                height="320"
+                                alt="Rolando César Vásquez Tavera, desarrollador"
+                                class="hero__photo"
+                                fetchpriority="high"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <a href="#about" class="hero__scroll" aria-label="Ir a la sección Sobre mí">
+                    <span class="hero__scroll-text mono">scroll</span>
+                    <svg class="icon" aria-hidden="true" focusable="false">
+                        <use href="img/icons.svg#ui-chevron-down" />
+                    </svg>
+                </a>
+            </section>
+
+            <section id="about" class="section about" aria-labelledby="about-title">
+                <div class="container">
+                    <h2 id="about-title" class="section__title reveal">Sobre mí</h2>
+                    <div class="about__grid">
+                        <div class="about__media reveal">
+                            <img
+                                src="img/perfil-web.webp"
+                                width="280"
+                                height="280"
+                                loading="lazy"
+                                alt=""
+                                class="about__photo"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="about__body reveal">
+                            <p class="about__lead">
+                                Soy <strong>programador</strong> y me apasiona crear soluciones
+                                digitales claras, rápidas y accesibles.
+                            </p>
+                            <p class="about__text">
+                                Experiencia en el sector tecnológico: desarrollo web, aplicaciones
+                                móviles y testing de calidad. Trabajo con equipos y proyectos
+                                reales, priorizando buenas prácticas y entregas mantenibles.
+                            </p>
+                            <ul class="about__meta">
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#ui-map-pin" />
+                                    </svg>
+                                    Tarija, Bolivia
+                                </li>
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#ui-phone" />
+                                    </svg>
+                                    +591 78249575
+                                </li>
+                                <li>
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#ui-flag" />
+                                    </svg>
+                                    Nacionalidad boliviana
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="stats reveal" role="list">
+                        <div class="stat" role="listitem">
+                            <span class="stat__num mono">5+</span>
+                            <span class="stat__label">Años como freelancer</span>
+                        </div>
+                        <div class="stat" role="listitem">
+                            <span class="stat__num mono">6+</span>
+                            <span class="stat__label">Proyectos destacados</span>
+                        </div>
+                        <div class="stat" role="listitem">
+                            <span class="stat__num mono">3</span>
+                            <span class="stat__label">Áreas: web, móvil, QA</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills" aria-labelledby="skills-title">
+                <div class="container">
+                    <h2 id="skills-title" class="section__title reveal">Skills</h2>
+                    <p class="section__lead reveal">
+                        Stack y herramientas que uso en producción y proyectos personales.
                     </p>
-                    <div class="hero__cta">
-                        <a href="#projects" class="btn btn--primary">
-                            Ver proyectos
-                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-arrow-right"/></svg>
-                        </a>
-                        <a href="#contact" class="btn btn--ghost">Contáctame</a>
-                    </div>
-                </div>
-                <div class="hero__visual">
-                    <div class="hero__photo-ring" aria-hidden="true"></div>
-                    <div class="hero__photo-wrap">
-                        <img src="img/perfil-web.webp" width="320" height="320" alt="Rolando César Vásquez Tavera, desarrollador" class="hero__photo" fetchpriority="high">
-                    </div>
-                </div>
-            </div>
-            <a href="#about" class="hero__scroll" aria-label="Ir a la sección Sobre mí">
-                <span class="hero__scroll-text mono">scroll</span>
-                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-chevron-down"/></svg>
-            </a>
-        </section>
 
-        <section id="about" class="section about" aria-labelledby="about-title">
-            <div class="container">
-                <h2 id="about-title" class="section__title reveal">Sobre mí</h2>
-                <div class="about__grid">
-                    <div class="about__media reveal">
-                        <img src="img/perfil-web.webp" width="280" height="280" loading="lazy" alt="" class="about__photo" decoding="async">
+                    <div class="skills__tabs reveal">
+                        <div
+                            role="tablist"
+                            class="skills__tablist mono"
+                            aria-label="Categorías de habilidades técnicas"
+                        >
+                            <button
+                                type="button"
+                                role="tab"
+                                id="tab-lang"
+                                class="skills__tab"
+                                aria-selected="true"
+                                aria-controls="panel-lang"
+                            >
+                                Lenguajes
+                            </button>
+                            <button
+                                type="button"
+                                role="tab"
+                                id="tab-fw"
+                                class="skills__tab"
+                                aria-selected="false"
+                                aria-controls="panel-fw"
+                                tabindex="-1"
+                            >
+                                Frameworks
+                            </button>
+                            <button
+                                type="button"
+                                role="tab"
+                                id="tab-db"
+                                class="skills__tab"
+                                aria-selected="false"
+                                aria-controls="panel-db"
+                                tabindex="-1"
+                            >
+                                Datos &amp; tools
+                            </button>
+                        </div>
+
+                        <div
+                            id="panel-lang"
+                            role="tabpanel"
+                            class="skills__panel"
+                            aria-labelledby="tab-lang"
+                        >
+                            <div class="skill-grid">
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-js" />
+                                    </svg>
+                                    <h3 class="skill-card__name">JavaScript</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-ts" />
+                                    </svg>
+                                    <h3 class="skill-card__name">TypeScript</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-php" />
+                                    </svg>
+                                    <h3 class="skill-card__name">PHP</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-python" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Python</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-java" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Java</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-dart" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Dart</h3>
+                                </article>
+                            </div>
+                        </div>
+                        <div
+                            id="panel-fw"
+                            role="tabpanel"
+                            class="skills__panel"
+                            aria-labelledby="tab-fw"
+                            hidden
+                        >
+                            <div class="skill-grid">
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-react" />
+                                    </svg>
+                                    <h3 class="skill-card__name">React</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-flutter" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Flutter</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-react" />
+                                    </svg>
+                                    <h3 class="skill-card__name">React Native</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-angular" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Angular</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-spring" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Spring Boot</h3>
+                                </article>
+                            </div>
+                        </div>
+                        <div
+                            id="panel-db"
+                            role="tabpanel"
+                            class="skills__panel"
+                            aria-labelledby="tab-db"
+                            hidden
+                        >
+                            <div class="skill-grid">
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-mysql" />
+                                    </svg>
+                                    <h3 class="skill-card__name">MySQL</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-postgresql" />
+                                    </svg>
+                                    <h3 class="skill-card__name">PostgreSQL</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-firebase" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Firebase</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-supabase" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Supabase</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-git" />
+                                    </svg>
+                                    <h3 class="skill-card__name">Git</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#tech-github" />
+                                    </svg>
+                                    <h3 class="skill-card__name">GitHub</h3>
+                                </article>
+                                <article class="skill-card">
+                                    <svg
+                                        class="skill-card__svg skill-card__svg--ui"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <use href="img/icons.svg#ui-clipboard-check" />
+                                    </svg>
+                                    <h3 class="skill-card__name">QA / Testing</h3>
+                                </article>
+                            </div>
+                        </div>
                     </div>
-                    <div class="about__body reveal">
-                        <p class="about__lead">
-                            Soy <strong>programador</strong> y me apasiona crear soluciones digitales claras, rápidas y accesibles.
-                        </p>
-                        <p class="about__text">
-                            Experiencia en el sector tecnológico: desarrollo web, aplicaciones móviles y testing de calidad.
-                            Trabajo con equipos y proyectos reales, priorizando buenas prácticas y entregas mantenibles.
-                        </p>
-                        <ul class="about__meta">
-                            <li>
-                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-map-pin"/></svg>
-                                Tarija, Bolivia
+
+                    <h3 class="skills__subtitle reveal">Habilidades blandas e idiomas</h3>
+                    <div class="soft-row reveal">
+                        <ul class="chips" aria-label="Habilidades blandas">
+                            <li class="chip">
+                                <svg class="icon" aria-hidden="true" focusable="false">
+                                    <use href="img/icons.svg#ui-target" />
+                                </svg>
+                                Resolución de problemas
                             </li>
-                            <li>
-                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-phone"/></svg>
-                                +591 78249575
+                            <li class="chip">
+                                <svg class="icon" aria-hidden="true" focusable="false">
+                                    <use href="img/icons.svg#ui-users" />
+                                </svg>
+                                Trabajo en equipo
                             </li>
-                            <li>
-                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-flag"/></svg>
-                                Nacionalidad boliviana
+                            <li class="chip">
+                                <svg class="icon" aria-hidden="true" focusable="false">
+                                    <use href="img/icons.svg#ui-trending-up" />
+                                </svg>
+                                Liderazgo
+                            </li>
+                            <li class="chip">
+                                <svg class="icon" aria-hidden="true" focusable="false">
+                                    <use href="img/icons.svg#ui-refresh-cw" />
+                                </svg>
+                                Adaptabilidad
+                            </li>
+                        </ul>
+
+                        <ul class="languages" aria-label="Idiomas">
+                            <li class="language">
+                                <div class="language__head">
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#ui-languages" />
+                                    </svg>
+                                    <span class="language__name">Español</span>
+                                    <span class="language__level mono">Nativo</span>
+                                </div>
+                                <div
+                                    class="language__bar"
+                                    role="progressbar"
+                                    aria-label="Nivel de español: nativo"
+                                    aria-valuenow="100"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <span class="language__fill" style="--level: 100%"></span>
+                                </div>
+                            </li>
+                            <li class="language">
+                                <div class="language__head">
+                                    <svg class="icon" aria-hidden="true" focusable="false">
+                                        <use href="img/icons.svg#ui-languages" />
+                                    </svg>
+                                    <span class="language__name"
+                                        >Inglés <span class="language__hint">(técnico)</span></span
+                                    >
+                                    <span class="language__level mono">B1 básico</span>
+                                </div>
+                                <div
+                                    class="language__bar"
+                                    role="progressbar"
+                                    aria-label="Nivel de inglés técnico: B1 básico"
+                                    aria-valuenow="45"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <span class="language__fill" style="--level: 45%"></span>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="stats reveal" role="list">
-                    <div class="stat" role="listitem">
-                        <span class="stat__num mono">5+</span>
-                        <span class="stat__label">Años como freelancer</span>
-                    </div>
-                    <div class="stat" role="listitem">
-                        <span class="stat__num mono">6+</span>
-                        <span class="stat__label">Proyectos destacados</span>
-                    </div>
-                    <div class="stat" role="listitem">
-                        <span class="stat__num mono">3</span>
-                        <span class="stat__label">Áreas: web, móvil, QA</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="skills" class="section skills" aria-labelledby="skills-title">
-            <div class="container">
-                <h2 id="skills-title" class="section__title reveal">Skills</h2>
-                <p class="section__lead reveal">Stack y herramientas que uso en producción y proyectos personales.</p>
+            <section id="projects" class="section projects" aria-labelledby="projects-title">
+                <div class="container">
+                    <h2 id="projects-title" class="section__title reveal">Proyectos</h2>
+                    <p class="section__lead reveal">
+                        Selección de trabajo reciente y proyectos completados como freelancer.
+                    </p>
 
-                <div class="skills__tabs reveal">
-                    <div role="tablist" class="skills__tablist mono" aria-label="Categorías de habilidades técnicas">
-                        <button type="button" role="tab" id="tab-lang" class="skills__tab" aria-selected="true" aria-controls="panel-lang">Lenguajes</button>
-                        <button type="button" role="tab" id="tab-fw" class="skills__tab" aria-selected="false" aria-controls="panel-fw" tabindex="-1">Frameworks</button>
-                        <button type="button" role="tab" id="tab-db" class="skills__tab" aria-selected="false" aria-controls="panel-db" tabindex="-1">Datos &amp; tools</button>
-                    </div>
-
-                    <div id="panel-lang" role="tabpanel" class="skills__panel" aria-labelledby="tab-lang">
-                        <div class="skill-grid">
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-js"/></svg><h3 class="skill-card__name">JavaScript</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-ts"/></svg><h3 class="skill-card__name">TypeScript</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-php"/></svg><h3 class="skill-card__name">PHP</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-python"/></svg><h3 class="skill-card__name">Python</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-java"/></svg><h3 class="skill-card__name">Java</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-dart"/></svg><h3 class="skill-card__name">Dart</h3></article>
-                        </div>
-                    </div>
-                    <div id="panel-fw" role="tabpanel" class="skills__panel" aria-labelledby="tab-fw" hidden>
-                        <div class="skill-grid">
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg><h3 class="skill-card__name">React</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-flutter"/></svg><h3 class="skill-card__name">Flutter</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg><h3 class="skill-card__name">React Native</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-angular"/></svg><h3 class="skill-card__name">Angular</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-spring"/></svg><h3 class="skill-card__name">Spring Boot</h3></article>
-                        </div>
-                    </div>
-                    <div id="panel-db" role="tabpanel" class="skills__panel" aria-labelledby="tab-db" hidden>
-                        <div class="skill-grid">
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-mysql"/></svg><h3 class="skill-card__name">MySQL</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-postgresql"/></svg><h3 class="skill-card__name">PostgreSQL</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-firebase"/></svg><h3 class="skill-card__name">Firebase</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-supabase"/></svg><h3 class="skill-card__name">Supabase</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-git"/></svg><h3 class="skill-card__name">Git</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-github"/></svg><h3 class="skill-card__name">GitHub</h3></article>
-                            <article class="skill-card"><svg class="skill-card__svg skill-card__svg--ui" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-clipboard-check"/></svg><h3 class="skill-card__name">QA / Testing</h3></article>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 class="skills__subtitle reveal">Habilidades blandas e idiomas</h3>
-                <div class="soft-row reveal">
-                    <ul class="chips" aria-label="Habilidades blandas">
-                        <li class="chip">
-                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-target"/></svg>
-                            Resolución de problemas
-                        </li>
-                        <li class="chip">
-                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-users"/></svg>
-                            Trabajo en equipo
-                        </li>
-                        <li class="chip">
-                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-trending-up"/></svg>
-                            Liderazgo
-                        </li>
-                        <li class="chip">
-                            <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-refresh-cw"/></svg>
-                            Adaptabilidad
-                        </li>
-                    </ul>
-
-                    <ul class="languages" aria-label="Idiomas">
-                        <li class="language">
-                            <div class="language__head">
-                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-languages"/></svg>
-                                <span class="language__name">Español</span>
-                                <span class="language__level mono">Nativo</span>
-                            </div>
-                            <div class="language__bar" role="progressbar" aria-label="Nivel de español: nativo" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                <span class="language__fill" style="--level: 100%;"></span>
-                            </div>
-                        </li>
-                        <li class="language">
-                            <div class="language__head">
-                                <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-languages"/></svg>
-                                <span class="language__name">Inglés <span class="language__hint">(técnico)</span></span>
-                                <span class="language__level mono">B1 básico</span>
-                            </div>
-                            <div class="language__bar" role="progressbar" aria-label="Nivel de inglés técnico: B1 básico" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                <span class="language__fill" style="--level: 45%;"></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section projects" aria-labelledby="projects-title">
-            <div class="container">
-                <h2 id="projects-title" class="section__title reveal">Proyectos</h2>
-                <p class="section__lead reveal">Selección de trabajo reciente y proyectos completados como freelancer.</p>
-
-                <div class="project-grid">
-                    <article class="project reveal">
-                        <div class="project__body">
-                            <div class="project__dots" aria-hidden="true">
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                            </div>
-                            <header class="project__header">
-                                <div>
-                                    <p class="project__type">Desarrollo Web</p>
-                                    <h3 class="project__title">Voz Liberal Tarija</h3>
+                    <div class="project-grid">
+                        <article class="project reveal">
+                            <div class="project__body">
+                                <div class="project__dots" aria-hidden="true">
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
                                 </div>
-                                <span class="badge badge--done">Completado</span>
-                            </header>
-                            <p class="project__desc">Sitio web institucional para plataforma política. Desarrollado sin frameworks, con enfoque en rendimiento, accesibilidad y carga rápida.</p>
-                            <ul class="project__stack">
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-html5"/></svg> HTML5</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-css3"/></svg> CSS3</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-js"/></svg> JavaScript</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="project reveal">
-                        <div class="project__body">
-                            <div class="project__dots" aria-hidden="true">
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
+                                <header class="project__header">
+                                    <div>
+                                        <p class="project__type">Desarrollo Web</p>
+                                        <h3 class="project__title">Voz Liberal Tarija</h3>
+                                    </div>
+                                    <span class="badge badge--done">Completado</span>
+                                </header>
+                                <p class="project__desc">
+                                    Sitio web institucional para plataforma política. Desarrollado
+                                    sin frameworks, con enfoque en rendimiento, accesibilidad y
+                                    carga rápida.
+                                </p>
+                                <ul class="project__stack">
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-html5" />
+                                        </svg>
+                                        HTML5
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-css3" />
+                                        </svg>
+                                        CSS3
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-js" />
+                                        </svg>
+                                        JavaScript
+                                    </li>
+                                </ul>
                             </div>
-                            <header class="project__header">
-                                <div>
-                                    <p class="project__type">Aplicación Web</p>
-                                    <h3 class="project__title">Test Político Boliviano</h3>
-                                </div>
-                                <span class="badge badge--done">Completado</span>
-                            </header>
-                            <p class="project__desc">Plataforma interactiva para iniciativa ciudadana. Cuestionario político con resultados en tiempo real, desarrollado con Angular y TypeScript.</p>
-                            <ul class="project__stack">
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-angular"/></svg> Angular</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-ts"/></svg> TypeScript</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-css3"/></svg> CSS3</li>
-                            </ul>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="project reveal">
-                        <div class="project__body">
-                            <div class="project__dots" aria-hidden="true">
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                            </div>
-                            <header class="project__header">
-                                <div>
-                                    <p class="project__type">Web &amp; Mobile · Freelance remoto</p>
-                                    <h3 class="project__title">Startup — Santa Cruz</h3>
+                        <article class="project reveal">
+                            <div class="project__body">
+                                <div class="project__dots" aria-hidden="true">
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
                                 </div>
-                                <span class="badge badge--progress">En desarrollo</span>
-                            </header>
-                            <p class="project__desc">Desarrollo de aplicación móvil y panel web para startup tecnológica. Arquitectura con Firebase como backend en tiempo real.</p>
-                            <ul class="project__stack">
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-flutter"/></svg> Flutter</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg> React</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-firebase"/></svg> Firebase</li>
-                            </ul>
-                        </div>
-                    </article>
+                                <header class="project__header">
+                                    <div>
+                                        <p class="project__type">Aplicación Web</p>
+                                        <h3 class="project__title">Test Político Boliviano</h3>
+                                    </div>
+                                    <span class="badge badge--done">Completado</span>
+                                </header>
+                                <p class="project__desc">
+                                    Plataforma interactiva para iniciativa ciudadana. Cuestionario
+                                    político con resultados en tiempo real, desarrollado con Angular
+                                    y TypeScript.
+                                </p>
+                                <ul class="project__stack">
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-angular" />
+                                        </svg>
+                                        Angular
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-ts" />
+                                        </svg>
+                                        TypeScript
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-css3" />
+                                        </svg>
+                                        CSS3
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
 
-                    <article class="project reveal">
-                        <div class="project__body">
-                            <div class="project__dots" aria-hidden="true">
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                            </div>
-                            <header class="project__header">
-                                <div>
-                                    <p class="project__type">Sistema Web</p>
-                                    <h3 class="project__title">Sistema Radio Móvil Andaluz</h3>
+                        <article class="project reveal">
+                            <div class="project__body">
+                                <div class="project__dots" aria-hidden="true">
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
                                 </div>
-                                <span class="badge badge--done">Completado</span>
-                            </header>
-                            <p class="project__desc">Sistema completo para control y despacho de llamadas radiales: registro de clientes, historial y panel de operadores en tiempo real.</p>
-                            <ul class="project__stack">
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-php"/></svg> PHP</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-js"/></svg> JavaScript</li>
-                                <li><span class="stack-fallback mono">Ajax</span></li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-mysql"/></svg> MySQL</li>
-                            </ul>
-                        </div>
-                    </article>
+                                <header class="project__header">
+                                    <div>
+                                        <p class="project__type">
+                                            Web &amp; Mobile · Freelance remoto
+                                        </p>
+                                        <h3 class="project__title">Startup — Santa Cruz</h3>
+                                    </div>
+                                    <span class="badge badge--progress">En desarrollo</span>
+                                </header>
+                                <p class="project__desc">
+                                    Desarrollo de aplicación móvil y panel web para startup
+                                    tecnológica. Arquitectura con Firebase como backend en tiempo
+                                    real.
+                                </p>
+                                <ul class="project__stack">
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-flutter" />
+                                        </svg>
+                                        Flutter
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-react" />
+                                        </svg>
+                                        React
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-firebase" />
+                                        </svg>
+                                        Firebase
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
 
-                    <article class="project reveal">
-                        <div class="project__body">
-                            <div class="project__dots" aria-hidden="true">
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                            </div>
-                            <header class="project__header">
-                                <div>
-                                    <p class="project__type">Aplicación Móvil</p>
-                                    <h3 class="project__title">App OTN-PB Monitoreo</h3>
+                        <article class="project reveal">
+                            <div class="project__body">
+                                <div class="project__dots" aria-hidden="true">
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
                                 </div>
-                                <span class="badge badge--done">Completado</span>
-                            </header>
-                            <p class="project__desc">App móvil para visualización y monitoreo de estaciones meteorológicas satelitales en el valle central de Tarija.</p>
-                            <ul class="project__stack">
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-flutter"/></svg> Flutter</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-spring"/></svg> Spring Boot</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-postgresql"/></svg> PostgreSQL</li>
-                            </ul>
-                        </div>
-                    </article>
+                                <header class="project__header">
+                                    <div>
+                                        <p class="project__type">Sistema Web</p>
+                                        <h3 class="project__title">Sistema Radio Móvil Andaluz</h3>
+                                    </div>
+                                    <span class="badge badge--done">Completado</span>
+                                </header>
+                                <p class="project__desc">
+                                    Sistema completo para control y despacho de llamadas radiales:
+                                    registro de clientes, historial y panel de operadores en tiempo
+                                    real.
+                                </p>
+                                <ul class="project__stack">
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-php" />
+                                        </svg>
+                                        PHP
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-js" />
+                                        </svg>
+                                        JavaScript
+                                    </li>
+                                    <li><span class="stack-fallback mono">Ajax</span></li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-mysql" />
+                                        </svg>
+                                        MySQL
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
 
-                    <article class="project reveal">
-                        <div class="project__body">
-                            <div class="project__dots" aria-hidden="true">
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                                <span class="project__dot"></span>
-                            </div>
-                            <header class="project__header">
-                                <div>
-                                    <p class="project__type">QA / Aseguramiento de calidad</p>
-                                    <h3 class="project__title">QA Testing — Llévame</h3>
+                        <article class="project reveal">
+                            <div class="project__body">
+                                <div class="project__dots" aria-hidden="true">
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
                                 </div>
-                                <span class="badge badge--done">Completado</span>
-                            </header>
-                            <p class="project__desc">Tester QA para startup de movilidad. Pruebas de funcionalidad, usabilidad, rendimiento y seguridad sobre aplicación React Native.</p>
-                            <ul class="project__stack">
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-clipboard-check"/></svg> QA</li>
-                                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#tech-react"/></svg> React Native</li>
-                            </ul>
-                        </div>
-                    </article>
+                                <header class="project__header">
+                                    <div>
+                                        <p class="project__type">Aplicación Móvil</p>
+                                        <h3 class="project__title">App OTN-PB Monitoreo</h3>
+                                    </div>
+                                    <span class="badge badge--done">Completado</span>
+                                </header>
+                                <p class="project__desc">
+                                    App móvil para visualización y monitoreo de estaciones
+                                    meteorológicas satelitales en el valle central de Tarija.
+                                </p>
+                                <ul class="project__stack">
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-flutter" />
+                                        </svg>
+                                        Flutter
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-spring" />
+                                        </svg>
+                                        Spring Boot
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-postgresql" />
+                                        </svg>
+                                        PostgreSQL
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="project reveal">
+                            <div class="project__body">
+                                <div class="project__dots" aria-hidden="true">
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
+                                    <span class="project__dot"></span>
+                                </div>
+                                <header class="project__header">
+                                    <div>
+                                        <p class="project__type">QA / Aseguramiento de calidad</p>
+                                        <h3 class="project__title">QA Testing — Llévame</h3>
+                                    </div>
+                                    <span class="badge badge--done">Completado</span>
+                                </header>
+                                <p class="project__desc">
+                                    Tester QA para startup de movilidad. Pruebas de funcionalidad,
+                                    usabilidad, rendimiento y seguridad sobre aplicación React
+                                    Native.
+                                </p>
+                                <ul class="project__stack">
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#ui-clipboard-check" />
+                                        </svg>
+                                        QA
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-react" />
+                                        </svg>
+                                        React Native
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="education" class="section education" aria-labelledby="education-title">
-            <div class="container">
-                <h2 id="education-title" class="section__title reveal">Formación</h2>
-                <div class="education__layout">
-                    <div class="timeline reveal">
-                        <div class="timeline__item">
-                            <div class="timeline__marker" aria-hidden="true"></div>
-                            <article class="timeline__card">
-                                <h3 class="timeline__title">Bachiller</h3>
-                                <p class="timeline__inst">Colegio Nacional San Luis / CEA San Jerónimo</p>
-                            </article>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__marker" aria-hidden="true"></div>
-                            <article class="timeline__card">
-                                <h3 class="timeline__title">Técnico Superior en Sistemas Informáticos</h3>
-                                <p class="timeline__inst">Instituto Técnico Superior «INCOS»</p>
-                            </article>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__marker" aria-hidden="true"></div>
-                            <article class="timeline__card">
-                                <h3 class="timeline__title">Ingeniería en Sistemas</h3>
-                                <p class="timeline__inst">Universidad Adventista de Bolivia</p>
-                            </article>
+            <section id="education" class="section education" aria-labelledby="education-title">
+                <div class="container">
+                    <h2 id="education-title" class="section__title reveal">Formación</h2>
+                    <div class="education__layout">
+                        <div class="timeline reveal">
+                            <div class="timeline__item">
+                                <div class="timeline__marker" aria-hidden="true"></div>
+                                <article class="timeline__card">
+                                    <h3 class="timeline__title">Bachiller</h3>
+                                    <p class="timeline__inst">
+                                        Colegio Nacional San Luis / CEA San Jerónimo
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__marker" aria-hidden="true"></div>
+                                <article class="timeline__card">
+                                    <h3 class="timeline__title">
+                                        Técnico Superior en Sistemas Informáticos
+                                    </h3>
+                                    <p class="timeline__inst">Instituto Técnico Superior «INCOS»</p>
+                                </article>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__marker" aria-hidden="true"></div>
+                                <article class="timeline__card">
+                                    <h3 class="timeline__title">Ingeniería en Sistemas</h3>
+                                    <p class="timeline__inst">Universidad Adventista de Bolivia</p>
+                                </article>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="hobbies" class="section hobbies" aria-labelledby="hobbies-title">
-            <div class="container">
-                <h2 id="hobbies-title" class="section__title reveal">Intereses</h2>
-                <div class="hobby-grid">
-                    <article class="hobby-card reveal">
-                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-brain-circuit"/></svg>
-                        <h3 class="hobby-card__title">IA y tecnologías emergentes</h3>
-                        <p class="hobby-card__desc">Modelos de lenguaje, automatización e IA aplicada al desarrollo; también exploración de blockchain, integraciones y herramientas que optimizan productos.</p>
-                    </article>
-                    <article class="hobby-card reveal">
-                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-book-open"/></svg>
-                        <h3 class="hobby-card__title">Formación y comunidad</h3>
-                        <p class="hobby-card__desc">Podcasts (Fernando Herrera, Midudev, Brais Moure, Sergio Code), cursos, webinars y eventos para seguir al día en la industria.</p>
-                    </article>
-                    <article class="hobby-card reveal">
-                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-laptop"/></svg>
-                        <h3 class="hobby-card__title">Práctica y equipos</h3>
-                        <p class="hobby-card__desc">Side projects con frameworks nuevos; interés en Scrum y buenas prácticas para colaborar y entregar con calidad.</p>
-                    </article>
+            <section id="hobbies" class="section hobbies" aria-labelledby="hobbies-title">
+                <div class="container">
+                    <h2 id="hobbies-title" class="section__title reveal">Intereses</h2>
+                    <div class="hobby-grid">
+                        <article class="hobby-card reveal">
+                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
+                                <use href="img/icons.svg#ui-brain-circuit" />
+                            </svg>
+                            <h3 class="hobby-card__title">IA y tecnologías emergentes</h3>
+                            <p class="hobby-card__desc">
+                                Modelos de lenguaje, automatización e IA aplicada al desarrollo;
+                                también exploración de blockchain, integraciones y herramientas que
+                                optimizan productos.
+                            </p>
+                        </article>
+                        <article class="hobby-card reveal">
+                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
+                                <use href="img/icons.svg#ui-book-open" />
+                            </svg>
+                            <h3 class="hobby-card__title">Formación y comunidad</h3>
+                            <p class="hobby-card__desc">
+                                Podcasts (Fernando Herrera, Midudev, Brais Moure, Sergio Code),
+                                cursos, webinars y eventos para seguir al día en la industria.
+                            </p>
+                        </article>
+                        <article class="hobby-card reveal">
+                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
+                                <use href="img/icons.svg#ui-laptop" />
+                            </svg>
+                            <h3 class="hobby-card__title">Práctica y equipos</h3>
+                            <p class="hobby-card__desc">
+                                Side projects con frameworks nuevos; interés en Scrum y buenas
+                                prácticas para colaborar y entregar con calidad.
+                            </p>
+                        </article>
+                    </div>
+                    <blockquote class="quote reveal">
+                        <p>
+                            La pasión por la tecnología y el aprendizaje continuo me permiten
+                            mantener la creatividad y la productividad en mis proyectos.
+                        </p>
+                    </blockquote>
                 </div>
-                <blockquote class="quote reveal">
-                    <p>La pasión por la tecnología y el aprendizaje continuo me permiten mantener la creatividad y la productividad en mis proyectos.</p>
-                </blockquote>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact" class="section contact" aria-labelledby="contact-title">
-            <div class="container">
-                <h2 id="contact-title" class="section__title reveal">Contacto</h2>
-                <p class="section__lead reveal">¿Colaboramos? Escríbeme o llámame; respondo lo antes posible.</p>
+            <section id="contact" class="section contact" aria-labelledby="contact-title">
+                <div class="container">
+                    <h2 id="contact-title" class="section__title reveal">Contacto</h2>
+                    <p class="section__lead reveal">
+                        ¿Colaboramos? Escríbeme o llámame; respondo lo antes posible.
+                    </p>
 
-                <div class="contact__grid reveal">
-                    <a href="mailto:rolando.sha256@gmail.com" class="contact-card">
-                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-mail"/></svg>
-                        <span class="contact-card__label">Email</span>
-                        <span class="contact-card__value mono">rolando.sha256@gmail.com</span>
-                    </a>
-                    <a href="tel:+59178249575" class="contact-card">
-                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-phone"/></svg>
-                        <span class="contact-card__label">Teléfono</span>
-                        <span class="contact-card__value mono">+591 78249575</span>
-                    </a>
-                    <div class="contact-card">
-                        <svg class="icon icon--lg" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-map-pin"/></svg>
-                        <span class="contact-card__label">Ubicación</span>
-                        <span class="contact-card__value mono">Tarija, Bolivia</span>
+                    <div class="contact__grid reveal">
+                        <a href="mailto:rolando.sha256@gmail.com" class="contact-card">
+                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
+                                <use href="img/icons.svg#ui-mail" />
+                            </svg>
+                            <span class="contact-card__label">Email</span>
+                            <span class="contact-card__value mono">rolando.sha256@gmail.com</span>
+                        </a>
+                        <a href="tel:+59178249575" class="contact-card">
+                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
+                                <use href="img/icons.svg#ui-phone" />
+                            </svg>
+                            <span class="contact-card__label">Teléfono</span>
+                            <span class="contact-card__value mono">+591 78249575</span>
+                        </a>
+                        <div class="contact-card">
+                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
+                                <use href="img/icons.svg#ui-map-pin" />
+                            </svg>
+                            <span class="contact-card__label">Ubicación</span>
+                            <span class="contact-card__value mono">Tarija, Bolivia</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__cta reveal">
+                        <h3 class="contact__cta-title">¿Tienes un proyecto en mente?</h3>
+                        <a
+                            class="btn btn--primary btn--lg"
+                            href="mailto:rolando.sha256@gmail.com?subject=Propuesta%20de%20proyecto"
+                        >
+                            Enviar mensaje
+                            <svg class="icon" aria-hidden="true" focusable="false">
+                                <use href="img/icons.svg#ui-send" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
+            </section>
+        </main>
 
-                <div class="contact__cta reveal">
-                    <h3 class="contact__cta-title">¿Tienes un proyecto en mente?</h3>
-                    <a class="btn btn--primary btn--lg" href="mailto:rolando.sha256@gmail.com?subject=Propuesta%20de%20proyecto">
-                        Enviar mensaje
-                        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-send"/></svg>
-                    </a>
-                </div>
+        <footer class="footer" role="contentinfo">
+            <div class="container footer__inner">
+                <p class="footer__copyright">
+                    <span class="footer__symbol" aria-hidden="true">©</span>
+                    <span class="sr-only">Copyright </span>
+                    <span data-year></span>
+                    <a href="#hero" class="footer__name">Rolando César Vásquez Tavera</a>.
+                    <span class="footer__rights">Todos los derechos reservados.</span>
+                </p>
             </div>
-        </section>
-    </main>
+        </footer>
 
-    <footer class="footer" role="contentinfo">
-        <div class="container footer__inner">
-            <p class="footer__copyright">
-                <span class="footer__symbol" aria-hidden="true">©</span>
-                <span class="sr-only">Copyright </span>
-                <span data-year></span>
-                <a href="#hero" class="footer__name">Rolando César Vásquez Tavera</a>.
-                <span class="footer__rights">Todos los derechos reservados.</span>
-            </p>
-        </div>
-    </footer>
+        <button type="button" class="back-to-top" aria-label="Volver arriba">
+            <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="img/icons.svg#ui-arrow-up" />
+            </svg>
+        </button>
 
-    <button type="button" class="back-to-top" aria-label="Volver arriba">
-        <svg class="icon" aria-hidden="true" focusable="false"><use href="img/icons.svg#ui-arrow-up"/></svg>
-    </button>
-
-    <script type="module" src="js/main.js"></script>
-</body>
+        <script type="module" src="js/main.js"></script>
+    </body>
 </html>
