@@ -1,0 +1,11 @@
+# Normaliza los fines de línea a LF en el repositorio.
+# Sin esto, en Windows se commitea CRLF y `prettier --check` falla en el
+# runner Linux del CI, porque .prettierrc.json fija endOfLine: "lf".
+* text=auto eol=lf
+
+# Binarios: que git no los toque
+*.webp binary
+*.ico  binary
+*.png  binary
+*.jpg  binary
+*.pdf  binary
