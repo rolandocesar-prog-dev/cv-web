@@ -37,9 +37,6 @@ Abre `index.html` directamente en el navegador o sírvelo con cualquier servidor
 
 ## Pendiente
 
-- [ ] **Añadir `RolandoVasquez-CV.pdf` en la raíz del repo.** El botón
-      "Descargar CV" del hero ya apunta a ese nombre de archivo; hasta que
-      exista, el enlace devuelve 404.
 - [ ] Reemplazar `img/og-image.svg` por PNG o JPG. LinkedIn, WhatsApp y X no
       renderizan SVG en las previsualizaciones, y además la imagen actual
       conserva los colores del tema oscuro anterior.
