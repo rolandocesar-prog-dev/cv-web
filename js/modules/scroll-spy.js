@@ -6,9 +6,7 @@ export function initScrollSpy() {
   const links = Array.from(document.querySelectorAll('.nav__link[data-spy]'));
   if (!links.length) return;
 
-  const sections = links
-    .map((l) => document.querySelector(l.getAttribute('href')))
-    .filter(Boolean);
+  const sections = links.map((l) => document.querySelector(l.getAttribute('href'))).filter(Boolean);
 
   const setActive = (id) => {
     links.forEach((link) => {

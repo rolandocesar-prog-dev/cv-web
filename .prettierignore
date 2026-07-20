@@ -1,0 +1,5 @@
+# Generado por npm install (también en CI) — no es código fuente
+package-lock.json
+
+# Sprite generado por build-sprite.ps1
+img/icons.svg
