@@ -21,7 +21,8 @@ cv-web/
 ├── img/
 │   ├── icons.svg        (sprite SVG)
 │   ├── icons-src/       (SVG fuente para regenerar el sprite)
-│   ├── og-image.svg
+│   ├── og-image.png     (previsualización al compartir)
+│   ├── og-image.svg     (fuente editable del PNG)
 │   ├── perfil-web.webp
 │   └── perfil.ico
 ├── robots.txt
@@ -35,11 +36,9 @@ Abre `index.html` directamente en el navegador o sírvelo con cualquier servidor
 
 > El sitio usa módulos ES nativos (`type="module"`), por lo que algunas funciones requieren servirse vía HTTP en lugar de abrirse como archivo local (`file://`).
 
-## Pendiente
+## Imagen de previsualización
 
-- [ ] Reemplazar `img/og-image.svg` por PNG o JPG. LinkedIn, WhatsApp y X no
-      renderizan SVG en las previsualizaciones, y además la imagen actual
-      conserva los colores del tema oscuro anterior.
+`img/og-image.png` (1200×630) es la que usan LinkedIn, WhatsApp y X. `img/og-image.svg` es su fuente editable: tras cambiarla, vuelve a exportarla a PNG.
 
 ## Licencia
 
