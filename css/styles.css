@@ -564,6 +564,13 @@ section[id] {
     color: var(--text);
 }
 
+.hero__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 24px;
+}
+
 .hero__cta {
     display: flex;
     flex-wrap: wrap;
@@ -1076,6 +1083,11 @@ section[id] {
     transition:
         transform var(--transition),
         border-color var(--transition);
+}
+
+.project--featured {
+    grid-column: 1 / -1;
+    border-color: var(--accent);
 }
 
 .project:hover {
