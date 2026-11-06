@@ -30,3 +30,7 @@ yarn-error.log*
 # Cursor
 .agents/
 skills-lock.json
+
+# Generador del PDF (tools/)
+tools/.venv/
+__pycache__/

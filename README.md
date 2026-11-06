@@ -25,6 +25,10 @@ cv-web/
 │   ├── og-image.svg     (fuente editable del PNG)
 │   ├── perfil-web.webp
 │   └── perfil.ico
+├── tools/
+│   ├── generar_cv_pdf.py (genera el PDF del CV)
+│   └── requirements.txt
+├── CV_Rolando_Vasquez_Tavera.pdf
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
@@ -35,6 +39,17 @@ cv-web/
 Abre `index.html` directamente en el navegador o sírvelo con cualquier servidor estático de tu preferencia.
 
 > El sitio usa módulos ES nativos (`type="module"`), por lo que algunas funciones requieren servirse vía HTTP en lugar de abrirse como archivo local (`file://`).
+
+## CV en PDF
+
+`CV_Rolando_Vasquez_Tavera.pdf` se genera con ReportLab desde `tools/generar_cv_pdf.py`, donde
+está todo su contenido. Para actualizarlo, edita el texto del script y vuelve a generarlo:
+
+```bash
+python -m venv tools/.venv
+tools/.venv/Scripts/pip install -r tools/requirements.txt   # Linux/macOS: tools/.venv/bin/
+tools/.venv/Scripts/python tools/generar_cv_pdf.py
+```
 
 ## Imagen de previsualización
 

@@ -1,0 +1,9 @@
+# Estilo del generador del PDF (tools/generar_cv_pdf.py).
+line-length = 100
+target-version = "py312"
+
+[lint]
+select = ["E", "W", "F", "I", "B", "UP", "N", "SIM", "RUF"]
+
+# La raya de los rangos de años («2020 – actualidad») es intencional.
+allowed-confusables = ["–"]
