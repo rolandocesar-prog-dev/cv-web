@@ -135,6 +135,18 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         [("Código y demo", "https://github.com/rolandocesar-prog-dev/docs-rag-assistant")],
     ),
     (
+        "Suite de pruebas E2E con Playwright — Proyecto propio",
+        "Playwright · TypeScript · axe-core · Docker · GitHub Actions",
+        "Pruebas end-to-end de un sitio de comercio electrónico de práctica (Sauce Demo), a partir "
+        "de un plan de pruebas priorizado: 139 pruebas en cuatro navegadores, 13 defectos reales "
+        "documentados, accesibilidad, rendimiento y regresión visual, y 0 pruebas inestables en "
+        "30 ejecuciones del CI.",
+        [
+            ("Código", "https://github.com/rolandocesar-prog-dev/qa-e2e-playwright"),
+            ("Reporte", "https://rolandocesar-prog-dev.github.io/qa-e2e-playwright/"),
+        ],
+    ),
+    (
         "App OTN-PB — Monitoreo de estaciones meteorológicas",
         "Flutter · Spring Boot · PostgreSQL",
         "Aplicación móvil para visualización y monitoreo en tiempo real de estaciones "
