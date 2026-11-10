@@ -159,6 +159,15 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         ],
     ),
     (
+        "API de inventario — Proyecto propio",
+        "NestJS · TypeScript · PostgreSQL · Prisma · Docker · GitHub Actions",
+        "API REST para pequeños comercios: catálogo, entradas, salidas y ajustes con historial "
+        "auditable, roles con JWT y tokens de renovación rotativos, y un stock que nunca queda "
+        "negativo aunque haya operaciones simultáneas (probado con 20 salidas a la vez contra "
+        "PostgreSQL real). Errores RFC 9457, logs estructurados, 184 pruebas y CI.",
+        [("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-api-nestjs")],
+    ),
+    (
         "App OTN-PB — Monitoreo de estaciones meteorológicas",
         "Flutter · Spring Boot · PostgreSQL",
         "Aplicación móvil para visualización y monitoreo en tiempo real de estaciones "

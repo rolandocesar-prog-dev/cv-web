@@ -315,7 +315,7 @@
                             <span class="stat__label">Apps publicadas en tiendas</span>
                         </li>
                         <li class="stat">
-                            <span class="stat__num">10</span>
+                            <span class="stat__num">11</span>
                             <span class="stat__label">Proyectos destacados</span>
                         </li>
                         <li class="stat">
@@ -1186,6 +1186,68 @@
                             <div class="project__body">
                                 <header class="project__header">
                                     <div>
+                                        <p class="project__type">Proyecto propio · API REST</p>
+                                        <h3 class="project__title">API de inventario</h3>
+                                    </div>
+                                    <span class="badge badge--done">Completado</span>
+                                </header>
+                                <p class="project__desc">
+                                    Inventario para pequeños comercios con historial auditable de
+                                    movimientos, roles con JWT y tokens de renovación rotativos, y
+                                    un stock que nunca queda negativo aunque haya operaciones
+                                    simultáneas: probado con 20 salidas a la vez contra PostgreSQL
+                                    real. Errores RFC 9457, logs estructurados, 184 pruebas y CI.
+                                </p>
+                                <ul class="project__stack">
+                                    <li>NestJS</li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-ts" />
+                                        </svg>
+                                        TypeScript
+                                    </li>
+                                    <li>
+                                        <svg class="icon" aria-hidden="true" focusable="false">
+                                            <use href="img/icons.svg#tech-postgresql" />
+                                        </svg>
+                                        PostgreSQL
+                                    </li>
+                                    <li>Docker</li>
+                                </ul>
+                                <ul class="store-links">
+                                    <li>
+                                        <a
+                                            class="store-link"
+                                            href="https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Código
+                                            <svg class="icon" aria-hidden="true" focusable="false">
+                                                <use href="img/icons.svg#ui-external-link" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="store-link"
+                                            href="https://github.com/rolandocesar-prog-dev/inventory-api-nestjs/blob/main/docs/demo.gif"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Ver demo
+                                            <svg class="icon" aria-hidden="true" focusable="false">
+                                                <use href="img/icons.svg#ui-external-link" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="project reveal">
+                            <div class="project__body">
+                                <header class="project__header">
+                                    <div>
                                         <p class="project__type">Desarrollo Web</p>
                                         <h3 class="project__title">Voz Liberal Tarija</h3>
                                     </div>
@@ -1399,62 +1461,6 @@
                                             <use href="img/icons.svg#tech-react" />
                                         </svg>
                                         React Native
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-
-                    <h3 class="projects__subtitle reveal">En construcción</h3>
-                    <p class="section__lead reveal">
-                        Proyectos de código abierto que desarrollo por hitos, con especificaciones,
-                        pruebas y CI desde el primer commit.
-                    </p>
-
-                    <div class="project-grid">
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">API REST</p>
-                                        <h3 class="project__title">API de inventario</h3>
-                                    </div>
-                                    <span class="badge badge--progress">En desarrollo</span>
-                                </header>
-                                <p class="project__desc">
-                                    Inventario para pequeños comercios con historial de movimientos,
-                                    roles y un stock que nunca queda negativo, incluso con
-                                    operaciones simultáneas. Ya tiene la base: Swagger, Docker y CI.
-                                </p>
-                                <ul class="project__stack">
-                                    <li>NestJS</li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-ts" />
-                                        </svg>
-                                        TypeScript
-                                    </li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-postgresql" />
-                                        </svg>
-                                        PostgreSQL
-                                    </li>
-                                    <li>Docker</li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
                                     </li>
                                 </ul>
                             </div>

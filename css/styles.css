@@ -850,15 +850,9 @@ section[id] {
     text-align: center;
 }
 
-.skills__subtitle,
-.projects__subtitle {
+.skills__subtitle {
     margin: 76px 0 32px;
     font-size: clamp(1.4rem, 2.6vw, 1.9rem);
-}
-
-/* Le sigue un párrafo introductorio, que ya trae su propio margen. */
-.projects__subtitle {
-    margin: 96px 0 16px;
 }
 
 .soft-row {
