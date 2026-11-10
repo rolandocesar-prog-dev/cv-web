@@ -147,6 +147,18 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         ],
     ),
     (
+        "Reservas de turnos — Proyecto propio",
+        "Flutter · Riverpod · Firebase (Firestore, Auth, Cloud Functions, FCM) · TypeScript",
+        "App multiplataforma para que canchas y consultorios publiquen sus horarios y sus clientes "
+        "reserven sin turnos duplicados: transacciones y reglas de Firestore con pruebas "
+        "automatizadas, panel para el negocio, recordatorios push con Cloud Functions y versión "
+        "web publicada. 173 pruebas de la app, accesibilidad verificada y CI.",
+        [
+            ("Código y demo", "https://github.com/rolandocesar-prog-dev/turnos-app-flutter"),
+            ("Web", "https://turnos-rv-portafolio.web.app"),
+        ],
+    ),
+    (
         "App OTN-PB — Monitoreo de estaciones meteorológicas",
         "Flutter · Spring Boot · PostgreSQL",
         "Aplicación móvil para visualización y monitoreo en tiempo real de estaciones "
