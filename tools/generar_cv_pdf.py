@@ -164,7 +164,8 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         "API REST para pequeños comercios: catálogo, entradas, salidas y ajustes con historial "
         "auditable, roles con JWT y tokens de renovación rotativos, y un stock que nunca queda "
         "negativo aunque haya operaciones simultáneas (probado con 20 salidas a la vez contra "
-        "PostgreSQL real). Errores RFC 9457, logs estructurados, 184 pruebas y CI.",
+        "PostgreSQL real). Errores RFC 9457, logs estructurados, 184 pruebas y CI. Cuenta de "
+        "demo (operador): demo@inventario.test / demo-inventario-2026.",
         [
             ("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"),
             ("API en vivo", "https://inventory-api-c5yi.onrender.com/docs"),

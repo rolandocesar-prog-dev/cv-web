@@ -1128,6 +1128,20 @@ section[id] {
     color: var(--text-muted);
 }
 
+/* Credenciales de la cuenta de demostración de un proyecto. */
+.project__demo {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* Cada credencial entera en una línea: el guion es parte de la contraseña. */
+.project__demo code {
+    font-family: var(--font-mono);
+    color: var(--text);
+    white-space: nowrap;
+}
+
 .project__stack {
     list-style: none;
     margin: 0;
