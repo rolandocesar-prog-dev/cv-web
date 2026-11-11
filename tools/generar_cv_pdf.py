@@ -165,7 +165,10 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         "auditable, roles con JWT y tokens de renovación rotativos, y un stock que nunca queda "
         "negativo aunque haya operaciones simultáneas (probado con 20 salidas a la vez contra "
         "PostgreSQL real). Errores RFC 9457, logs estructurados, 184 pruebas y CI.",
-        [("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-api-nestjs")],
+        [
+            ("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"),
+            ("API en vivo", "https://inventory-api-c5yi.onrender.com/docs"),
+        ],
     ),
     (
         "App OTN-PB — Monitoreo de estaciones meteorológicas",
