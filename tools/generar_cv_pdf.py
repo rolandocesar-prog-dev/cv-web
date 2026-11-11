@@ -172,6 +172,15 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         ],
     ),
     (
+        "Agente de inventario con MCP — Proyecto propio",
+        "TypeScript · Model Context Protocol · Ollama (LLM local) · zod · Vitest · GitHub Actions",
+        "Servidor MCP y agente que consultan y mueven el inventario de la API anterior conversando "
+        "en español con un modelo local. Ningún movimiento se registra sin que una persona apruebe "
+        "el resumen del servidor; evaluado con 18 escenarios y dos modelos (0 escrituras sin "
+        "aprobación). 126 pruebas y CI.",
+        [("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-agent-mcp")],
+    ),
+    (
         "App OTN-PB — Monitoreo de estaciones meteorológicas",
         "Flutter · Spring Boot · PostgreSQL",
         "Aplicación móvil para visualización y monitoreo en tiempo real de estaciones "
