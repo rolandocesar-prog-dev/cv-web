@@ -128,19 +128,17 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
     (
         "Asistente RAG sobre documentación — Proyecto propio",
         "Python · FastAPI · PostgreSQL + pgvector · Docker · RAG / LLM",
-        "Responde preguntas sobre la documentación de Kubernetes en español citando cada fuente, y "
-        "avisa cuando la respuesta no está. Búsqueda híbrida, modelo intercambiable (local o en la "
-        "nube) y evaluación automática: trae el documento correcto en el 100 % de las preguntas de "
-        "prueba y el 89 % de sus respuestas es fiel a las fuentes citadas.",
+        "Responde preguntas sobre la documentación de Kubernetes citando cada fuente y avisa si la "
+        "respuesta no está. Búsqueda híbrida y evaluación automática: documento correcto en el "
+        "100 % de las preguntas.",
         [("Código y demo", "https://github.com/rolandocesar-prog-dev/docs-rag-assistant")],
     ),
     (
         "Suite de pruebas E2E con Playwright — Proyecto propio",
         "Playwright · TypeScript · axe-core · Docker · GitHub Actions",
-        "Pruebas end-to-end de un sitio de comercio electrónico de práctica (Sauce Demo), a partir "
-        "de un plan de pruebas priorizado: 139 pruebas en cuatro navegadores, 13 defectos reales "
-        "documentados, accesibilidad, rendimiento y regresión visual, y 0 pruebas inestables en "
-        "30 ejecuciones del CI.",
+        "Pruebas end-to-end de un comercio de práctica (Sauce Demo): 139 pruebas en cuatro "
+        "navegadores, 13 defectos reales documentados, accesibilidad, rendimiento, regresión "
+        "visual y 0 pruebas inestables.",
         [
             ("Código", "https://github.com/rolandocesar-prog-dev/qa-e2e-playwright"),
             ("Reporte", "https://rolandocesar-prog-dev.github.io/qa-e2e-playwright/"),
@@ -149,10 +147,9 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
     (
         "Reservas de turnos — Proyecto propio",
         "Flutter · Riverpod · Firebase (Firestore, Auth, Cloud Functions, FCM) · TypeScript",
-        "App multiplataforma para que canchas y consultorios publiquen sus horarios y sus clientes "
-        "reserven sin turnos duplicados: transacciones y reglas de Firestore con pruebas "
-        "automatizadas, panel para el negocio, recordatorios push con Cloud Functions y versión "
-        "web publicada. 173 pruebas de la app, accesibilidad verificada y CI.",
+        "Reservas sin turnos duplicados para canchas y consultorios: transacciones y reglas de "
+        "Firestore probadas, panel del negocio, recordatorios push con Cloud Functions y web "
+        "publicada. 173 pruebas y CI.",
         [
             ("Código y demo", "https://github.com/rolandocesar-prog-dev/turnos-app-flutter"),
             ("Web", "https://turnos-rv-portafolio.web.app"),
@@ -161,11 +158,9 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
     (
         "API de inventario — Proyecto propio",
         "NestJS · TypeScript · PostgreSQL · Prisma · Docker · GitHub Actions",
-        "API REST para pequeños comercios: catálogo, entradas, salidas y ajustes con historial "
-        "auditable, roles con JWT y tokens de renovación rotativos, y un stock que nunca queda "
-        "negativo aunque haya operaciones simultáneas (probado con 20 salidas a la vez contra "
-        "PostgreSQL real). Errores RFC 9457, logs estructurados, 184 pruebas y CI. Cuenta de "
-        "demo (operador): demo@inventario.test / demo-inventario-2026.",
+        "API REST con historial auditable, JWT con renovación rotativa y stock que nunca queda "
+        "negativo con operaciones simultáneas. 184 pruebas y CI. Demo (operador): "
+        "demo@inventario.test / demo-inventario-2026.",
         [
             ("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"),
             ("API en vivo", "https://inventory-api-c5yi.onrender.com/docs"),
@@ -174,11 +169,18 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
     (
         "Agente de inventario con MCP — Proyecto propio",
         "TypeScript · Model Context Protocol · Ollama (LLM local) · zod · Vitest · GitHub Actions",
-        "Servidor MCP y agente que consultan y mueven el inventario de la API anterior conversando "
-        "en español con un modelo local. Ningún movimiento se registra sin que una persona apruebe "
-        "el resumen del servidor; evaluado con 18 escenarios y dos modelos (0 escrituras sin "
-        "aprobación). 126 pruebas y CI.",
+        "Servidor MCP y agente que mueven el inventario conversando en español con un modelo "
+        "local; nada se registra sin aprobación humana (0 escrituras sin aprobación en 18 "
+        "escenarios). 126 pruebas y CI.",
         [("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-agent-mcp")],
+    ),
+    (
+        "Escáner de facturas con IA — Proyecto propio",
+        "Flutter · Dart · Riverpod · Ollama (modelo de visión local) · GitHub Actions",
+        "App Android y web que lee la foto de una factura con un modelo de visión local y, tras la "
+        "revisión humana, registra las entradas sin duplicados. 10/10 facturas de prueba "
+        "perfectas; 123 pruebas y CI.",
+        [("Código y demo", "https://github.com/rolandocesar-prog-dev/invoice-scanner-flutter")],
     ),
     (
         "App OTN-PB — Monitoreo de estaciones meteorológicas",
