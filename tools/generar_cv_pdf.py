@@ -34,7 +34,7 @@ OUTPUT = Path(__file__).resolve().parent.parent / "CV_Rolando_Vasquez_Tavera.pdf
 # --- Contenido ------------------------------------------------------------------------------
 
 NAME = "Rolando César Vásquez Tavera"
-ROLE = "Desarrollador móvil y full stack — Flutter · Firebase · QA"
+ROLE = "Desarrollador full stack y móvil — Flutter · TypeScript · Python · IA"
 CONTACT = ["Tarija, Bolivia", "+591 78249575", "rolando.sha256@gmail.com"]
 PROFILE_LINKS = [
     ("Portafolio web", "https://rolandocesar-prog-dev.github.io/cv-web/"),
@@ -42,13 +42,12 @@ PROFILE_LINKS = [
 ]
 
 PROFILE = (
-    "Desarrollador de software con más de cinco años como profesional independiente en "
-    "aplicaciones móviles multiplataforma (Flutter), sistemas web a medida y aseguramiento de "
-    "calidad. Manejo el ciclo completo del producto: requerimientos, diseño UX/UI, desarrollo, "
-    "pruebas, despliegue y publicación en Google Play y App Store bajo cuenta propia de "
-    "desarrollador. Estudiante de Ingeniería en Sistemas; desarrollo mi proyecto de grado, un "
-    "asistente conversacional con RAG para trámites municipales. Orientado a buenas prácticas, "
-    "código mantenible y entregas documentadas."
+    "Desarrollador full stack y móvil con más de cinco años como profesional independiente. "
+    "Construyo apps con Flutter y backends con TypeScript (NestJS) y Python, con pruebas "
+    "automatizadas y CI. Publiqué 4 apps en Google Play y App Store para empresas de delivery y "
+    "movilidad, con experiencia en QA. Aplico IA a problemas concretos: RAG con evaluación "
+    "medible, agentes con MCP y aprobación humana, y lectura de documentos con modelos de visión. "
+    "Seis proyectos propios con código abierto, más de 900 pruebas automatizadas y demos en línea."
 )
 
 APPS_INTRO = (
@@ -58,14 +57,14 @@ APPS_INTRO = (
 )
 APPS = [
     (
-        "Aplicación de movilidad — módulo pasajero",
+        "App de delivery y servicios — módulo cliente",
         [
             ("Google Play", "https://play.google.com/store/apps/details?id=com.goplus.customerapp"),
             ("App Store", "https://apps.apple.com/bo/app/id6787314464"),
         ],
     ),
     (
-        "Aplicación de movilidad — módulo conductor",
+        "App de delivery y servicios — módulo repartidor",
         [
             ("Google Play", "https://play.google.com/store/apps/details?id=com.goplus.driverapp"),
             ("App Store", "https://apps.apple.com/bo/app/id6787321937"),
@@ -98,7 +97,7 @@ EXPERIENCE = [
         "Startup de movilidad · Freelance",
         [
             "Desarrollo de las aplicaciones móviles de la plataforma (módulos pasajero y "
-            "conductor) y publicación en App Store bajo cuenta propia de desarrollador.",
+            "conductor) y publicación en App Store.",
             "Aseguramiento de calidad (QA): pruebas de funcionalidad, usabilidad, rendimiento y "
             "seguridad sobre aplicación React Native.",
         ],
@@ -118,14 +117,6 @@ EXPERIENCE = [
 # (título, tecnologías, descripción, enlaces)
 PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
     (
-        "Asistente conversacional para trámites municipales — Proyecto de grado (UAB, en curso)",
-        "RAG / LLM · App móvil · Panel de administración · Scrum",
-        "Asistente basado en RAG que orienta a los ciudadanos sobre trámites del Gobierno Autónomo "
-        "Municipal de Tarija. Incluye app móvil y panel de administración; la Alcaldía actúa como "
-        "Product Owner.",
-        [],
-    ),
-    (
         "Asistente RAG sobre documentación — Proyecto propio",
         "Python · FastAPI · PostgreSQL + pgvector · Docker · RAG / LLM",
         "Responde preguntas sobre la documentación de Kubernetes citando cada fuente y avisa si la "
@@ -134,14 +125,14 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         [("Código y demo", "https://github.com/rolandocesar-prog-dev/docs-rag-assistant")],
     ),
     (
-        "Suite de pruebas E2E con Playwright — Proyecto propio",
-        "Playwright · TypeScript · axe-core · Docker · GitHub Actions",
-        "Pruebas end-to-end de un comercio de práctica (Sauce Demo): 139 pruebas en cuatro "
-        "navegadores, 13 defectos reales documentados, accesibilidad, rendimiento, regresión "
-        "visual y 0 pruebas inestables.",
+        "API de inventario — Proyecto propio",
+        "NestJS · TypeScript · PostgreSQL · Prisma · Docker · GitHub Actions",
+        "API REST con historial auditable, JWT con renovación rotativa y stock que nunca queda "
+        "negativo con operaciones simultáneas. 184 pruebas y CI. Demo (operador): "
+        "demo@inventario.test / demo-inventario-2026.",
         [
-            ("Código", "https://github.com/rolandocesar-prog-dev/qa-e2e-playwright"),
-            ("Reporte", "https://rolandocesar-prog-dev.github.io/qa-e2e-playwright/"),
+            ("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"),
+            ("API en vivo", "https://inventory-api-c5yi.onrender.com/docs"),
         ],
     ),
     (
@@ -156,15 +147,12 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         ],
     ),
     (
-        "API de inventario — Proyecto propio",
-        "NestJS · TypeScript · PostgreSQL · Prisma · Docker · GitHub Actions",
-        "API REST con historial auditable, JWT con renovación rotativa y stock que nunca queda "
-        "negativo con operaciones simultáneas. 184 pruebas y CI. Demo (operador): "
-        "demo@inventario.test / demo-inventario-2026.",
-        [
-            ("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"),
-            ("API en vivo", "https://inventory-api-c5yi.onrender.com/docs"),
-        ],
+        "Escáner de facturas con IA — Proyecto propio",
+        "Flutter · Dart · Riverpod · Ollama (modelo de visión local) · GitHub Actions",
+        "App Android y web que lee la foto de una factura con un modelo de visión local y, tras la "
+        "revisión humana, registra las entradas sin duplicados. 10/10 facturas de prueba "
+        "perfectas; 123 pruebas y CI.",
+        [("Código y demo", "https://github.com/rolandocesar-prog-dev/invoice-scanner-flutter")],
     ),
     (
         "Agente de inventario con MCP — Proyecto propio",
@@ -175,12 +163,15 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         [("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-agent-mcp")],
     ),
     (
-        "Escáner de facturas con IA — Proyecto propio",
-        "Flutter · Dart · Riverpod · Ollama (modelo de visión local) · GitHub Actions",
-        "App Android y web que lee la foto de una factura con un modelo de visión local y, tras la "
-        "revisión humana, registra las entradas sin duplicados. 10/10 facturas de prueba "
-        "perfectas; 123 pruebas y CI.",
-        [("Código y demo", "https://github.com/rolandocesar-prog-dev/invoice-scanner-flutter")],
+        "Suite de pruebas E2E con Playwright — Proyecto propio",
+        "Playwright · TypeScript · axe-core · Docker · GitHub Actions",
+        "Pruebas end-to-end de un comercio de práctica (Sauce Demo): 139 pruebas en cuatro "
+        "navegadores, 13 defectos reales documentados, accesibilidad, rendimiento, regresión "
+        "visual y 0 pruebas inestables.",
+        [
+            ("Código", "https://github.com/rolandocesar-prog-dev/qa-e2e-playwright"),
+            ("Reporte", "https://rolandocesar-prog-dev.github.io/qa-e2e-playwright/"),
+        ],
     ),
     (
         "App OTN-PB — Monitoreo de estaciones meteorológicas",
@@ -198,14 +189,14 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         [],
     ),
     (
-        "Test Político Boliviano",
+        "Cuestionario ciudadano interactivo",
         "Angular · TypeScript",
         "Plataforma web interactiva de cuestionario ciudadano con procesamiento y visualización de "
         "resultados en tiempo real.",
         [],
     ),
     (
-        "Sitio web institucional — Voz Liberal Tarija",
+        "Sitio web institucional",
         "HTML5 · CSS3 · JavaScript",
         "Sitio institucional desarrollado sin frameworks, con foco en rendimiento, accesibilidad y "
         "tiempos de carga reducidos.",
@@ -216,31 +207,34 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
 SKILLS = [
     (
         "Núcleo",
-        "Flutter, Dart, Firebase (Firestore, Auth, Storage), JavaScript, TypeScript, Git, GitHub, "
-        "pruebas de software",
+        "Flutter, Dart, TypeScript, JavaScript, NestJS, Python (FastAPI), PostgreSQL, Firebase, "
+        "Docker, Git y GitHub",
     ),
     (
         "Complementario",
-        "React, React Native, Angular, Spring Boot, PHP, Java, Python, APIs REST, PostgreSQL, "
-        "MySQL, Supabase",
+        "React, React Native, Angular, Spring Boot, Java, PHP, MySQL, Supabase",
     ),
-    ("En foco ahora", "IA aplicada (RAG), Docker y CI/CD, testing automatizado"),
+    (
+        "IA y calidad",
+        "RAG y búsqueda híbrida, agentes con MCP, pruebas E2E con Playwright, "
+        "CI/CD con GitHub Actions",
+    ),
     ("Metodologías", "Scrum, control de versiones con Git, buenas prácticas de código"),
 ]
 
 EDUCATION = [
-    ("Ingeniería en Sistemas", "Universidad Adventista de Bolivia (en curso)"),
+    (
+        "Ingeniería en Sistemas",
+        "Universidad Adventista de Bolivia (en curso). Proyecto de grado: asistente con RAG para "
+        "trámites del Gobierno Autónomo Municipal de Tarija, con Scrum y la Alcaldía como "
+        "Product Owner",
+    ),
     ("Técnico Superior en Sistemas Informáticos", "Instituto Técnico Superior «INCOS»"),
     ("Bachiller en Humanidades", "Colegio Nacional San Luis / CEA San Jerónimo"),
 ]
 
 PERSONAL = [
     ("Idiomas:", "Español (nativo) · Inglés B1 (lectura y documentación técnica)"),
-    (
-        "Competencias:",
-        "Resolución de problemas, trabajo en equipo, liderazgo, adaptabilidad y aprendizaje "
-        "continuo.",
-    ),
 ]
 
 # --- Estilo -----------------------------------------------------------------------------------
@@ -440,7 +434,7 @@ def build(output: Path = OUTPUT) -> None:
         *projects(),
         *skills(),
         *labeled_lines("Formación académica", EDUCATION, " — "),
-        *labeled_lines("Idiomas y competencias personales", PERSONAL, " "),
+        *labeled_lines("Idiomas", PERSONAL, " "),
     ]
     document.build(story)
 
