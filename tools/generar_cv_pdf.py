@@ -84,7 +84,7 @@ APPS = [
 EXPERIENCE = [
     (
         "Desarrollador móvil y web — Startup tecnológica (Santa Cruz de la Sierra)",
-        "Freelance remoto · En desarrollo activo",
+        "Freelance remoto · Proyecto completado",
         [
             "Desarrollo de aplicaciones móviles multiplataforma con Flutter para Android e iOS, y "
             "panel web administrativo en React.",
