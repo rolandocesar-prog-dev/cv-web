@@ -5,7 +5,6 @@
 import { initHeaderScroll } from './modules/header.js';
 import { initMenu } from './modules/menu.js';
 import { initReveal } from './modules/reveal.js';
-import { initTypewriter } from './modules/typewriter.js';
 import { initYear } from './modules/year.js';
 import { initBackToTop } from './modules/back-to-top.js';
 import { initSkillTabs } from './modules/tabs.js';
@@ -20,7 +19,6 @@ ready(() => {
   initHeaderScroll();
   initMenu();
   initReveal();
-  initTypewriter();
   initYear();
   initBackToTop();
   initSkillTabs();

@@ -514,14 +514,6 @@ section[id] {
     align-items: center;
 }
 
-.hero__greeting {
-    margin-bottom: 22px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    color: var(--text-soft);
-}
-
 .hero__name {
     margin-bottom: 22px;
     font-size: clamp(3rem, 8vw, 6.2rem);
@@ -531,25 +523,10 @@ section[id] {
 
 .hero__role {
     margin-bottom: 30px;
-    min-height: 1.6em;
     font-family: var(--font-mono);
     font-size: clamp(1rem, 2vw, 1.35rem);
     font-weight: 700;
     color: var(--accent);
-}
-
-.hero__bracket {
-    color: #a49b87;
-}
-
-.hero__cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1.05em;
-    margin-left: 2px;
-    background: var(--accent);
-    vertical-align: text-bottom;
-    animation: blink-cursor 1s step-end infinite;
 }
 
 .hero__desc {
@@ -609,42 +586,6 @@ section[id] {
     object-fit: cover;
 }
 
-.hero__scroll {
-    position: absolute;
-    bottom: 32px;
-    left: 50%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    transform: translateX(-50%);
-    color: var(--text-muted);
-}
-
-.hero__scroll:hover {
-    color: var(--accent);
-}
-
-.hero__scroll-text {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-}
-
-.hero__scroll-line {
-    width: 1.5px;
-    height: 34px;
-    background: var(--accent);
-}
-
-@keyframes blink-cursor {
-    50% {
-        opacity: 0;
-    }
-}
-
 /* ============================================================
    Secciones
    ============================================================ */
@@ -678,22 +619,6 @@ section[id] {
    Sobre mí
    ============================================================ */
 
-.about__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: clamp(40px, 6vw, 80px);
-    align-items: start;
-    margin-bottom: 76px;
-}
-
-.about__photo {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    box-shadow: 0 20px 50px rgba(28, 26, 22, 0.12);
-}
-
 .about__lead {
     margin-bottom: 24px;
     font-family: var(--font-serif);
@@ -704,34 +629,15 @@ section[id] {
     color: var(--text);
 }
 
+.about__body {
+    max-width: 68ch;
+    margin-bottom: 64px;
+}
+
 .about__text {
-    max-width: 56ch;
-    margin-bottom: 36px;
+    max-width: 64ch;
     line-height: 1.8;
     color: var(--text-muted);
-}
-
-.about__meta {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.about__meta li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.about__meta .icon {
-    width: 16px;
-    height: 16px;
-    color: var(--accent);
 }
 
 .stats {
@@ -855,42 +761,9 @@ section[id] {
     font-size: clamp(1.4rem, 2.6vw, 1.9rem);
 }
 
-.soft-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 36px;
-    align-items: start;
-}
-
-.chips {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    align-content: flex-start;
-}
-
-.chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 18px;
-    border: 1.5px solid var(--line);
-    border-radius: 999px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.chip .icon {
-    width: 15px;
-    height: 15px;
-    color: var(--accent);
-}
-
 .languages {
     list-style: none;
+    max-width: 560px;
     margin: 0;
     padding: 24px 28px;
     display: flex;
@@ -1214,6 +1087,46 @@ section[id] {
     }
 }
 
+/* Otros trabajos: lista compacta, sin el peso visual de las tarjetas. */
+.projects__subtitle {
+    margin: 76px 0 28px;
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+}
+
+.work-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--line-soft);
+}
+
+.work-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) 13rem;
+    gap: 8px 32px;
+    align-items: baseline;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line-soft);
+}
+
+.work-item__title {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.work-item__desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.work-item__stack {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-align: right;
+}
+
 /* ============================================================
    Formación — timeline
    ============================================================ */
@@ -1262,61 +1175,20 @@ section[id] {
     color: var(--text-muted);
 }
 
-/* ============================================================
-   Intereses
-   ============================================================ */
-
-.hobby-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 28px;
-    margin-bottom: 56px;
-}
-
-.hobby-card {
-    padding: 32px 28px;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    transition:
-        transform var(--transition),
-        border-color var(--transition);
-}
-
-.hobby-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--accent);
-}
-
-.hobby-card .icon--lg {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 20px;
+.timeline__when {
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     color: var(--accent);
 }
 
-.hobby-card__title {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.hobby-card__desc {
+.timeline__desc {
+    max-width: 64ch;
+    margin-top: 12px;
     font-size: 14px;
     line-height: 1.7;
     color: var(--text-muted);
-}
-
-.quote {
-    margin: 0;
-    padding: 8px 0 8px 32px;
-    border-left: 4px solid var(--accent);
-}
-
-.quote p {
-    font-family: var(--font-serif);
-    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
-    font-style: italic;
-    font-weight: 500;
-    line-height: 1.6;
 }
 
 /* ============================================================
@@ -1369,6 +1241,13 @@ a.contact-card:hover {
     padding: clamp(40px, 6vw, 64px) var(--gutter);
     border: 2px dashed var(--line);
     text-align: center;
+}
+
+.contact__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
 
 .contact__cta-title {
@@ -1462,13 +1341,13 @@ a.contact-card:hover {
 
 /* El estado oculto se aplica solo si el JS arrancó (clase .js en <html>).
    Sin esto, un fallo de JS o un IntersectionObserver que no dispara dejaría
-   las 28 secciones en opacity:0 y la página se vería vacía. */
+   las secciones en opacity:0 y la página se vería vacía. */
 .js .reveal {
     opacity: 0;
-    transform: translateY(26px);
+    transform: translateY(16px);
     transition:
-        opacity 0.6s ease,
-        transform 0.6s ease;
+        opacity 0.4s ease,
+        transform 0.4s ease;
 
     /* Cascada entre hermanos, índice inyectado por reveal.js */
     transition-delay: calc(var(--i, 0) * 80ms);
@@ -1483,7 +1362,7 @@ a.contact-card:hover {
    Responsive
    ============================================================ */
 
-/* Con 8 entradas el menú no entra en pantallas de portátil (~800px de alto).
+/* Con 7 entradas el menú no entra en pantallas de portátil (~800px de alto).
    Se compacta en vez de obligar a scrollear para llegar a "Contacto".
    Va aquí, después de las reglas base: @media no aporta especificidad. */
 @media (height <= 900px) {
@@ -1519,12 +1398,21 @@ a.contact-card:hover {
     }
 
     .hero__visual {
-        order: -1;
         justify-self: start;
     }
 
-    .hero__scroll {
-        display: none;
+    .hero__photo-ring,
+    .hero__photo-wrap {
+        width: min(220px, 60vw);
+        height: min(264px, 72vw);
+    }
+
+    .work-item {
+        grid-template-columns: 1fr;
+    }
+
+    .work-item__stack {
+        text-align: left;
     }
 }
 
@@ -1542,16 +1430,18 @@ a.contact-card:hover {
     }
 
     .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 28px;
     }
 
     .stat {
-        padding-right: 28px;
+        padding-right: 0;
+        border-right: none;
     }
 
     .app-grid,
     .project-grid,
-    .hobby-grid,
     .contact__grid {
         grid-template-columns: 1fr;
     }
@@ -1587,10 +1477,6 @@ a.contact-card:hover {
         opacity: 1;
         transform: none;
     }
-
-    .hero__cursor {
-        animation: none;
-    }
 }
 
 /* ============================================================
@@ -1602,7 +1488,6 @@ a.contact-card:hover {
     .menu,
     .skip-link,
     .back-to-top,
-    .hero__scroll,
     .hero__bg {
         display: none !important;
     }
