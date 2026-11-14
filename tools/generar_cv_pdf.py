@@ -1,15 +1,18 @@
-"""Genera `CV_Rolando_Vasquez_Tavera.pdf` con ReportLab.
+"""Genera el CV en PDF con ReportLab, en español y en inglés.
 
 Uso (desde la raíz de cv-web):
     python -m venv tools/.venv
     tools/.venv/Scripts/pip install -r tools/requirements.txt   (Linux/macOS: tools/.venv/bin/)
     tools/.venv/Scripts/python tools/generar_cv_pdf.py
 
-El contenido está en las constantes de abajo: para actualizar el CV se edita el texto y se vuelve
-a generar el PDF. El texto va como marcado de ReportLab, así que `&`, `<` y `>` se escapan.
+Escribe `CV_Rolando_Vasquez_Tavera.pdf` (español) y `CV_Rolando_Vasquez_Tavera_EN.pdf` (inglés).
+El contenido en español está en las constantes de abajo y el inglés en `cv_en.py`: para
+actualizar el CV se editan los dos y se vuelve a generar. El texto va como marcado de ReportLab,
+así que `&`, `<` y `>` se escapan.
 """
 
 from pathlib import Path
+from types import SimpleNamespace
 from xml.sax.saxutils import escape
 
 from reportlab.lib import colors
@@ -29,7 +32,11 @@ from reportlab.platypus import (
     TableStyle,
 )
 
-OUTPUT = Path(__file__).resolve().parent.parent / "CV_Rolando_Vasquez_Tavera.pdf"
+from cv_en import EN
+
+ROOT = Path(__file__).resolve().parent.parent
+OUTPUT = ROOT / "CV_Rolando_Vasquez_Tavera.pdf"
+OUTPUT_EN = ROOT / "CV_Rolando_Vasquez_Tavera_EN.pdf"
 
 # --- Contenido ------------------------------------------------------------------------------
 
@@ -250,6 +257,30 @@ PERSONAL = [
     ("Idiomas:", "Español (nativo) · Inglés B1 (lectura y documentación técnica)"),
 ]
 
+ES = SimpleNamespace(
+    NAME=NAME,
+    ROLE=ROLE,
+    CONTACT=CONTACT,
+    PROFILE_LINKS=PROFILE_LINKS,
+    PROFILE=PROFILE,
+    APPS_INTRO=APPS_INTRO,
+    APPS=APPS,
+    EXPERIENCE=EXPERIENCE,
+    PROJECTS=PROJECTS,
+    SKILLS=SKILLS,
+    EDUCATION=EDUCATION,
+    PERSONAL=PERSONAL,
+    HEADINGS=SimpleNamespace(
+        profile="Perfil profesional",
+        apps="Apps desarrolladas y publicadas en tiendas oficiales",
+        experience="Experiencia profesional",
+        projects="Proyectos destacados",
+        skills="Competencias técnicas",
+        education="Formación académica",
+        languages="Idiomas",
+    ),
+)
+
 # --- Estilo -----------------------------------------------------------------------------------
 
 GREEN = colors.HexColor("#1B3A2F")
@@ -322,15 +353,18 @@ def section(title: str, *blocks: Block) -> list[Flowable]:
     return [KeepTogether([*heading, *first]), *(KeepTogether(block) for block in rest)]
 
 
-def header() -> list[Flowable]:
-    contact_lines = [text(line) for line in CONTACT]
+def header(c: SimpleNamespace) -> list[Flowable]:
+    contact_lines = [text(line) for line in c.CONTACT]
     links = f' <font color="{GREY.hexval()}">·</font> '.join(
-        link(label, url) for label, url in PROFILE_LINKS
+        link(label, url) for label, url in c.PROFILE_LINKS
     )
     table = Table(
         [
             [
-                [Paragraph(text(NAME), STYLES["name"]), Paragraph(text(ROLE), STYLES["role"])],
+                [
+                    Paragraph(text(c.NAME), STYLES["name"]),
+                    Paragraph(text(c.ROLE), STYLES["role"]),
+                ],
                 Paragraph("<br/>".join([*contact_lines, links]), STYLES["contact"]),
             ]
         ],
@@ -350,21 +384,21 @@ def header() -> list[Flowable]:
     return [table, HRFlowable(width="100%", thickness=1.2, color=ORANGE, spaceBefore=4)]
 
 
-def apps() -> list[Flowable]:
-    blocks: list[Block] = [[Paragraph(text(APPS_INTRO), STYLES["body"])]]
-    for title, stores in APPS:
+def apps(c: SimpleNamespace) -> list[Flowable]:
+    blocks: list[Block] = [[Paragraph(text(c.APPS_INTRO), STYLES["body"])]]
+    for title, stores in c.APPS:
         blocks.append(
             [
                 Paragraph(text(title), STYLES["item"]),
                 *(link_line(store, url) for store, url in stores),
             ]
         )
-    return section("Apps desarrolladas y publicadas en tiendas oficiales", *blocks)
+    return section(c.HEADINGS.apps, *blocks)
 
 
-def experience() -> list[Flowable]:
+def experience(c: SimpleNamespace) -> list[Flowable]:
     blocks: list[Block] = []
-    for title, meta, bullets in EXPERIENCE:
+    for title, meta, bullets in c.EXPERIENCE:
         items = ListFlowable(
             [ListItem(Paragraph(text(b), STYLES["body"]), leftIndent=10) for b in bullets],
             bulletType="bullet",
@@ -380,12 +414,12 @@ def experience() -> list[Flowable]:
                 items,
             ]
         )
-    return section("Experiencia profesional", *blocks)
+    return section(c.HEADINGS.experience, *blocks)
 
 
-def projects() -> list[Flowable]:
+def projects(c: SimpleNamespace) -> list[Flowable]:
     blocks: list[Block] = []
-    for title, stack, description, links in PROJECTS:
+    for title, stack, description, links in c.PROJECTS:
         blocks.append(
             [
                 Paragraph(text(title), STYLES["item"]),
@@ -394,15 +428,15 @@ def projects() -> list[Flowable]:
                 *(link_line(label, url) for label, url in links),
             ]
         )
-    return section("Proyectos destacados", *blocks)
+    return section(c.HEADINGS.projects, *blocks)
 
 
-def skills() -> list[Flowable]:
+def skills(c: SimpleNamespace) -> list[Flowable]:
     label_width = 32 * mm
     table = Table(
         [
             [Paragraph(text(label), STYLES["label"]), Paragraph(text(value), STYLES["body"])]
-            for label, value in SKILLS
+            for label, value in c.SKILLS
         ],
         colWidths=[label_width, TABLE_WIDTH - label_width],
     )
@@ -417,7 +451,7 @@ def skills() -> list[Flowable]:
             ]
         )
     )
-    return section("Competencias técnicas", [table])
+    return section(c.HEADINGS.skills, [table])
 
 
 def labeled_lines(title: str, rows: list[tuple[str, str]], separator: str) -> list[Flowable]:
@@ -428,7 +462,7 @@ def labeled_lines(title: str, rows: list[tuple[str, str]], separator: str) -> li
     return section(title, lines)
 
 
-def build(output: Path = OUTPUT) -> None:
+def build(c: SimpleNamespace, output: Path) -> None:
     document = SimpleDocTemplate(
         str(output),
         pagesize=A4,
@@ -436,22 +470,23 @@ def build(output: Path = OUTPUT) -> None:
         rightMargin=17 * mm,
         topMargin=14 * mm,
         bottomMargin=14 * mm,
-        title=f"CV — {NAME}",
-        author=NAME,
+        title=f"CV — {c.NAME}",
+        author=c.NAME,
     )
     story: list[Flowable] = [
-        *header(),
-        *section("Perfil profesional", [Paragraph(text(PROFILE), STYLES["body"])]),
-        *apps(),
-        *experience(),
-        *projects(),
-        *skills(),
-        *labeled_lines("Formación académica", EDUCATION, " — "),
-        *labeled_lines("Idiomas", PERSONAL, " "),
+        *header(c),
+        *section(c.HEADINGS.profile, [Paragraph(text(c.PROFILE), STYLES["body"])]),
+        *apps(c),
+        *experience(c),
+        *projects(c),
+        *skills(c),
+        *labeled_lines(c.HEADINGS.education, c.EDUCATION, " — "),
+        *labeled_lines(c.HEADINGS.languages, c.PERSONAL, " "),
     ]
     document.build(story)
 
 
 if __name__ == "__main__":
-    build()
-    print(f"Generado: {OUTPUT.name}")
+    for content, target in ((ES, OUTPUT), (EN, OUTPUT_EN)):
+        build(content, target)
+        print(f"Generado: {target.name}")
