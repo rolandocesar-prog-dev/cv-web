@@ -303,6 +303,29 @@ section[id] {
 }
 
 /* Botón de menú + hamburguesa animada */
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Enlace a la otra versión de idioma de la página. */
+.lang-switch {
+    padding: 8px 4px;
+    color: var(--text);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.lang-switch:hover {
+    color: var(--accent);
+}
+
 .menu-toggle {
     display: flex;
     align-items: center;

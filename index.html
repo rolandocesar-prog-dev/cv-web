@@ -16,6 +16,16 @@
         <meta name="color-scheme" content="light" />
 
         <link rel="canonical" href="https://rolandocesar-prog-dev.github.io/cv-web/" />
+        <link
+            rel="alternate"
+            hreflang="es"
+            href="https://rolandocesar-prog-dev.github.io/cv-web/"
+        />
+        <link
+            rel="alternate"
+            hreflang="en"
+            href="https://rolandocesar-prog-dev.github.io/cv-web/en/"
+        />
 
         <meta property="og:title" content="Rolando Vásquez — Desarrollador full stack y móvil" />
         <meta
@@ -119,20 +129,25 @@
                     <span class="logo__text">RV</span>
                 </a>
 
-                <button
-                    type="button"
-                    class="menu-toggle"
-                    aria-expanded="false"
-                    aria-controls="site-menu"
-                    aria-label="Abrir menú"
-                >
-                    <span class="menu-toggle__label">Menú</span>
-                    <span class="menu-toggle__bars" aria-hidden="true">
-                        <span class="menu-toggle__bar"></span>
-                        <span class="menu-toggle__bar"></span>
-                        <span class="menu-toggle__bar"></span>
-                    </span>
-                </button>
+                <div class="header__actions">
+                    <a href="en/" class="lang-switch" hreflang="en" lang="en">English</a>
+                    <button
+                        type="button"
+                        class="menu-toggle"
+                        aria-expanded="false"
+                        aria-controls="site-menu"
+                        aria-label="Abrir menú"
+                        data-label-open="Abrir menú"
+                        data-label-close="Cerrar menú"
+                    >
+                        <span class="menu-toggle__label">Menú</span>
+                        <span class="menu-toggle__bars" aria-hidden="true">
+                            <span class="menu-toggle__bar"></span>
+                            <span class="menu-toggle__bar"></span>
+                            <span class="menu-toggle__bar"></span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </header>
 

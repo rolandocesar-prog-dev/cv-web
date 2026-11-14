@@ -13,7 +13,8 @@ Sitio estático de CV / portfolio. HTML semántico, CSS moderno con tokens y Jav
 
 ```
 cv-web/
-├── index.html
+├── index.html           (versión en español, la fuente)
+├── en/index.html        (versión en inglés, generada: no se edita a mano)
 ├── css/styles.css
 ├── js/
 │   ├── main.js
@@ -26,9 +27,13 @@ cv-web/
 │   ├── perfil-web.webp
 │   └── perfil.ico
 ├── tools/
-│   ├── generar_cv_pdf.py (genera el PDF del CV)
+│   ├── build-en.mjs      (genera en/index.html)
+│   ├── en.json           (traducciones de la página)
+│   ├── generar_cv_pdf.py (genera los dos PDF del CV)
+│   ├── cv_en.py          (contenido en inglés del PDF)
 │   └── requirements.txt
 ├── CV_Rolando_Vasquez_Tavera.pdf
+├── CV_Rolando_Vasquez_Tavera_EN.pdf
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
@@ -40,10 +45,23 @@ Abre `index.html` directamente en el navegador o sírvelo con cualquier servidor
 
 > El sitio usa módulos ES nativos (`type="module"`), por lo que algunas funciones requieren servirse vía HTTP en lugar de abrirse como archivo local (`file://`).
 
+## Versión en inglés
+
+`en/index.html` se genera desde `index.html` con las traducciones de `tools/en.json`. Tras cambiar
+la página en español, actualiza la tabla y vuelve a generarla:
+
+```bash
+npm run build:en
+```
+
+El script falla si queda un texto en español sin traducir o una traducción que ya no se usa, y el
+CI comprueba con `npm run check:en` que `en/index.html` esté al día.
+
 ## CV en PDF
 
-`CV_Rolando_Vasquez_Tavera.pdf` se genera con ReportLab desde `tools/generar_cv_pdf.py`, donde
-está todo su contenido. Para actualizarlo, edita el texto del script y vuelve a generarlo:
+`CV_Rolando_Vasquez_Tavera.pdf` (español) y `CV_Rolando_Vasquez_Tavera_EN.pdf` (inglés) se generan
+con ReportLab desde `tools/generar_cv_pdf.py`. El contenido en español está en ese script y el
+inglés en `tools/cv_en.py`: al cambiar uno, cambia también el otro y vuelve a generarlos:
 
 ```bash
 python -m venv tools/.venv

@@ -3,3 +3,6 @@ package-lock.json
 
 # Sprite generado por build-sprite.ps1
 img/icons.svg
+
+# Página en inglés generada por tools/build-en.mjs
+en/index.html

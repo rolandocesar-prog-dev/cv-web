@@ -22,6 +22,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # en/index.html se genera desde index.html: falla si alguien cambió uno sin el otro.
+      - name: Versión en inglés al día
+        run: npm run check:en
+
       - name: HTML validate
         run: npm run lint:html
 

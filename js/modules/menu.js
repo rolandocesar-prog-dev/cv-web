@@ -31,7 +31,8 @@ export function initMenu() {
 
   const setOpen = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    // Los textos vienen del HTML para que cada idioma de la página use los suyos.
+    toggle.setAttribute('aria-label', open ? toggle.dataset.labelClose : toggle.dataset.labelOpen);
     menu.hidden = !open;
 
     if (open) {
