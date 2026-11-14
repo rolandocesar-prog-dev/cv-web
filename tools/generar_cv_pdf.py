@@ -43,11 +43,13 @@ PROFILE_LINKS = [
 
 PROFILE = (
     "Desarrollador full stack y móvil con más de cinco años como profesional independiente. "
-    "Construyo apps con Flutter y backends con TypeScript (NestJS) y Python, con pruebas "
+    "Construyo apps con Flutter, interfaces web con React y backends con TypeScript (NestJS) y "
+    "Python, con pruebas "
     "automatizadas y CI. Publiqué 4 apps en Google Play y App Store para empresas de delivery y "
     "movilidad, con experiencia en QA. Aplico IA a problemas concretos: RAG con evaluación "
     "medible, agentes con MCP y aprobación humana, y lectura de documentos con modelos de visión. "
-    "Seis proyectos propios con código abierto, más de 900 pruebas automatizadas y demos en línea."
+    "Siete proyectos propios con código abierto, más de 1.000 pruebas automatizadas y demos en "
+    "línea."
 )
 
 APPS_INTRO = (
@@ -136,6 +138,17 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
         ],
     ),
     (
+        "Panel web de inventario — Proyecto propio",
+        "React · TypeScript · TanStack Query · Tailwind · Playwright · GitHub Actions",
+        "Interfaz web de la API de inventario: catálogo, kardex, movimientos y administración. "
+        "Tokens rotativos con una sola renovación y escrituras sin reintento automático. 143 "
+        "pruebas, 16 E2E con accesibilidad y CI que lo publica.",
+        [
+            ("Código y demo", "https://github.com/rolandocesar-prog-dev/inventory-web-react"),
+            ("En línea", "https://rolandocesar-prog-dev.github.io/inventory-web-react/"),
+        ],
+    ),
+    (
         "Reservas de turnos — Proyecto propio",
         "Flutter · Riverpod · Firebase (Firestore, Auth, Cloud Functions, FCM) · TypeScript",
         "Reservas sin turnos duplicados para canchas y consultorios: transacciones y reglas de "
@@ -207,12 +220,12 @@ PROJECTS: list[tuple[str, str, str, list[tuple[str, str]]]] = [
 SKILLS = [
     (
         "Núcleo",
-        "Flutter, Dart, TypeScript, JavaScript, NestJS, Python (FastAPI), PostgreSQL, Firebase, "
-        "Docker, Git y GitHub",
+        "Flutter, Dart, TypeScript, JavaScript, React, NestJS, Python (FastAPI), PostgreSQL, "
+        "Firebase, Docker, Git y GitHub",
     ),
     (
         "Complementario",
-        "React, React Native, Angular, Spring Boot, Java, PHP, MySQL, Supabase",
+        "React Native, Angular, Spring Boot, Java, PHP, MySQL, Supabase",
     ),
     (
         "IA y calidad",
