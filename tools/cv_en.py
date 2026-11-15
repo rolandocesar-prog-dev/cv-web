@@ -14,6 +14,7 @@ EN = SimpleNamespace(
     PROFILE_LINKS=[
         ("Web portfolio", "https://rolandocesar-prog-dev.github.io/cv-web/en/"),
         ("GitHub", GITHUB),
+        ("LinkedIn", "https://www.linkedin.com/in/rolando-cesar-vasquez-tavera-b62235222"),
     ],
     PROFILE=(
         "Full stack and mobile developer with more than five years as a freelance professional. "

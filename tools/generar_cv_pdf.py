@@ -46,6 +46,7 @@ CONTACT = ["Tarija, Bolivia", "+591 78249575", "rolando.sha256@gmail.com"]
 PROFILE_LINKS = [
     ("Portafolio web", "https://rolandocesar-prog-dev.github.io/cv-web/"),
     ("GitHub", "https://github.com/rolandocesar-prog-dev"),
+    ("LinkedIn", "https://www.linkedin.com/in/rolando-cesar-vasquez-tavera-b62235222"),
 ]
 
 PROFILE = (
