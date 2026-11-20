@@ -2,12 +2,14 @@
 
 Sitio estático de CV / portfolio. HTML semántico, CSS moderno con tokens y JavaScript en módulos ES, sin frameworks ni build.
 
+Dirección visual «Dossier técnico»: tema oscuro, Geist + Geist Mono y un solo acento ámbar. Los requisitos, el diseño y el plan del rediseño están en [`specs/`](./specs).
+
 ## Stack
 
 - HTML5 + CSS3 (custom properties)
 - JavaScript ES Modules (vanilla)
 - Iconos self-hosted (sprite SVG)
-- Newsreader + Manrope + JetBrains Mono (Google Fonts)
+- Geist + Geist Mono (Google Fonts)
 
 ## Estructura
 
@@ -18,13 +20,14 @@ cv-web/
 ├── css/styles.css
 ├── js/
 │   ├── main.js
-│   └── modules/
+│   └── modules/         (header, menú, revelado, año, volver arriba, banner)
 ├── img/
 │   ├── icons.svg        (sprite SVG)
 │   ├── icons-src/       (SVG fuente para regenerar el sprite)
 │   ├── og-image.png     (previsualización al compartir)
 │   ├── og-image.svg     (fuente editable del PNG)
-│   ├── perfil-web.webp
+│   ├── demo-rag.gif     (demo del asistente RAG, copia de su repositorio)
+│   ├── perfil-web.webp  (foto del JSON-LD)
 │   └── perfil.ico
 ├── tools/
 │   ├── build-en.mjs      (genera en/index.html)
@@ -32,6 +35,7 @@ cv-web/
 │   ├── generar_cv_pdf.py (genera los dos PDF del CV)
 │   ├── cv_en.py          (contenido en inglés del PDF)
 │   └── requirements.txt
+├── specs/                (requisitos, diseño y tareas del rediseño)
 ├── CV_Rolando_Vasquez_Tavera.pdf
 ├── CV_Rolando_Vasquez_Tavera_EN.pdf
 ├── robots.txt
@@ -71,7 +75,9 @@ tools/.venv/Scripts/python tools/generar_cv_pdf.py
 
 ## Imagen de previsualización
 
-`img/og-image.png` (1200×630) es la que usan LinkedIn, WhatsApp y X. `img/og-image.svg` es su fuente editable: tras cambiarla, vuelve a exportarla a PNG.
+`img/og-image.png` (1200×630) es la que usan LinkedIn, WhatsApp y X. `img/og-image.svg` es su fuente editable: tras cambiarla, vuelve a exportarla a PNG a 1200×630 con las fuentes Geist y Geist Mono disponibles (por ejemplo, abriéndola en un navegador con las fuentes instaladas y capturándola con Playwright); sin ellas el texto cambia de tipografía.
+
+Las cifras del panel «estado de los repositorios» y de las tarjetas están escritas en `index.html`: si cambia el número de pruebas de un proyecto, actualiza las dos y el total de la sección de cifras.
 
 ## Licencia
 

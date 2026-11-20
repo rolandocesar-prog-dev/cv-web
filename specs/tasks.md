@@ -4,7 +4,7 @@ Cada tarea es un commit (Conventional Commits en español). Se marca `[x]` al te
 
 ## Hito R1 — Especificación
 
-- [ ] 1. Specs del rediseño (`requirements.md`, `design.md`, `tasks.md`).
+- [x] 1. Specs del rediseño (`requirements.md`, `design.md`, `tasks.md`).
 
 ## Hito R2 — Página
 
@@ -21,7 +21,7 @@ Cada tarea es un commit (Conventional Commits en español). Se marca `[x]` al te
 
 ## Hito R4 — Cierre
 
-- [ ] 5. Verificación en escritorio y celular, en español e inglés (capturas, axe, enlaces a los
+- [x] 5. Verificación en escritorio y celular, en español e inglés (capturas, axe, enlaces a los
       PDF) y README actualizado (tipografías, dirección visual, estructura).
 
 ## Fuera de este cambio
