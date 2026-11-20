@@ -90,7 +90,7 @@ sin tilde (`de`, `con`, `para`, `pruebas`, `proyectos`…) fuera de los nombres 
 - `sitemap.xml` con `<lastmod>` en las dos URL.
 - `img/og-image.svg` rehecha en oscuro con el titular vigente y exportada a PNG 1200×630 con
   Chromium (Playwright) y las fuentes Geist locales.
-- La dirección de la imagen lleva una versión (`og-image.png?v=2`): LinkedIn y otras redes guardan
+- La dirección de la imagen lleva una versión (`og-image.png?v=N`): LinkedIn y otras redes guardan
   la imagen por su dirección y solo la vuelven a descargar si esta cambia.
 
 ## 8. Verificación

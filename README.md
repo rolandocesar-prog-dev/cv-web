@@ -77,7 +77,7 @@ tools/.venv/Scripts/python tools/generar_cv_pdf.py
 
 `img/og-image.png` (1200×630) es la que usan LinkedIn, WhatsApp y X. `img/og-image.svg` es su fuente editable: tras cambiarla, vuelve a exportarla a PNG a 1200×630 con las fuentes Geist y Geist Mono disponibles (por ejemplo, abriéndola en un navegador con las fuentes instaladas y capturándola con Playwright); sin ellas el texto cambia de tipografía.
 
-Las redes guardan la imagen según su dirección: al cambiarla, sube también la versión `?v=N` de `og:image` y `twitter:image` en `index.html` (hoy `?v=2`) y vuelve a generar la versión en inglés; si no, LinkedIn sigue mostrando la anterior. Para refrescarla en LinkedIn: [Post Inspector](https://www.linkedin.com/post-inspector/).
+Las redes guardan la imagen según su dirección: al cambiarla, sube también la versión `?v=N` de `og:image` y `twitter:image` en `index.html` (hoy `?v=3`) y vuelve a generar la versión en inglés; si no, LinkedIn sigue mostrando la anterior. Para refrescarla en LinkedIn: [Post Inspector](https://www.linkedin.com/post-inspector/).
 
 Las cifras del panel «estado de los repositorios» y de las tarjetas están escritas en `index.html`: si cambia el número de pruebas de un proyecto, actualiza las dos y el total de la sección de cifras.
 
