@@ -8,7 +8,7 @@ Cada tarea es un commit (Conventional Commits en español). Se marca `[x]` al te
 
 ## Hito R2 — Página
 
-- [ ] 2. Rediseño oscuro de la página en español e inglés: estructura nueva en `index.html`,
+- [x] 2. Rediseño oscuro de la página en español e inglés: estructura nueva en `index.html`,
       `css/styles.css` reescrito con los tokens, `js/main.js` sin pestañas (se borra `tabs.js`),
       banner de consola con los colores nuevos, demo del RAG en `img/demo-rag.gif`, traducciones
       en `tools/en.json` y `en/index.html` regenerado (RF-01 a RF-11, RNF-01 a RNF-05).

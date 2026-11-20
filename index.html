@@ -61,9 +61,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preload" as="image" href="img/perfil-web.webp" fetchpriority="high" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/styles.css" />
@@ -128,11 +127,19 @@
 
         <header class="header" data-scroll-state="top">
             <div class="container header__inner">
-                <a href="#hero" class="logo" aria-label="Inicio — Rolando Vásquez">
-                    <span class="logo__icon mono" aria-hidden="true">&lt;/&gt;</span>
-                    <span class="logo__text">RV</span>
+                <a href="#hero" class="logo">
+                    <span class="logo__mark mono" aria-hidden="true">rv</span>
+                    <span class="logo__text">Rolando Vásquez</span>
                 </a>
-
+                <nav class="nav" aria-label="Secciones">
+                    <ul class="nav__list mono">
+                        <li><a href="#projects" class="nav__link">Proyectos</a></li>
+                        <li><a href="#apps" class="nav__link">Apps</a></li>
+                        <li><a href="#skills" class="nav__link">Stack</a></li>
+                        <li><a href="#education" class="nav__link">Trayectoria</a></li>
+                        <li><a href="#contact" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
                 <div class="header__actions">
                     <a href="en/" class="lang-switch" hreflang="en" lang="en">English</a>
                     <button
@@ -160,39 +167,33 @@
                 Cerrar
                 <span class="menu__close-x" aria-hidden="true">&times;</span>
             </button>
-
             <ul class="menu__list">
                 <li class="menu__item">
-                    <span class="menu__num" aria-hidden="true">01</span
+                    <span class="menu__num mono" aria-hidden="true">01</span
                     ><a href="#hero" class="menu__link">Inicio</a>
                 </li>
                 <li class="menu__item">
-                    <span class="menu__num" aria-hidden="true">02</span
-                    ><a href="#about" class="menu__link">Sobre mí</a>
-                </li>
-                <li class="menu__item">
-                    <span class="menu__num" aria-hidden="true">03</span
-                    ><a href="#skills" class="menu__link">Skills</a>
-                </li>
-                <li class="menu__item">
-                    <span class="menu__num" aria-hidden="true">04</span
-                    ><a href="#apps" class="menu__link">Apps publicadas</a>
-                </li>
-                <li class="menu__item">
-                    <span class="menu__num" aria-hidden="true">05</span
+                    <span class="menu__num mono" aria-hidden="true">02</span
                     ><a href="#projects" class="menu__link">Proyectos</a>
                 </li>
                 <li class="menu__item">
-                    <span class="menu__num" aria-hidden="true">06</span
-                    ><a href="#education" class="menu__link">Formación</a>
+                    <span class="menu__num mono" aria-hidden="true">03</span
+                    ><a href="#apps" class="menu__link">Apps publicadas</a>
                 </li>
                 <li class="menu__item">
-                    <span class="menu__num" aria-hidden="true">07</span
+                    <span class="menu__num mono" aria-hidden="true">04</span
+                    ><a href="#skills" class="menu__link">Stack</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num mono" aria-hidden="true">05</span
+                    ><a href="#education" class="menu__link">Trayectoria</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__num mono" aria-hidden="true">06</span
                     ><a href="#contact" class="menu__link">Contacto</a>
                 </li>
             </ul>
-
-            <div class="menu__footer">
+            <div class="menu__footer mono">
                 <a href="mailto:rolando.sha256@gmail.com">rolando.sha256@gmail.com</a>
                 <span>+591&nbsp;78249575</span>
                 <span>Tarija, Bolivia</span>
@@ -201,15 +202,19 @@
 
         <main id="main">
             <section id="hero" class="hero" aria-labelledby="hero-title">
-                <div class="hero__bg" aria-hidden="true">
-                    <div class="hero__grid"></div>
-                    <div class="hero__blob"></div>
-                </div>
                 <div class="container hero__inner">
                     <div class="hero__text">
+                        <p class="hero__status mono">
+                            <span class="status-dot" aria-hidden="true"></span>
+                            Disponible para trabajo remoto · Tarija, Bolivia (UTC−4)
+                        </p>
                         <h1 id="hero-title" class="hero__name">Rolando<br />Vásquez</h1>
                         <p class="hero__role">
                             Desarrollador full stack y móvil · IA&nbsp;aplicada
+                        </p>
+                        <p class="hero__pitch">
+                            Software con pruebas, CI y decisiones documentadas, del requisito a
+                            producción.
                         </p>
                         <p class="hero__desc">
                             Construyo apps con Flutter, interfaces web con React y backends con
@@ -225,1320 +230,833 @@
                                     <use href="img/icons.svg#ui-arrow-right" />
                                 </svg>
                             </a>
-                            <a href="#contact" class="btn btn--ghost">Contáctame</a>
-                            <div class="hero__links">
-                                <a href="CV_Rolando_Vasquez_Tavera.pdf" class="btn-link" download
-                                    >Descargar CV ↓</a
-                                >
-                                <a
-                                    href="https://github.com/rolandocesar-prog-dev"
-                                    class="btn-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >GitHub ↗</a
-                                >
-                                <a
-                                    href="https://www.linkedin.com/in/rolando-cesar-vasquez-tavera-b62235222"
-                                    class="btn-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    >LinkedIn ↗</a
-                                >
-                            </div>
+                            <a href="CV_Rolando_Vasquez_Tavera.pdf" class="btn btn--ghost" download
+                                >Descargar CV (PDF)</a
+                            >
+                            <a
+                                href="https://github.com/rolandocesar-prog-dev"
+                                class="text-link mono"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >GitHub <span aria-hidden="true">↗</span></a
+                            >
+                            <a
+                                href="https://www.linkedin.com/in/rolando-cesar-vasquez-tavera-b62235222"
+                                class="text-link mono"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >LinkedIn <span aria-hidden="true">↗</span></a
+                            >
                         </div>
                     </div>
-                    <div class="hero__visual">
-                        <div class="hero__photo-ring" aria-hidden="true"></div>
-                        <div class="hero__photo-wrap">
+
+                    <aside class="repo-status" aria-labelledby="repo-status-title">
+                        <div class="repo-status__bar">
+                            <p id="repo-status-title" class="repo-status__title">
+                                github.com/rolandocesar-prog-dev
+                            </p>
+                            <span class="repo-status__dots" aria-hidden="true">
+                                <span></span><span></span><span></span>
+                            </span>
+                        </div>
+                        <table class="repo-status__table">
+                            <caption class="sr-only">
+                                Pruebas automatizadas y CI de cada proyecto
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Repositorio</th>
+                                    <th scope="col" class="num">Pruebas</th>
+                                    <th scope="col">CI</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">inventory-api-nestjs</th>
+                                    <td class="num">184</td>
+                                    <td class="ci-pass">pasa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">docs-rag-assistant</th>
+                                    <td class="num">180+</td>
+                                    <td class="ci-pass">pasa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">turnos-app-flutter</th>
+                                    <td class="num">173</td>
+                                    <td class="ci-pass">pasa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">inventory-web-react</th>
+                                    <td class="num">143</td>
+                                    <td class="ci-pass">pasa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">qa-e2e-playwright</th>
+                                    <td class="num">139</td>
+                                    <td class="ci-pass">pasa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">inventory-agent-mcp</th>
+                                    <td class="num">126</td>
+                                    <td class="ci-pass">pasa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">invoice-scanner-flutter</th>
+                                    <td class="num">123</td>
+                                    <td class="ci-pass">pasa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="repo-status__foot">
+                            <span>7/7 repos en verde</span>
+                            <span>1.000+ pruebas</span>
+                        </p>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="figures" aria-label="En cifras">
+                <ul class="container figures__list">
+                    <li class="figure">
+                        <span class="figure__num">5+</span>
+                        <span class="figure__label mono">Años de experiencia</span>
+                    </li>
+                    <li class="figure">
+                        <span class="figure__num">4</span>
+                        <span class="figure__label mono">Apps publicadas</span>
+                    </li>
+                    <li class="figure">
+                        <span class="figure__num">7</span>
+                        <span class="figure__label mono">Proyectos abiertos con CI</span>
+                    </li>
+                    <li class="figure">
+                        <span class="figure__num figure__num--accent">1.000+</span>
+                        <span class="figure__label mono">Pruebas automatizadas</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="ecosystem" class="section" aria-labelledby="ecosystem-title">
+                <div class="container">
+                    <div class="section__head reveal">
+                        <div class="section__heading">
+                            <p class="section__kicker mono">01 / caso principal</p>
+                            <h2 id="ecosystem-title" class="section__title">
+                                Un sistema de inventario, cuatro proyectos conectados
+                            </h2>
+                        </div>
+                        <p class="section__lead">
+                            Una API como núcleo y tres clientes que la usan: un panel web, un
+                            escáner de facturas con visión y un agente que conversa en español.
+                            Ningún movimiento se registra sin aprobación humana.
+                        </p>
+                    </div>
+                    <div class="eco reveal">
+                        <ul class="eco__list">
+                            <li class="eco__item eco__item--left">
+                                <div class="eco__node">
+                                    <span class="eco__kicker mono">frontend web</span>
+                                    <span class="eco__name">Panel web</span>
+                                    <span class="eco__meta"
+                                        >React · TanStack Query · 143 pruebas</span
+                                    >
+                                </div>
+                                <span class="eco__link mono">HTTP · JWT</span>
+                            </li>
+                            <li class="eco__item eco__item--core">
+                                <div class="eco__node eco__node--core">
+                                    <span class="eco__kicker mono">núcleo</span>
+                                    <span class="eco__name">API de inventario</span>
+                                    <span class="eco__meta">NestJS · PostgreSQL · 184 pruebas</span>
+                                </div>
+                            </li>
+                            <li class="eco__item eco__item--right">
+                                <span class="eco__link mono">MCP · aprobación humana</span>
+                                <div class="eco__node">
+                                    <span class="eco__kicker mono">agentes de IA</span>
+                                    <span class="eco__name">Agente MCP</span>
+                                    <span class="eco__meta">TypeScript · Ollama · 126 pruebas</span>
+                                </div>
+                            </li>
+                            <li class="eco__item eco__item--below">
+                                <span class="eco__link eco__link--vertical mono"
+                                    >foto → entradas sin duplicados</span
+                                >
+                                <div class="eco__node">
+                                    <span class="eco__kicker mono">móvil · visión</span>
+                                    <span class="eco__name">Escáner de facturas</span>
+                                    <span class="eco__meta">Flutter · Ollama · 10/10 facturas</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section" aria-labelledby="projects-title">
+                <div class="container">
+                    <div class="section__head reveal">
+                        <div class="section__heading">
+                            <p class="section__kicker mono">02 / proyectos</p>
+                            <h2 id="projects-title" class="section__title">
+                                Código abierto, medido y con demo
+                            </h2>
+                        </div>
+                        <p class="section__lead">
+                            Proyectos propios con código abierto, pruebas automatizadas y CI. Cada
+                            uno se puede revisar en GitHub, y varios se pueden probar en línea.
+                        </p>
+                    </div>
+
+                    <article class="featured reveal" aria-labelledby="project-rag">
+                        <div class="featured__body">
+                            <p class="card__area mono">IA aplicada · RAG</p>
+                            <h3 id="project-rag" class="featured__title">
+                                Asistente RAG sobre documentación
+                            </h3>
+                            <p class="card__desc">
+                                Responde en español sobre la documentación de Kubernetes citando
+                                cada fuente, y avisa cuando la respuesta no está. Búsqueda híbrida
+                                en PostgreSQL + pgvector y modelo intercambiable, local o en la
+                                nube.
+                            </p>
+                            <p class="metric metric--lg">
+                                <span class="metric__num">100 %</span>
+                                <span class="metric__label"
+                                    >trae el documento correcto en las preguntas de prueba</span
+                                >
+                            </p>
+                            <ul class="chips mono">
+                                <li>Python</li>
+                                <li>FastAPI</li>
+                                <li>pgvector</li>
+                                <li>Docker</li>
+                            </ul>
+                            <ul class="card__links mono">
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/docs-rag-assistant"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Código <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/docs-rag-assistant/blob/main/docs/demo.gif"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver demo <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <figure class="featured__media">
                             <img
-                                src="img/perfil-web.webp"
-                                width="300"
-                                height="360"
-                                alt="Rolando César Vásquez Tavera, desarrollador"
-                                class="hero__photo"
-                                fetchpriority="high"
+                                src="img/demo-rag.gif"
+                                width="960"
+                                height="720"
+                                loading="lazy"
+                                decoding="async"
+                                alt="Demostración del asistente: responde una pregunta sobre Kubernetes citando sus fuentes"
                             />
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        </figure>
+                    </article>
 
-            <section id="about" class="section section--alt about" aria-labelledby="about-title">
-                <div class="container">
-                    <h2 id="about-title" class="section__title section__title--spaced reveal">
-                        Sobre mí
-                    </h2>
-                    <div class="about__body reveal">
-                        <p class="about__lead">
-                            Llevo aplicaciones desde el requerimiento hasta producción: diseño,
-                            código, pruebas, despliegue y publicación en las tiendas.
-                        </p>
-                        <p class="about__text">
-                            Desde 2020 trabajo como desarrollador independiente con Flutter,
-                            Firebase y JavaScript/TypeScript. Desarrollé y publiqué 4 apps para
-                            empresas de delivery y movilidad, y mi experiencia en QA me hace pensar
-                            en la calidad desde el diseño. En mis proyectos propios cada decisión
-                            queda documentada, medida y cubierta por pruebas. Curso Ingeniería en
-                            Sistemas en la Universidad Adventista de Bolivia.
-                        </p>
-                    </div>
-                    <ul class="stats reveal">
-                        <li class="stat">
-                            <span class="stat__num">5+</span>
-                            <span class="stat__label">Años de experiencia</span>
-                        </li>
-                        <li class="stat">
-                            <span class="stat__num">4</span>
-                            <span class="stat__label">Apps publicadas</span>
-                        </li>
-                        <li class="stat">
-                            <span class="stat__num">7</span>
-                            <span class="stat__label">Proyectos abiertos con CI</span>
-                        </li>
-                        <li class="stat">
-                            <span class="stat__num">1.000+</span>
-                            <span class="stat__label">Pruebas automatizadas</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                    <div class="project-grid">
+                        <article class="card reveal" aria-labelledby="project-api">
+                            <p class="card__area mono">Backend · API REST</p>
+                            <h3 id="project-api" class="card__title">API de inventario</h3>
+                            <p class="card__desc">
+                                Historial auditable, roles con JWT y tokens rotativos. El stock
+                                nunca queda negativo, ni con 20 salidas simultáneas.
+                            </p>
+                            <p class="metric">
+                                <span class="metric__num">184</span>
+                                <span class="metric__label">pruebas · errores RFC 9457</span>
+                            </p>
+                            <p class="card__demo">
+                                Cuenta de demo (operador): <code>demo@inventario.test</code> /
+                                <code>demo-inventario-2026</code>
+                            </p>
+                            <p class="card__stack mono">
+                                NestJS · TypeScript · PostgreSQL · Docker
+                            </p>
+                            <ul class="card__links mono">
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Código <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/inventory-api-nestjs/blob/main/docs/demo.gif"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver demo <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://inventory-api-c5yi.onrender.com/docs"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Probar la API <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </article>
 
-            <section id="skills" class="section skills" aria-labelledby="skills-title">
-                <div class="container">
-                    <h2 id="skills-title" class="section__title reveal">Skills</h2>
-                    <p class="section__lead reveal">
-                        Con qué construyo hoy, qué manejo de trabajos anteriores y en qué me estoy
-                        especializando.
-                    </p>
-
-                    <div class="skills__tabs reveal">
-                        <div
-                            role="tablist"
-                            class="skills__tablist mono"
-                            aria-label="Grupos de habilidades técnicas"
-                        >
-                            <button
-                                type="button"
-                                role="tab"
-                                id="tab-core"
-                                class="skills__tab"
-                                aria-selected="true"
-                                aria-controls="panel-core"
-                            >
-                                Núcleo
-                            </button>
-                            <button
-                                type="button"
-                                role="tab"
-                                id="tab-extra"
-                                class="skills__tab"
-                                aria-selected="false"
-                                aria-controls="panel-extra"
-                                tabindex="-1"
-                            >
-                                Complementario
-                            </button>
-                            <button
-                                type="button"
-                                role="tab"
-                                id="tab-focus"
-                                class="skills__tab"
-                                aria-selected="false"
-                                aria-controls="panel-focus"
-                                tabindex="-1"
-                            >
-                                IA y calidad
-                            </button>
-                        </div>
-
-                        <div
-                            id="panel-core"
-                            role="tabpanel"
-                            class="skills__panel"
-                            aria-labelledby="tab-core"
-                        >
-                            <div class="skill-grid">
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-flutter" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Flutter</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-dart" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Dart</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-ts" />
-                                    </svg>
-                                    <h3 class="skill-card__name">TypeScript</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-js" />
-                                    </svg>
-                                    <h3 class="skill-card__name">JavaScript</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-react" />
-                                    </svg>
-                                    <h3 class="skill-card__name">React</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-nestjs" />
-                                    </svg>
-                                    <h3 class="skill-card__name">NestJS</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-python" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Python</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-postgresql" />
-                                    </svg>
-                                    <h3 class="skill-card__name">PostgreSQL</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-firebase" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Firebase</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-docker" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Docker</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-git" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Git y GitHub</h3>
-                                </article>
-                            </div>
-                        </div>
-                        <div
-                            id="panel-extra"
-                            role="tabpanel"
-                            class="skills__panel"
-                            aria-labelledby="tab-extra"
-                            hidden
-                        >
-                            <div class="skill-grid">
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-react" />
-                                    </svg>
-                                    <h3 class="skill-card__name">React Native</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-angular" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Angular</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-spring" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Spring Boot</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-java" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Java</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-php" />
-                                    </svg>
-                                    <h3 class="skill-card__name">PHP</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-mysql" />
-                                    </svg>
-                                    <h3 class="skill-card__name">MySQL</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#tech-supabase" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Supabase</h3>
-                                </article>
-                            </div>
-                        </div>
-                        <div
-                            id="panel-focus"
-                            role="tabpanel"
-                            class="skills__panel"
-                            aria-labelledby="tab-focus"
-                            hidden
-                        >
-                            <div class="skill-grid">
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg skill-card__svg--ui"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#ui-brain-circuit" />
-                                    </svg>
-                                    <h3 class="skill-card__name">RAG y búsqueda híbrida</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg skill-card__svg--ui"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#ui-message-circle" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Agentes con MCP</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg skill-card__svg--ui"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#ui-clipboard-check" />
-                                    </svg>
-                                    <h3 class="skill-card__name">Pruebas E2E con Playwright</h3>
-                                </article>
-                                <article class="skill-card">
-                                    <svg
-                                        class="skill-card__svg skill-card__svg--ui"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                    >
-                                        <use href="img/icons.svg#ui-refresh-cw" />
-                                    </svg>
-                                    <h3 class="skill-card__name">CI/CD con GitHub Actions</h3>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h3 class="skills__subtitle reveal">Idiomas</h3>
-                    <ul class="languages reveal">
-                        <li class="language">
-                            <div class="language__head">
-                                <svg class="icon" aria-hidden="true" focusable="false">
-                                    <use href="img/icons.svg#ui-languages" />
-                                </svg>
-                                <span class="language__name">Español</span>
-                                <span class="language__level mono">Nativo</span>
-                            </div>
-                            <div class="language__bar" aria-hidden="true">
-                                <span class="language__fill" style="--level: 100%"></span>
-                            </div>
-                        </li>
-                        <li class="language">
-                            <div class="language__head">
-                                <svg class="icon" aria-hidden="true" focusable="false">
-                                    <use href="img/icons.svg#ui-languages" />
-                                </svg>
-                                <span class="language__name"
-                                    >Inglés <span class="language__hint">(técnico)</span></span
+                        <article class="card reveal" aria-labelledby="project-web">
+                            <p class="card__area mono">Frontend web · React</p>
+                            <h3 id="project-web" class="card__title">Panel web de inventario</h3>
+                            <p class="card__desc">
+                                Catálogo, kardex y movimientos de stock. Las escrituras nunca se
+                                reintentan solas, para no duplicar movimientos.
+                            </p>
+                            <p class="metric">
+                                <span class="metric__num">143</span>
+                                <span class="metric__label"
+                                    >pruebas · 16 de extremo a extremo con accesibilidad</span
                                 >
-                                <span class="language__level mono">B1 intermedio</span>
-                            </div>
-                            <div class="language__bar" aria-hidden="true">
-                                <span class="language__fill" style="--level: 45%"></span>
-                            </div>
-                        </li>
-                    </ul>
+                            </p>
+                            <p class="card__demo">
+                                Se prueba con un clic: «Usar la cuenta de demostración».
+                            </p>
+                            <p class="card__stack mono">
+                                React · TypeScript · TanStack Query · Tailwind · Playwright
+                            </p>
+                            <ul class="card__links mono">
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/inventory-web-react"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Código <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/inventory-web-react/blob/main/docs/demo.gif"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver demo <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://rolandocesar-prog-dev.github.io/inventory-web-react/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Probar el panel <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card reveal" aria-labelledby="project-turnos">
+                            <p class="card__area mono">Móvil y web · Flutter + Firebase</p>
+                            <h3 id="project-turnos" class="card__title">Reservas de turnos</h3>
+                            <p class="card__desc">
+                                Canchas y consultorios publican sus horarios y sus clientes reservan
+                                sin turnos duplicados, con recordatorios push desde Cloud Functions.
+                            </p>
+                            <p class="metric">
+                                <span class="metric__num">173</span>
+                                <span class="metric__label"
+                                    >pruebas · accesibilidad verificada</span
+                                >
+                            </p>
+                            <p class="card__stack mono">
+                                Flutter · Firebase · Riverpod · TypeScript
+                            </p>
+                            <ul class="card__links mono">
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/turnos-app-flutter"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Código <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/turnos-app-flutter/blob/main/docs/demo.gif"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver demo <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://turnos-rv-portafolio.web.app"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Probar la web <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card reveal" aria-labelledby="project-facturas">
+                            <p class="card__area mono">Móvil y web · IA con visión</p>
+                            <h3 id="project-facturas" class="card__title">
+                                Escáner de facturas con IA
+                            </h3>
+                            <p class="card__desc">
+                                Lee la foto de una factura con un modelo de visión local, empareja
+                                cada línea con el catálogo y registra las entradas tras la revisión
+                                de una persona.
+                            </p>
+                            <p class="metric">
+                                <span class="metric__num">10/10</span>
+                                <span class="metric__label">facturas perfectas · 123 pruebas</span>
+                            </p>
+                            <p class="card__stack mono">Flutter · Riverpod · Ollama · Visión</p>
+                            <ul class="card__links mono">
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/invoice-scanner-flutter"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Código <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/invoice-scanner-flutter/blob/main/docs/demo.gif"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver demo <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card reveal" aria-labelledby="project-agent">
+                            <p class="card__area mono">Agentes de IA · MCP</p>
+                            <h3 id="project-agent" class="card__title">
+                                Agente de inventario con MCP
+                            </h3>
+                            <p class="card__desc">
+                                Consulta y mueve el inventario conversando en español con un modelo
+                                local. Nada se registra sin que una persona lo apruebe.
+                            </p>
+                            <p class="metric">
+                                <span class="metric__num">0</span>
+                                <span class="metric__label"
+                                    >escrituras sin aprobación en 18 escenarios</span
+                                >
+                            </p>
+                            <p class="card__stack mono">TypeScript · MCP · Ollama · LLM</p>
+                            <ul class="card__links mono">
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/inventory-agent-mcp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Código <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/inventory-agent-mcp/blob/main/docs/demo.gif"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver demo <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article class="card reveal" aria-labelledby="project-qa">
+                            <p class="card__area mono">QA · Pruebas E2E</p>
+                            <h3 id="project-qa" class="card__title">Suite E2E con Playwright</h3>
+                            <p class="card__desc">
+                                Plan de pruebas priorizado sobre Sauce Demo en cuatro navegadores,
+                                con 13 defectos reales documentados, accesibilidad y regresión
+                                visual.
+                            </p>
+                            <p class="metric">
+                                <span class="metric__num">0</span>
+                                <span class="metric__label"
+                                    >pruebas inestables en 30 ejecuciones</span
+                                >
+                            </p>
+                            <p class="card__stack mono">Playwright · TypeScript · QA</p>
+                            <ul class="card__links mono">
+                                <li>
+                                    <a
+                                        href="https://github.com/rolandocesar-prog-dev/qa-e2e-playwright"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Código <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://rolandocesar-prog-dev.github.io/qa-e2e-playwright/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver reporte <span aria-hidden="true">↗</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </section>
 
-            <section id="apps" class="section section--alt apps" aria-labelledby="apps-title">
+            <section id="apps" class="section" aria-labelledby="apps-title">
                 <div class="container">
-                    <h2 id="apps-title" class="section__title reveal">Apps publicadas</h2>
-                    <p class="section__lead reveal">
-                        Aplicaciones que desarrollé y publiqué bajo mi propia cuenta de
-                        desarrollador en Google Play Console y Apple Developer Program. Me
-                        contrataron para el desarrollo y la publicación; el lanzamiento comercial lo
-                        gestionó cada empresa.
-                    </p>
-
-                    <div class="app-grid">
-                        <article class="app-card reveal">
-                            <header class="app-card__head">
-                                <svg
-                                    class="icon app-card__icon"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                >
-                                    <use href="img/icons.svg#ui-smartphone" />
-                                </svg>
-                                <span class="badge badge--done">Publicada</span>
-                            </header>
-                            <p class="app-card__type">Delivery y servicios · Pasajero</p>
-                            <h3 class="app-card__title">GoPlus</h3>
-                            <p class="app-card__desc">
+                    <div class="section__head reveal">
+                        <div class="section__heading">
+                            <p class="section__kicker mono">03 / en producción</p>
+                            <h2 id="apps-title" class="section__title">Apps publicadas</h2>
+                        </div>
+                        <p class="section__lead">
+                            Aplicaciones que desarrollé y publiqué bajo mi propia cuenta de
+                            desarrollador en Google Play Console y Apple Developer Program. Me
+                            contrataron para el desarrollo y la publicación; el lanzamiento
+                            comercial lo gestionó cada empresa.
+                        </p>
+                    </div>
+                    <ul class="apps reveal">
+                        <li class="app">
+                            <p class="app__type mono">Delivery y servicios · Pasajero</p>
+                            <h3 class="app__name">GoPlus</h3>
+                            <p class="app__desc">
                                 App de delivery y servicios para usuarios finales. Desarrollada en
                                 Flutter para Android e iOS, con backend en tiempo real sobre
                                 Firebase.
                             </p>
-                            <ul class="app-card__stack">
-                                <li>
-                                    <svg class="icon" aria-hidden="true" focusable="false">
-                                        <use href="img/icons.svg#tech-flutter" /></svg
-                                    >Flutter
-                                </li>
-                                <li>
-                                    <svg class="icon" aria-hidden="true" focusable="false">
-                                        <use href="img/icons.svg#tech-firebase" /></svg
-                                    >Firebase
-                                </li>
-                            </ul>
-                            <ul class="store-links">
+                            <ul class="app__stores mono">
                                 <li>
                                     <a
-                                        class="store-link"
                                         href="https://play.google.com/store/apps/details?id=com.goplus.customerapp"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        >Google Play <span aria-hidden="true">↗</span></a
                                     >
-                                        Google Play
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#ui-external-link" />
-                                        </svg>
-                                    </a>
                                 </li>
                                 <li>
                                     <a
-                                        class="store-link"
                                         href="https://apps.apple.com/bo/app/id6787314464"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        >App Store <span aria-hidden="true">↗</span></a
                                     >
-                                        App Store
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#ui-external-link" />
-                                        </svg>
-                                    </a>
                                 </li>
                             </ul>
-                        </article>
-
-                        <article class="app-card reveal">
-                            <header class="app-card__head">
-                                <svg
-                                    class="icon app-card__icon"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                >
-                                    <use href="img/icons.svg#ui-smartphone" />
-                                </svg>
-                                <span class="badge badge--done">Publicada</span>
-                            </header>
-                            <p class="app-card__type">Delivery y servicios · Repartidor</p>
-                            <h3 class="app-card__title">GoPlus Driver</h3>
-                            <p class="app-card__desc">
+                        </li>
+                        <li class="app">
+                            <p class="app__type mono">Delivery y servicios · Repartidor</p>
+                            <h3 class="app__name">GoPlus Driver</h3>
+                            <p class="app__desc">
                                 Módulo para repartidores: gestión de pedidos, estados de entrega y
                                 ganancias, con notificaciones push en tiempo real.
                             </p>
-                            <ul class="app-card__stack">
-                                <li>
-                                    <svg class="icon" aria-hidden="true" focusable="false">
-                                        <use href="img/icons.svg#tech-flutter" /></svg
-                                    >Flutter
-                                </li>
-                                <li>
-                                    <svg class="icon" aria-hidden="true" focusable="false">
-                                        <use href="img/icons.svg#tech-firebase" /></svg
-                                    >Firebase
-                                </li>
-                            </ul>
-                            <ul class="store-links">
+                            <ul class="app__stores mono">
                                 <li>
                                     <a
-                                        class="store-link"
                                         href="https://play.google.com/store/apps/details?id=com.goplus.driverapp"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        >Google Play <span aria-hidden="true">↗</span></a
                                     >
-                                        Google Play
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#ui-external-link" />
-                                        </svg>
-                                    </a>
                                 </li>
                                 <li>
                                     <a
-                                        class="store-link"
                                         href="https://apps.apple.com/bo/app/id6787321937"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        >App Store <span aria-hidden="true">↗</span></a
                                     >
-                                        App Store
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#ui-external-link" />
-                                        </svg>
-                                    </a>
                                 </li>
                             </ul>
-                        </article>
-
-                        <article class="app-card reveal">
-                            <header class="app-card__head">
-                                <svg
-                                    class="icon app-card__icon"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                >
-                                    <use href="img/icons.svg#ui-smartphone" />
-                                </svg>
-                                <span class="badge badge--done">Publicada</span>
-                            </header>
-                            <p class="app-card__type">Movilidad · Pasajero</p>
-                            <h3 class="app-card__title">Llévame App</h3>
-                            <p class="app-card__desc">
+                        </li>
+                        <li class="app">
+                            <p class="app__type mono">Movilidad · Pasajero</p>
+                            <h3 class="app__name">Llévame App</h3>
+                            <p class="app__desc">
                                 App de movilidad para pasajeros. Desarrollo del módulo y publicación
                                 en App Store.
                             </p>
-                            <ul class="app-card__stack">
-                                <li>
-                                    <svg class="icon" aria-hidden="true" focusable="false">
-                                        <use href="img/icons.svg#tech-react" /></svg
-                                    >React Native
-                                </li>
-                            </ul>
-                            <ul class="store-links">
+                            <ul class="app__stores mono">
                                 <li>
                                     <a
-                                        class="store-link"
                                         href="https://apps.apple.com/bo/app/id6450678669"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        >App Store <span aria-hidden="true">↗</span></a
                                     >
-                                        App Store
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#ui-external-link" />
-                                        </svg>
-                                    </a>
                                 </li>
                             </ul>
-                        </article>
-
-                        <article class="app-card reveal">
-                            <header class="app-card__head">
-                                <svg
-                                    class="icon app-card__icon"
-                                    aria-hidden="true"
-                                    focusable="false"
-                                >
-                                    <use href="img/icons.svg#ui-smartphone" />
-                                </svg>
-                                <span class="badge badge--done">Publicada</span>
-                            </header>
-                            <p class="app-card__type">Movilidad · Conductor</p>
-                            <h3 class="app-card__title">Llévame Driver</h3>
-                            <p class="app-card__desc">
+                        </li>
+                        <li class="app">
+                            <p class="app__type mono">Movilidad · Conductor</p>
+                            <h3 class="app__name">Llévame Driver</h3>
+                            <p class="app__desc">
                                 Módulo para conductores de la plataforma. También hice el QA de la
                                 plataforma: pruebas de funcionalidad, usabilidad, rendimiento y
                                 seguridad.
                             </p>
-                            <ul class="app-card__stack">
-                                <li>
-                                    <svg class="icon" aria-hidden="true" focusable="false">
-                                        <use href="img/icons.svg#tech-react" /></svg
-                                    >React Native
-                                </li>
-                                <li>
-                                    <svg class="icon icon--ui" aria-hidden="true" focusable="false">
-                                        <use href="img/icons.svg#ui-clipboard-check" /></svg
-                                    >QA
-                                </li>
-                            </ul>
-                            <ul class="store-links">
+                            <ul class="app__stores mono">
                                 <li>
                                     <a
-                                        class="store-link"
                                         href="https://apps.apple.com/bo/app/id6469526845"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        >App Store <span aria-hidden="true">↗</span></a
                                     >
-                                        App Store
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#ui-external-link" />
-                                        </svg>
-                                    </a>
                                 </li>
                             </ul>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="section projects" aria-labelledby="projects-title">
-                <div class="container">
-                    <h2 id="projects-title" class="section__title reveal">Proyectos</h2>
-                    <p class="section__lead reveal">
-                        Proyectos propios con código abierto, pruebas automatizadas y CI. Cada uno
-                        se puede revisar en GitHub, y varios se pueden probar en línea.
-                    </p>
-
-                    <div class="project-grid">
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">IA aplicada · RAG</p>
-                                        <h3 class="project__title">
-                                            Asistente RAG sobre documentación
-                                        </h3>
-                                    </div>
-                                </header>
-                                <p class="project__desc">
-                                    Responde preguntas sobre la documentación de Kubernetes en
-                                    español citando cada fuente, y avisa cuando la respuesta no
-                                    está. Búsqueda híbrida en PostgreSQL + pgvector, modelo
-                                    intercambiable (local o en la nube) y evaluación automática:
-                                    trae el documento correcto en el 100 % de las preguntas de
-                                    prueba.
-                                </p>
-                                <ul class="project__stack">
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-python" />
-                                        </svg>
-                                        Python
-                                    </li>
-                                    <li>FastAPI</li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-postgresql" />
-                                        </svg>
-                                        pgvector
-                                    </li>
-                                    <li>
-                                        <svg
-                                            class="icon icon--ui"
-                                            aria-hidden="true"
-                                            focusable="false"
-                                        >
-                                            <use href="img/icons.svg#ui-brain-circuit" />
-                                        </svg>
-                                        RAG / LLM
-                                    </li>
-                                    <li>Docker</li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/docs-rag-assistant"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/docs-rag-assistant/blob/main/docs/demo.gif"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Ver demo
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">Backend · API REST</p>
-                                        <h3 class="project__title">API de inventario</h3>
-                                    </div>
-                                </header>
-                                <p class="project__desc">
-                                    Inventario para pequeños comercios con historial auditable de
-                                    movimientos, roles con JWT y tokens de renovación rotativos, y
-                                    un stock que nunca queda negativo aunque haya operaciones
-                                    simultáneas: probado con 20 salidas a la vez contra PostgreSQL
-                                    real. Errores RFC 9457, logs estructurados, 184 pruebas y CI.
-                                </p>
-                                <p class="project__demo">
-                                    Cuenta de demo (operador): <code>demo@inventario.test</code> /
-                                    <code>demo-inventario-2026</code>
-                                </p>
-                                <ul class="project__stack">
-                                    <li>NestJS</li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-ts" />
-                                        </svg>
-                                        TypeScript
-                                    </li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-postgresql" />
-                                        </svg>
-                                        PostgreSQL
-                                    </li>
-                                    <li>Docker</li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/inventory-api-nestjs"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/inventory-api-nestjs/blob/main/docs/demo.gif"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Ver demo
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://inventory-api-c5yi.onrender.com/docs"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Probar la API
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">Frontend web · React</p>
-                                        <h3 class="project__title">Panel web de inventario</h3>
-                                    </div>
-                                </header>
-                                <p class="project__desc">
-                                    Interfaz web de la API de inventario: catálogo con búsqueda y
-                                    filtros en la dirección, kardex, movimientos de stock y
-                                    pantallas de administrador. Sesión con tokens rotativos y una
-                                    sola renovación, y escrituras que nunca se reintentan solas para
-                                    no duplicar movimientos. 143 pruebas, 16 de extremo a extremo
-                                    con accesibilidad, y CI que lo publica.
-                                </p>
-                                <p class="project__demo">
-                                    Se prueba con un clic: «Usar la cuenta de demostración».
-                                </p>
-                                <ul class="project__stack">
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-react" />
-                                        </svg>
-                                        React
-                                    </li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-ts" />
-                                        </svg>
-                                        TypeScript
-                                    </li>
-                                    <li>TanStack Query</li>
-                                    <li>Tailwind</li>
-                                    <li>Playwright</li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/inventory-web-react"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/inventory-web-react/blob/main/docs/demo.gif"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Ver demo
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://rolandocesar-prog-dev.github.io/inventory-web-react/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Probar el panel
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">
-                                            Móvil y web · Flutter + Firebase
-                                        </p>
-                                        <h3 class="project__title">Reservas de turnos</h3>
-                                    </div>
-                                </header>
-                                <p class="project__desc">
-                                    Canchas y consultorios publican sus horarios y sus clientes
-                                    reservan sin turnos duplicados: transacciones y reglas de
-                                    Firestore con pruebas automatizadas, panel para el negocio,
-                                    recordatorios push con Cloud Functions y versión web publicada.
-                                    173 pruebas de la app, accesibilidad verificada y CI.
-                                </p>
-                                <ul class="project__stack">
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-flutter" />
-                                        </svg>
-                                        Flutter
-                                    </li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-firebase" />
-                                        </svg>
-                                        Firebase
-                                    </li>
-                                    <li>Riverpod</li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-ts" />
-                                        </svg>
-                                        TypeScript
-                                    </li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/turnos-app-flutter"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/turnos-app-flutter/blob/main/docs/demo.gif"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Ver demo
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://turnos-rv-portafolio.web.app"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Probar la web
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">Móvil y web · IA con visión</p>
-                                        <h3 class="project__title">Escáner de facturas con IA</h3>
-                                    </div>
-                                </header>
-                                <p class="project__desc">
-                                    App Flutter (Android y web) que lee la foto de una factura de
-                                    proveedor con un modelo de visión local, empareja cada línea con
-                                    el catálogo y, tras la revisión de una persona, registra las
-                                    entradas en la API de inventario sin duplicados. Evaluada con 10
-                                    facturas ficticias: 10/10 perfectas con el modelo de 9B. 123
-                                    pruebas y CI.
-                                </p>
-                                <ul class="project__stack">
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-flutter" />
-                                        </svg>
-                                        Flutter
-                                    </li>
-                                    <li>Riverpod</li>
-                                    <li>Ollama</li>
-                                    <li>Visión</li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/invoice-scanner-flutter"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/invoice-scanner-flutter/blob/main/docs/demo.gif"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Ver demo
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">Agentes de IA · MCP</p>
-                                        <h3 class="project__title">Agente de inventario con MCP</h3>
-                                    </div>
-                                </header>
-                                <p class="project__desc">
-                                    Servidor MCP y agente que consultan y mueven el inventario
-                                    conversando en español, con un modelo local (Ollama). Ningún
-                                    movimiento se registra sin que una persona apruebe el resumen
-                                    del servidor. Evaluado con 18 escenarios y dos modelos: 0
-                                    escrituras sin aprobación. 126 pruebas y CI.
-                                </p>
-                                <ul class="project__stack">
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-ts" />
-                                        </svg>
-                                        TypeScript
-                                    </li>
-                                    <li>MCP</li>
-                                    <li>Ollama</li>
-                                    <li>LLM</li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/inventory-agent-mcp"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/inventory-agent-mcp/blob/main/docs/demo.gif"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Ver demo
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-
-                        <article class="project reveal">
-                            <div class="project__body">
-                                <header class="project__header">
-                                    <div>
-                                        <p class="project__type">QA · Pruebas E2E</p>
-                                        <h3 class="project__title">Suite E2E con Playwright</h3>
-                                    </div>
-                                </header>
-                                <p class="project__desc">
-                                    Pruebas end-to-end sobre Sauce Demo, un sitio público para
-                                    practicar automatización, a partir de un plan de pruebas
-                                    priorizado: 139 pruebas en cuatro navegadores, 13 defectos
-                                    reales documentados, accesibilidad, regresión visual y 0 pruebas
-                                    inestables en 30 ejecuciones del CI.
-                                </p>
-                                <ul class="project__stack">
-                                    <li>Playwright</li>
-                                    <li>
-                                        <svg class="icon" aria-hidden="true" focusable="false">
-                                            <use href="img/icons.svg#tech-ts" />
-                                        </svg>
-                                        TypeScript
-                                    </li>
-                                    <li>
-                                        <svg
-                                            class="icon icon--ui"
-                                            aria-hidden="true"
-                                            focusable="false"
-                                        >
-                                            <use href="img/icons.svg#ui-clipboard-check" />
-                                        </svg>
-                                        QA
-                                    </li>
-                                </ul>
-                                <ul class="store-links">
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://github.com/rolandocesar-prog-dev/qa-e2e-playwright"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Código
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            class="store-link"
-                                            href="https://rolandocesar-prog-dev.github.io/qa-e2e-playwright/"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Ver reporte
-                                            <svg class="icon" aria-hidden="true" focusable="false">
-                                                <use href="img/icons.svg#ui-external-link" />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                    <h3 class="projects__subtitle reveal">Otros trabajos</h3>
-                    <ul class="work-list reveal">
-                        <li class="work-item">
-                            <p class="work-item__title">
-                                App móvil y panel web para una startup de Santa Cruz
-                            </p>
-                            <p class="work-item__desc">
-                                Freelance remoto: app Flutter para Android e iOS y panel web en
-                                React, con Firebase como backend en tiempo real.
-                            </p>
-                            <p class="work-item__stack mono">Flutter · React · Firebase</p>
-                        </li>
-                        <li class="work-item">
-                            <p class="work-item__title">App OTN-PB · monitoreo meteorológico</p>
-                            <p class="work-item__desc">
-                                App móvil para visualizar estaciones meteorológicas satelitales del
-                                valle central de Tarija.
-                            </p>
-                            <p class="work-item__stack mono">Flutter · Spring Boot · PostgreSQL</p>
-                        </li>
-                        <li class="work-item">
-                            <p class="work-item__title">
-                                Sistema de despacho · Radio Móvil Andaluz
-                            </p>
-                            <p class="work-item__desc">
-                                Control y despacho de llamadas: registro de clientes, historial y
-                                panel de operadores en tiempo real.
-                            </p>
-                            <p class="work-item__stack mono">PHP · JavaScript · MySQL</p>
-                        </li>
-                        <li class="work-item">
-                            <p class="work-item__title">Cuestionario ciudadano interactivo</p>
-                            <p class="work-item__desc">
-                                Aplicación web con cálculo y visualización de resultados en tiempo
-                                real.
-                            </p>
-                            <p class="work-item__stack mono">Angular · TypeScript</p>
-                        </li>
-                        <li class="work-item">
-                            <p class="work-item__title">Sitio web institucional</p>
-                            <p class="work-item__desc">
-                                Sitio sin frameworks, con foco en rendimiento, accesibilidad y carga
-                                rápida.
-                            </p>
-                            <p class="work-item__stack mono">HTML · CSS · JavaScript</p>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section
-                id="education"
-                class="section section--alt education"
-                aria-labelledby="education-title"
-            >
-                <div class="container">
-                    <h2 id="education-title" class="section__title section__title--spaced reveal">
-                        Formación
-                    </h2>
-                    <div class="education__layout">
-                        <div class="timeline reveal">
-                            <div class="timeline__item">
-                                <div class="timeline__marker" aria-hidden="true"></div>
-                                <article class="timeline__card">
-                                    <p class="timeline__when mono">En curso</p>
-                                    <h3 class="timeline__title">Ingeniería en Sistemas</h3>
-                                    <p class="timeline__inst">Universidad Adventista de Bolivia</p>
-                                    <p class="timeline__desc">
+            <section id="skills" class="section" aria-labelledby="skills-title">
+                <div class="container split">
+                    <div class="split__aside reveal">
+                        <p class="section__kicker mono">04 / stack</p>
+                        <h2 id="skills-title" class="section__title">Con qué construyo</h2>
+                    </div>
+                    <div class="split__main skill-groups reveal">
+                        <div class="skill-group">
+                            <h3 class="skill-group__title mono">Núcleo</h3>
+                            <ul class="skill-group__list">
+                                <li>Flutter</li>
+                                <li>Dart</li>
+                                <li>TypeScript</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>NestJS</li>
+                                <li>Python</li>
+                                <li>PostgreSQL</li>
+                                <li>Firebase</li>
+                                <li>Docker</li>
+                                <li>Git y GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-group__title mono">IA y calidad</h3>
+                            <ul class="skill-group__list skill-group__list--stacked">
+                                <li>RAG y búsqueda híbrida</li>
+                                <li>Agentes con MCP</li>
+                                <li>Pruebas E2E con Playwright</li>
+                                <li>CI/CD con GitHub Actions</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-group__title mono">Complementario</h3>
+                            <ul class="skill-group__list skill-group__list--soft">
+                                <li>React Native</li>
+                                <li>Angular</li>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>Supabase</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-group__title mono">Idiomas</h3>
+                            <ul class="skill-group__list skill-group__list--stacked">
+                                <li>
+                                    <span>Español</span>
+                                    <span class="skill-group__level mono">Nativo</span>
+                                </li>
+                                <li>
+                                    <span
+                                        >Inglés
+                                        <span class="skill-group__hint">(técnico)</span></span
+                                    >
+                                    <span class="skill-group__level mono">B1 intermedio</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section" aria-labelledby="education-title">
+                <div class="container split">
+                    <div class="split__aside reveal">
+                        <p class="section__kicker mono">05 / trayectoria</p>
+                        <h2 id="education-title" class="section__title">
+                            Formación y otros trabajos
+                        </h2>
+                    </div>
+                    <div class="split__main">
+                        <h3 class="rows__title mono reveal">Formación</h3>
+                        <ul class="rows reveal">
+                            <li class="row">
+                                <p class="row__label row__label--accent mono">En curso</p>
+                                <div class="row__body">
+                                    <p class="row__title">Ingeniería en Sistemas</p>
+                                    <p class="row__meta">Universidad Adventista de Bolivia</p>
+                                    <p class="row__desc">
                                         Proyecto de grado: asistente conversacional con RAG que
                                         orienta a los ciudadanos sobre trámites del Gobierno
                                         Autónomo Municipal de Tarija, con app móvil y panel de
                                         administración. Se desarrolla con Scrum, con la Alcaldía
                                         como Product Owner.
                                     </p>
-                                </article>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__marker" aria-hidden="true"></div>
-                                <article class="timeline__card">
-                                    <h3 class="timeline__title">
+                                </div>
+                            </li>
+                            <li class="row">
+                                <p class="row__label mono">Egresado</p>
+                                <div class="row__body">
+                                    <p class="row__title">
                                         Técnico Superior en Sistemas Informáticos
-                                    </h3>
-                                    <p class="timeline__inst">Instituto Técnico Superior «INCOS»</p>
-                                </article>
-                            </div>
-                            <div class="timeline__item">
-                                <div class="timeline__marker" aria-hidden="true"></div>
-                                <article class="timeline__card">
-                                    <h3 class="timeline__title">Bachiller en Humanidades</h3>
-                                    <p class="timeline__inst">
+                                    </p>
+                                    <p class="row__meta">Instituto Técnico Superior «INCOS»</p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <p class="row__label mono">Bachillerato</p>
+                                <div class="row__body">
+                                    <p class="row__title">Bachiller en Humanidades</p>
+                                    <p class="row__meta">
                                         Colegio Nacional San Luis / CEA San Jerónimo
                                     </p>
-                                </article>
-                            </div>
-                        </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3 class="rows__title mono reveal">Otros trabajos</h3>
+                        <ul class="rows reveal">
+                            <li class="row">
+                                <p class="row__label mono">Freelance</p>
+                                <div class="row__body">
+                                    <p class="row__title">
+                                        App móvil y panel web para una startup de Santa Cruz
+                                    </p>
+                                    <p class="row__desc">
+                                        Freelance remoto: app Flutter para Android e iOS y panel web
+                                        en React, con Firebase como backend en tiempo real.
+                                    </p>
+                                    <p class="row__stack mono">Flutter · React · Firebase</p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <p class="row__label mono">Móvil</p>
+                                <div class="row__body">
+                                    <p class="row__title">App OTN-PB · monitoreo meteorológico</p>
+                                    <p class="row__desc">
+                                        App móvil para visualizar estaciones meteorológicas
+                                        satelitales del valle central de Tarija.
+                                    </p>
+                                    <p class="row__stack mono">
+                                        Flutter · Spring Boot · PostgreSQL
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <p class="row__label mono">Web</p>
+                                <div class="row__body">
+                                    <p class="row__title">
+                                        Sistema de despacho · Radio Móvil Andaluz
+                                    </p>
+                                    <p class="row__desc">
+                                        Control y despacho de llamadas: registro de clientes,
+                                        historial y panel de operadores en tiempo real.
+                                    </p>
+                                    <p class="row__stack mono">PHP · JavaScript · MySQL</p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <p class="row__label mono">Web</p>
+                                <div class="row__body">
+                                    <p class="row__title">Cuestionario ciudadano interactivo</p>
+                                    <p class="row__desc">
+                                        Aplicación web con cálculo y visualización de resultados en
+                                        tiempo real.
+                                    </p>
+                                    <p class="row__stack mono">Angular · TypeScript</p>
+                                </div>
+                            </li>
+                            <li class="row">
+                                <p class="row__label mono">Web</p>
+                                <div class="row__body">
+                                    <p class="row__title">Sitio web institucional</p>
+                                    <p class="row__desc">
+                                        Sitio sin frameworks, con foco en rendimiento, accesibilidad
+                                        y carga rápida.
+                                    </p>
+                                    <p class="row__stack mono">HTML · CSS · JavaScript</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <section
-                id="contact"
-                class="section section--alt contact"
-                aria-labelledby="contact-title"
-            >
+            <section id="contact" class="section contact" aria-labelledby="contact-title">
                 <div class="container">
-                    <h2 id="contact-title" class="section__title reveal">Contacto</h2>
-                    <p class="section__lead reveal">
+                    <p class="section__kicker mono reveal">06 / contacto</p>
+                    <h2 id="contact-title" class="contact__title reveal">
+                        ¿Buscas un desarrollador para tu equipo?
+                    </h2>
+                    <p class="contact__lead reveal">
                         Abierto a puestos de desarrollo full stack o móvil, remotos o en Bolivia, y
                         a proyectos freelance. Respondo lo antes posible.
                     </p>
-
-                    <div class="contact__grid reveal">
-                        <a href="mailto:rolando.sha256@gmail.com" class="contact-card">
-                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
-                                <use href="img/icons.svg#ui-mail" />
-                            </svg>
-                            <span class="contact-card__label">Email</span>
-                            <span class="contact-card__value mono">rolando.sha256@gmail.com</span>
-                        </a>
-                        <a href="tel:+59178249575" class="contact-card">
-                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
-                                <use href="img/icons.svg#ui-phone" />
-                            </svg>
-                            <span class="contact-card__label">Teléfono</span>
-                            <span class="contact-card__value mono">+591&nbsp;78249575</span>
-                        </a>
-                        <a
-                            href="https://github.com/rolandocesar-prog-dev"
-                            class="contact-card"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
-                                <use href="img/icons.svg#tech-github" />
-                            </svg>
-                            <span class="contact-card__label">GitHub</span>
-                            <span class="contact-card__value mono">rolandocesar-prog-dev</span>
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/rolando-cesar-vasquez-tavera-b62235222"
-                            class="contact-card"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <svg class="icon icon--lg" aria-hidden="true" focusable="false">
-                                <use href="img/icons.svg#tech-linkedin" />
-                            </svg>
-                            <span class="contact-card__label">LinkedIn</span>
-                            <span class="contact-card__value mono"
-                                >rolando-cesar-vasquez-tavera</span
-                            >
-                        </a>
-                    </div>
-
-                    <div class="contact__cta reveal">
-                        <h3 class="contact__cta-title">¿Buscas un desarrollador para tu equipo?</h3>
-                        <div class="contact__actions">
+                    <ul class="contact__actions reveal">
+                        <li>
                             <a
                                 class="btn btn--primary btn--lg"
                                 href="mailto:rolando.sha256@gmail.com?subject=Oportunidad%20laboral"
                             >
-                                Escribirme
                                 <svg class="icon" aria-hidden="true" focusable="false">
-                                    <use href="img/icons.svg#ui-send" />
+                                    <use href="img/icons.svg#ui-mail" />
                                 </svg>
+                                rolando.sha256@gmail.com
                             </a>
+                        </li>
+                        <li>
+                            <a class="btn btn--ghost btn--lg" href="tel:+59178249575">
+                                <span class="sr-only">Teléfono: </span>+591&nbsp;78249575
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="btn btn--ghost btn--lg"
+                                href="https://www.linkedin.com/in/rolando-cesar-vasquez-tavera-b62235222"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >LinkedIn <span aria-hidden="true">↗</span></a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="btn btn--ghost btn--lg"
+                                href="https://github.com/rolandocesar-prog-dev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >GitHub <span aria-hidden="true">↗</span></a
+                            >
+                        </li>
+                        <li>
                             <a
                                 class="btn btn--ghost btn--lg"
                                 href="CV_Rolando_Vasquez_Tavera.pdf"
                                 download
                                 >Descargar CV (PDF)</a
                             >
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <div class="container footer__inner">
+            <div class="container footer__inner mono">
                 <p class="footer__copyright">
                     <span aria-hidden="true">©</span>
                     <span class="sr-only">Copyright </span>
@@ -1546,6 +1064,7 @@
                     <a href="#hero" class="footer__name">Rolando César Vásquez Tavera</a>. Todos los
                     derechos reservados.
                 </p>
+                <p class="footer__place">Tarija, Bolivia</p>
             </div>
         </footer>
 

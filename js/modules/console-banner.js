@@ -3,8 +3,8 @@
  * Mantiene el branding y un canal directo de contacto.
  */
 export function printConsoleBanner() {
-  const accent = '#b1441f';
-  const text = '#1c1a16';
+  const accent = '#f0b450';
+  const text = '#ecedee';
 
   const banner = `
 %c
@@ -14,7 +14,7 @@ export function printConsoleBanner() {
 │                                          │
 ╰──────────────────────────────────────────╯
 
-%cDesarrollador Web · Mobile · QA  —  Tarija, Bolivia
+%cDesarrollador full stack y móvil · IA aplicada  —  Tarija, Bolivia
 %c¿Te interesa colaborar? %crolando.sha256@gmail.com
 `;
 
@@ -23,7 +23,7 @@ export function printConsoleBanner() {
     banner,
     `color:${accent};font-weight:bold`,
     `color:${text};font-weight:600`,
-    `color:#4a453d`,
+    `color:#9ba1a8`,
     `color:${accent};font-weight:bold;text-decoration:underline`,
   );
 }

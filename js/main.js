@@ -7,7 +7,6 @@ import { initMenu } from './modules/menu.js';
 import { initReveal } from './modules/reveal.js';
 import { initYear } from './modules/year.js';
 import { initBackToTop } from './modules/back-to-top.js';
-import { initSkillTabs } from './modules/tabs.js';
 import { printConsoleBanner } from './modules/console-banner.js';
 
 const ready = (fn) =>
@@ -21,6 +20,5 @@ ready(() => {
   initReveal();
   initYear();
   initBackToTop();
-  initSkillTabs();
   printConsoleBanner();
 });

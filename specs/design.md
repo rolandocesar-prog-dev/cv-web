@@ -40,7 +40,7 @@ main#main
   section#hero           disponibilidad · h1 · rol y propuesta · resumen · acciones
                          + aside.repo-status (table con caption)
   section.figures        ul de 4 cifras
-  section#ecosystem      01 / caso principal — ul.eco de 4 nodos + conectores aria-hidden
+  section#ecosystem      01 / caso principal — ul.eco de 4 nodos; conectores con etiqueta y líneas por CSS
   section#projects       02 / proyectos — article.featured (RAG + GIF) + 6 article.project-card
   section#apps           03 / en producción — 4 apps con enlaces a tiendas
   section#skills         04 / stack — núcleo · IA y calidad · complementario · idiomas
@@ -61,7 +61,8 @@ Un solo `css/styles.css`, por bloques en este orden: tokens, base y reset, utili
 repos, cifras, ecosistema, proyectos, apps, stack, trayectoria, contacto, pie, volver arriba y
 movimiento reducido. Nomenclatura `bloque__elemento--modificador`, como hasta ahora.
 
-Diseño adaptable sin consultas de medios salvo en la cabecera (860 px): flex con `flex-wrap` y
+Diseño adaptable sin consultas de medios salvo en la cabecera (860 px) y en el diagrama del
+ecosistema (760 px: en celular se apila en una columna con conectores verticales): flex con `flex-wrap` y
 cuadrículas `repeat(auto-fit, minmax(min(Npx, 100%), 1fr))`. Las líneas entre celdas se dibujan con
 `gap: 1px` sobre el color de borde, para que no queden bordes sueltos al apilarse.
 

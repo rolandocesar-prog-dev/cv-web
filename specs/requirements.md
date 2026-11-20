@@ -53,8 +53,8 @@ español o en inglés.
 
 - RF-05.1 La página DEBE presentar la API de inventario, el panel web, el agente MCP y el escáner
   de facturas como un sistema, con la API al centro y la relación de cada cliente con ella.
-- RF-05.2 El diagrama DEBE entenderse sin las líneas: los nodos son una lista con texto y los
-  conectores son decorativos (`aria-hidden`).
+- RF-05.2 El diagrama DEBE entenderse sin las líneas: los nodos son una lista con texto, cada
+  conector lleva su etiqueta en texto (por ejemplo «HTTP · JWT») y las líneas son decorativas.
 
 ### RF-06 Proyectos
 
