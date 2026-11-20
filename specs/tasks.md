@@ -15,7 +15,7 @@ Cada tarea es un commit (Conventional Commits en español). Se marca `[x]` al te
 
 ## Hito R3 — Buscadores y redes
 
-- [ ] 3. Metadatos del tema oscuro (`theme-color`, `color-scheme`) y `lastmod` en el sitemap
+- [x] 3. Metadatos del tema oscuro (`theme-color`, `color-scheme`) y `lastmod` en el sitemap
       (RF-12.1, RF-12.3).
 - [ ] 4. Imagen de previsualización oscura: `img/og-image.svg` y `img/og-image.png` (RF-12.2).
 
