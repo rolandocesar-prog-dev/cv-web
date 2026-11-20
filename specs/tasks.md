@@ -19,6 +19,9 @@ Cada tarea es un commit (Conventional Commits en español). Se marca `[x]` al te
       (RF-12.1, RF-12.3).
 - [x] 4. Imagen de previsualización oscura: `img/og-image.svg` y `img/og-image.png` (RF-12.2).
 
+- [x] 6. Verificación del sitio en Google Search Console: archivo `googlebf3e1cb51b9db208.html`
+      en la raíz, tal como lo entrega Google (excluido de Prettier).
+
 ## Hito R4 — Cierre
 
 - [x] 5. Verificación en escritorio y celular, en español e inglés (capturas, axe, enlaces a los
@@ -28,4 +31,4 @@ Cada tarea es un commit (Conventional Commits en español). Se marca `[x]` al te
 
 - Regenerar `img/icons.svg` sin los símbolos que ya no se usan (`build-sprite.ps1`, en Windows).
 - Foto profesional nueva y fechas de cada experiencia (pendientes de Rolando).
-- Registrar el sitio en Google Search Console y Bing Webmaster Tools (con la cuenta de Rolando).
+- Registrar el sitio en Bing Webmaster Tools (con la cuenta de Rolando; se puede importar desde Search Console).

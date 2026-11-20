@@ -6,3 +6,6 @@ img/icons.svg
 
 # Página en inglés generada por tools/build-en.mjs
 en/index.html
+
+# Verificación de Google Search Console: el contenido debe quedar tal como lo entrega Google
+google*.html
